@@ -1,0 +1,2190 @@
+<section class="dashboard_section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-3">
+        <div class="marketplace_filter">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="project-tab" data-bs-toggle="tab" data-bs-target="#project" type="button" role="tab" aria-controls="project" aria-selected="true">Projects</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="group-tab" data-bs-toggle="tab" data-bs-target="#group" type="button" role="tab" aria-controls="group" aria-selected="false">Groups</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="people-tab" data-bs-toggle="tab" data-bs-target="#people" type="button" role="tab" aria-controls="people" aria-selected="false">People</button>
+            </li>
+          </ul>
+          <hr>
+          <h5>Location</h5>
+          <form method="post">
+            <input type="text" name="" placeholder="Search a location" class="form-control">
+            <button class="search-button">
+              <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="1.91188e-07" y="0.0450582" width="8.81618" height="3.95849" rx="1.97924" transform="matrix(0.46356 0.46356 -0.463556 0.463564 20.1889 18.3167)" fill="#272D35" stroke="#272D35" stroke-width="0.0972"/>
+                <ellipse cx="13.5" cy="13.5" rx="9.54594" ry="9.54594" transform="rotate(45 13.5 13.5)" stroke="#272D35" stroke-width="3"/>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-12">
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="project" role="tabpanel" aria-labelledby="project-tab">
+            <div class="row">
+              <div class="col-12 col-md-3">
+                <div class="marketplace_filter_card">
+                  <div class="accordion" id="filter_main">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Filters
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#filter_main">
+                        <div class="accordion-body">
+                          <div class="accordion" id="filter_inner">
+                            <div class="accordion-item type1">
+                              <h2 class="accordion-header" id="headingOne_inner">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne_inner" aria-expanded="true" aria-controls="collapseOne_inner">
+                                  Purpose
+                                </button>
+                              </h2>
+                              <div id="collapseOne_inner" class="accordion-collapse collapse" aria-labelledby="headingOne_inner" data-bs-parent="#filter_inner">
+                                <div class="accordion-body">
+                                  <ul>
+                                    <li>
+                                      <label class="label green">Aquatic Ecology
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <label class="label green">Civil Rights
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <label class="label green">Clean Energy
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <label class="label green">Clean Water & Sanitation
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <span class="deselect_all">deselect all</span>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item type2">
+                              <h2 class="accordion-header" id="headingTwo_inner">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo_inner" aria-expanded="false" aria-controls="collapseTwo_inner">
+                                  Skills
+                                </button>
+                              </h2>
+                              <div id="collapseTwo_inner" class="accordion-collapse collapse" aria-labelledby="headingTwo_inner" data-bs-parent="#filter_inner">
+                                <div class="accordion-body">
+                                  <ul>
+                                    <li class="heading">ANIMAL WELFARE</li>
+                                    <li>
+                                      <label class="label red">Animal Care
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <label class="label red">Aquatic Animal Care
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <label class="label red">Veterinary
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                    </li>
+                                    <li class="heading">ARTS</li>
+                                    <li>
+                                      <label class="label red">Acting
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <label class="label red">Dance
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <label class="label red">Drawing
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <span class="deselect_all">deselect all</span>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item type3">
+                              <h2 class="accordion-header" id="headingThree_inner">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree_inner" aria-expanded="false" aria-controls="collapseThree_inner">
+                                  Expertise
+                                </button>
+                              </h2>
+                              <div id="collapseThree_inner" class="accordion-collapse collapse" aria-labelledby="headingThree_inner" data-bs-parent="#filter_inner">
+                                <div class="accordion-body">
+                                  <ul>
+                                    <li class="heading">BUSINESS</li>
+                                    <li>
+                                      <label class="label gold">Accounting
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <label class="label gold">Business Ethics
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <label class="label gold">Entrepreneurship
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <span class="deselect_all">deselect all</span>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item type4">
+                              <h2 class="accordion-header" id="headingFour_inner">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour_inner" aria-expanded="false" aria-controls="collapseFour_inner">
+                                  Funding Goal
+                                </button>
+                              </h2>
+                              <div id="collapseFour_inner" class="accordion-collapse collapse" aria-labelledby="headingFour_inner" data-bs-parent="#filter_inner">
+                                <div class="accordion-body">
+                                  <ul>
+                                    <li class="form">
+                                      <input type="number" maxlength="4" value="1000" class="from" />
+                                      <input type="number" maxlength="4" value="500000" class="to" />
+                                      <input type="text" class="js-range-slider" name="my_range" value="" data-skin="round" data-type="double" data-min="1000" data-max="500000" data-grid="false" />
+                                    </li>
+                                    <li>
+                                      <label class="label green2">under 10%
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <label class="label green2">Over 90%
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <span class="deselect_all">deselect all</span>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-9">
+                <div class="card_search_result">
+                  <ul class="list-inline badge_tag">
+                    <li class="list-inline-item">
+											<span class="badge bg-green">
+												<svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M6.04992 10.6592L6.00193 10.688L5.97314 10.67C-3.11516 5.20811 0.00384399 -0.0630103 3.37717 0.000569407C3.48513 0.000569407 3.5943 0.0113659 3.70227 0.0245617C5.06023 0.188909 5.69963 0.942269 6.00193 1.59006C6.30304 0.942269 6.94363 0.188909 8.3016 0.0305598C11.7793 -0.397703 15.4009 5.02457 6.04992 10.6592Z" fill="white"/>
+												</svg>
+												AQUATIC ECOLOGY <span class="close"><i class="fa fa-close"></i></span>
+											</span>
+                    </li>
+                    <li class="list-inline-item">
+											<span class="badge bg-green">
+												<svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M6.04992 10.6592L6.00193 10.688L5.97314 10.67C-3.11516 5.20811 0.00384399 -0.0630103 3.37717 0.000569407C3.48513 0.000569407 3.5943 0.0113659 3.70227 0.0245617C5.06023 0.188909 5.69963 0.942269 6.00193 1.59006C6.30304 0.942269 6.94363 0.188909 8.3016 0.0305598C11.7793 -0.397703 15.4009 5.02457 6.04992 10.6592Z" fill="white"/>
+												</svg>
+												HUNGER & FOOD SYSTEMS <span class="close"><i class="fa fa-close"></i></span>
+											</span>
+                    </li>
+                    <li class="list-inline-item">
+											<span class="badge bg-green">
+												<svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M6.04992 10.6592L6.00193 10.688L5.97314 10.67C-3.11516 5.20811 0.00384399 -0.0630103 3.37717 0.000569407C3.48513 0.000569407 3.5943 0.0113659 3.70227 0.0245617C5.06023 0.188909 5.69963 0.942269 6.00193 1.59006C6.30304 0.942269 6.94363 0.188909 8.3016 0.0305598C11.7793 -0.397703 15.4009 5.02457 6.04992 10.6592Z" fill="white"/>
+												</svg>
+												TERRESTRIAL ECOLOGY <span class="close"><i class="fa fa-close"></i></span>
+											</span>
+                    </li>
+                    <li class="list-inline-item">
+											<span class="badge bg-red">
+												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M0.440995 10.8131C0.156915 11.0972 0 11.4752 0 11.9115C0 12.7416 0.674909 13.4165 1.50498 13.4165C1.9279 13.4165 2.33389 13.2369 2.61855 12.9242L7.88483 7.13117L6.00418 5.24994L0.440995 10.8131ZM13.9147 5.33511L12.748 4.16845C12.6932 4.11362 12.6191 4.08329 12.5415 4.08329H12.2499V3.79162C12.2499 3.71404 12.2189 3.63996 12.1647 3.58513L9.83139 1.25182C9.36356 0.783991 8.57957 0 6.99992 0C5.42144 0 4.69753 0.723909 4.16845 1.25182C4.08504 1.33523 4.05995 1.46065 4.10545 1.56973C4.15037 1.67881 4.25712 1.74998 4.37495 1.74998C6.72751 1.74998 6.99992 2.74864 6.99992 3.49996C6.99992 4.12412 6.64643 4.59953 6.42068 4.84161L8.32641 6.74734C8.84207 6.39851 9.57473 5.98668 9.91656 6.01702V6.41659C9.91656 6.49418 9.94747 6.56826 10.0017 6.62309L11.46 8.08141C11.5149 8.13566 11.589 8.16658 11.6665 8.16658H11.6765C11.7575 8.16424 11.8334 8.12808 11.8859 8.06741L13.9275 5.7341C14.029 5.61802 14.0232 5.44419 13.9147 5.33511Z" fill="white"/>
+												</svg>
+												ACCOUNTING <span class="close"><i class="fa fa-close"></i></span>
+											</span>
+                    </li>
+                    <li class="list-inline-item">
+											<span class="badge bg-red">
+												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M0.440995 10.8131C0.156915 11.0972 0 11.4752 0 11.9115C0 12.7416 0.674909 13.4165 1.50498 13.4165C1.9279 13.4165 2.33389 13.2369 2.61855 12.9242L7.88483 7.13117L6.00418 5.24994L0.440995 10.8131ZM13.9147 5.33511L12.748 4.16845C12.6932 4.11362 12.6191 4.08329 12.5415 4.08329H12.2499V3.79162C12.2499 3.71404 12.2189 3.63996 12.1647 3.58513L9.83139 1.25182C9.36356 0.783991 8.57957 0 6.99992 0C5.42144 0 4.69753 0.723909 4.16845 1.25182C4.08504 1.33523 4.05995 1.46065 4.10545 1.56973C4.15037 1.67881 4.25712 1.74998 4.37495 1.74998C6.72751 1.74998 6.99992 2.74864 6.99992 3.49996C6.99992 4.12412 6.64643 4.59953 6.42068 4.84161L8.32641 6.74734C8.84207 6.39851 9.57473 5.98668 9.91656 6.01702V6.41659C9.91656 6.49418 9.94747 6.56826 10.0017 6.62309L11.46 8.08141C11.5149 8.13566 11.589 8.16658 11.6665 8.16658H11.6765C11.7575 8.16424 11.8334 8.12808 11.8859 8.06741L13.9275 5.7341C14.029 5.61802 14.0232 5.44419 13.9147 5.33511Z" fill="white"/>
+												</svg>
+												BOOKKEEPING <span class="close"><i class="fa fa-close"></i></span>
+											</span>
+                    </li>
+                    <li class="list-inline-item">
+											<span class="badge bg-gold">
+												<svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M0.75043 11.91C0.43704 12.1354 0 11.9115 0 11.5254V2.05293C0 0.91913 0.91913 0 2.05293 0H6.78941C7.92326 0 8.84234 0.91913 8.84234 2.05293V11.5254C8.84234 11.9115 8.40535 12.1354 8.09191 11.91L4.42116 9.26898L0.75043 11.91Z" fill="white"/>
+												</svg>
+												ACCOUNTING <span class="close"><i class="fa fa-close"></i></span>
+											</span>
+                    </li>
+                  </ul>
+                  <div class="row">
+                    <div class="col-12 col-md-4">
+                      <div class="card">
+                        <ul class="list-inline badge_tag">
+                          <li class="list-inline-item">
+											  		<span class="badge bg-green">
+														terrestrial
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-green">
+														hunger
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-red">
+														bookkeeping
+													</span>
+                          </li>
+                        </ul>
+                        <img src="../assets/images/img1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Santa Ana Trail Cleanup</h5>
+                          <h6>Santa Ana, Texas, USA</h6>
+                          <p class="card-text">Connecting women with mentorship & access to applicable techniques for daily...</p>
+                          <div class="progress_flex">
+                            <span class="progress_flex_span">$56,395 Raised</span>
+                            <span class="progress_flex_span">$60,000 Goal</span>
+                          </div>
+                          <div class="progress">
+                            <div class="progress-bar bg-green2" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <div class="bottom_flex">
+                            <a href="#" class="btn btn-purple-dark">Contact</a>
+                            <a href="#" class="read_more_link">Read More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <div class="card">
+                        <ul class="list-inline badge_tag">
+                          <li class="list-inline-item">
+											  		<span class="badge bg-green">
+														terrestrial
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-green">
+														hunger
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-red">
+														ACCOUNTING
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-black">
+														+1
+													</span>
+                          </li>
+                        </ul>
+                        <img src="../assets/images/img2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Urban Farm Initiative</h5>
+                          <h6>Memphis, Tennessee, USA</h6>
+                          <p class="card-text">Weekly training with local leaders to explore techniques for community...</p>
+                          <div class="progress_flex">
+                            <span class="progress_flex_span">$13,654 Raised</span>
+                            <span class="progress_flex_span">$15,000 Goal</span>
+                          </div>
+                          <div class="progress">
+                            <div class="progress-bar bg-green2" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <div class="bottom_flex">
+                            <a href="#" class="btn btn-purple-dark">Contact</a>
+                            <a href="#" class="read_more_link">Read More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <div class="card">
+                        <ul class="list-inline badge_tag">
+                          <li class="list-inline-item">
+											  		<span class="badge bg-green">
+														hunger
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-red">
+														ACCOUNTING
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-gold">
+														ACCOUNTING
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-black">
+														+1
+													</span>
+                          </li>
+                        </ul>
+                        <img src="../assets/images/img3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Food Train Nashik</h5>
+                          <h6>Nashik, Maharashtra, India</h6>
+                          <p class="card-text">Making healthy foods easily accessible by connecting local public transit wit...</p>
+                          <div class="progress_flex">
+                            <span class="progress_flex_span">$92,395 Raised</span>
+                            <span class="progress_flex_span">$100,000 Goal</span>
+                          </div>
+                          <div class="progress">
+                            <div class="progress-bar bg-green2" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <div class="bottom_flex">
+                            <a href="#" class="btn btn-purple-dark">Contact</a>
+                            <a href="#" class="read_more_link">Read More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 col-md-4">
+                      <div class="card">
+                        <ul class="list-inline badge_tag">
+                          <li class="list-inline-item">
+											  		<span class="badge bg-green">
+														terrestrial
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-green">
+														hunger
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-red">
+														ACCOUNTING
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-black">
+														+4
+													</span>
+                          </li>
+                        </ul>
+                        <img src="../assets/images/img4.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Beach Cleanup</h5>
+                          <h6>Redondo Beach, California, USA</h6>
+                          <p class="card-text">Volunteer cleanup of public beaches that line the coasts Come join...</p>
+                          <div class="progress_flex">
+                            <span class="progress_flex_span">$64,395 Raised</span>
+                            <span class="progress_flex_span">$70,000 Goal</span>
+                          </div>
+                          <div class="progress">
+                            <div class="progress-bar bg-green2" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <div class="bottom_flex">
+                            <a href="#" class="btn btn-purple-dark">Contact</a>
+                            <a href="#" class="read_more_link">Read More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <div class="card">
+                        <ul class="list-inline badge_tag">
+                          <li class="list-inline-item">
+											  		<span class="badge bg-green">
+														hunger
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-red">
+														bookkeeping
+													</span>
+                          </li>
+                        </ul>
+                        <img src="../assets/images/img5.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Arts & Culture Festival</h5>
+                          <h6>San Francisco, California, USA</h6>
+                          <p class="card-text">Connecting local businesses and creatives to share in a , food, and...</p>
+                          <div class="progress_flex">
+                            <span class="progress_flex_span">$9,845 Raised</span>
+                            <span class="progress_flex_span">$10,000 Goal</span>
+                          </div>
+                          <div class="progress">
+                            <div class="progress-bar bg-green2" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <div class="bottom_flex">
+                            <a href="#" class="btn btn-purple-dark">Contact</a>
+                            <a href="#" class="read_more_link">Read More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <div class="card">
+                        <ul class="list-inline badge_tag">
+                          <li class="list-inline-item">
+											  		<span class="badge bg-green">
+														aquatic
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-red">
+														ACCOUNTING
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-gold">
+														ACCOUNTING
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-black">
+														+1
+													</span>
+                          </li>
+                        </ul>
+                        <img src="../assets/images/img6.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Local Watershed Stewardship</h5>
+                          <h6>Chelan, Washington, USA </h6>
+                          <p class="card-text">A volunteer run project committed to wise stewardship of local, so th...</p>
+                          <div class="progress_flex">
+                            <span class="progress_flex_span">$56,395 Raised</span>
+                            <span class="progress_flex_span">$70,000 Goal</span>
+                          </div>
+                          <div class="progress">
+                            <div class="progress-bar bg-green2" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <div class="bottom_flex">
+                            <a href="#" class="btn btn-purple-dark">Contact</a>
+                            <a href="#" class="read_more_link">Read More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 col-md-4">
+                      <div class="card">
+                        <ul class="list-inline badge_tag">
+                          <li class="list-inline-item">
+											  		<span class="badge bg-green">
+														hunger
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-red">
+														bookkeeping
+													</span>
+                          </li>
+                        </ul>
+                        <img src="../assets/images/img7.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Open Mic & Benefit Show</h5>
+                          <h6>Nashville, Tennessee, USA </h6>
+                          <p class="card-text">Local artists and musicians coming together to for the food bank...</p>
+                          <div class="progress_flex">
+                            <span class="progress_flex_span">$56,395 Raised</span>
+                            <span class="progress_flex_span">$70,000 Goal</span>
+                          </div>
+                          <div class="progress">
+                            <div class="progress-bar bg-green2" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <div class="bottom_flex">
+                            <a href="#" class="btn btn-purple-dark">Contact</a>
+                            <a href="#" class="read_more_link">Read More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <div class="card">
+                        <ul class="list-inline badge_tag">
+                          <li class="list-inline-item">
+											  		<span class="badge bg-green">
+														terrestrial
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-green">
+														aquatic
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-green">
+														hunger
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-black">
+														+5
+													</span>
+                          </li>
+                        </ul>
+                        <img src="../assets/images/img8.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Activist Arts Collective Workshop</h5>
+                          <h6>Providence, Rhode Island, USA</h6>
+                          <p class="card-text">How can we best engage community members the arts to benefit...</p>
+                          <div class="progress_flex">
+                            <span class="progress_flex_span">$10,345 Raised</span>
+                            <span class="progress_flex_span">$12,000 Goal</span>
+                          </div>
+                          <div class="progress">
+                            <div class="progress-bar bg-green2" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <div class="bottom_flex">
+                            <a href="#" class="btn btn-purple-dark">Contact</a>
+                            <a href="#" class="read_more_link">Read More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <div class="card">
+                        <ul class="list-inline badge_tag">
+                          <li class="list-inline-item">
+											  		<span class="badge bg-red">
+														ACCOUNTING
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-red">
+														bookkeeping
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-gold">
+														ACCOUNTING
+													</span>
+                          </li>
+                        </ul>
+                        <img src="../assets/images/img9.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">After School Music Workshop</h5>
+                          <h6>Cleveland, Ohio, USA</h6>
+                          <p class="card-text">Immersing local teens with access to safe programming empowering...</p>
+                          <div class="progress_flex">
+                            <span class="progress_flex_span">$41,000 Raised</span>
+                            <span class="progress_flex_span">$45,300 Goal</span>
+                          </div>
+                          <div class="progress">
+                            <div class="progress-bar bg-green2" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <div class="bottom_flex">
+                            <a href="#" class="btn btn-purple-dark">Contact</a>
+                            <a href="#" class="read_more_link">Read More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 col-md-4">
+                      <div class="card">
+                        <ul class="list-inline badge_tag">
+                          <li class="list-inline-item">
+											  		<span class="badge bg-green">
+														terrestrial
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-green">
+														hunger
+													</span>
+                          </li>
+                        </ul>
+                        <img src="../assets/images/img10.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Infrastructure for Local Farms</h5>
+                          <h6>Sa Pa, Lao Cai, Vietnam</h6>
+                          <p class="card-text">Help equip local farms with tools they need to grow for their communit...</p>
+                          <div class="progress_flex">
+                            <span class="progress_flex_span">$56,395 Raised</span>
+                            <span class="progress_flex_span">$70,000 Goal</span>
+                          </div>
+                          <div class="progress">
+                            <div class="progress-bar bg-green2" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <div class="bottom_flex">
+                            <a href="#" class="btn btn-purple-dark">Contact</a>
+                            <a href="#" class="read_more_link">Read More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <div class="card">
+                        <ul class="list-inline badge_tag">
+                          <li class="list-inline-item">
+											  		<span class="badge bg-green">
+														hunger
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-red">
+														ACCOUNTING
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-gold">
+														ACCOUNTING
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-black">
+														+1
+													</span>
+                          </li>
+                        </ul>
+                        <img src="../assets/images/img11.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Lunch for Kids</h5>
+                          <h6>CDMX, Mexico </h6>
+                          <p class="card-text">Help connect children with healthy lunches the intersection of San Migue...</p>
+                          <div class="progress_flex">
+                            <span class="progress_flex_span">$140,000 Raised</span>
+                            <span class="progress_flex_span">$150,000 Goal</span>
+                          </div>
+                          <div class="progress">
+                            <div class="progress-bar bg-green2" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <div class="bottom_flex">
+                            <a href="#" class="btn btn-purple-dark">Contact</a>
+                            <a href="#" class="read_more_link">Read More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <div class="card">
+                        <ul class="list-inline badge_tag">
+                          <li class="list-inline-item">
+											  		<span class="badge bg-green">
+														terrestrial
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-green">
+														aquatic
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-green">
+														hunger
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-black">
+														+5
+													</span>
+                          </li>
+                        </ul>
+                        <img src="../assets/images/img12.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">March for Climate Justice</h5>
+                          <h6>Harlem, New York, USA</h6>
+                          <p class="card-text">Support local movement builders in bringing voice crisis that fac...</p>
+                          <div class="progress_flex">
+                            <span class="progress_flex_span">$56,395 Raised</span>
+                            <span class="progress_flex_span">$70,000 Goal</span>
+                          </div>
+                          <div class="progress">
+                            <div class="progress-bar bg-green2" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <div class="bottom_flex">
+                            <a href="#" class="btn btn-purple-dark">Contact</a>
+                            <a href="#" class="read_more_link">Read More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="group" role="tabpanel" aria-labelledby="group-tab">
+            <div class="row">
+              <div class="col-12 col-md-3">
+                <div class="marketplace_filter_card">
+                  <div class="accordion" id="filter_main1">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne1">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
+                          Filters
+                        </button>
+                      </h2>
+                      <div id="collapseOne1" class="accordion-collapse collapse show" aria-labelledby="headingOne1" data-bs-parent="#filter_main1">
+                        <div class="accordion-body">
+                          <div class="accordion" id="filter_inner1">
+                            <div class="accordion-item type1">
+                              <h2 class="accordion-header" id="headingOne_inner1">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne_inner1" aria-expanded="true" aria-controls="collapseOne_inner1">
+                                  Purpose
+                                </button>
+                              </h2>
+                              <div id="collapseOne_inner1" class="accordion-collapse collapse" aria-labelledby="headingOne_inner1" data-bs-parent="#filter_inner1">
+                                <div class="accordion-body">
+                                  <ul>
+                                    <li>
+                                      <label class="label green">Aquatic Ecology
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <label class="label green">Civil Rights
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <label class="label green">Clean Energy
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <label class="label green">Clean Water & Sanitation
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <span class="deselect_all">deselect all</span>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item type2">
+                              <h2 class="accordion-header" id="headingTwo_inner1">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo_inner1" aria-expanded="false" aria-controls="collapseTwo_inner1">
+                                  Skills
+                                </button>
+                              </h2>
+                              <div id="collapseTwo_inner1" class="accordion-collapse collapse" aria-labelledby="headingTwo_inner1" data-bs-parent="#filter_inner1">
+                                <div class="accordion-body">
+                                  <ul>
+                                    <li class="heading">ANIMAL WELFARE</li>
+                                    <li>
+                                      <label class="label red">Animal Care
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <label class="label red">Aquatic Animal Care
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <label class="label red">Veterinary
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                    </li>
+                                    <li class="heading">ARTS</li>
+                                    <li>
+                                      <label class="label red">Acting
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <label class="label red">Dance
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <label class="label red">Drawing
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <span class="deselect_all">deselect all</span>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item type3">
+                              <h2 class="accordion-header" id="headingThree_inner1">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree_inner1" aria-expanded="false" aria-controls="collapseThree_inner1">
+                                  Expertise
+                                </button>
+                              </h2>
+                              <div id="collapseThree_inner1" class="accordion-collapse collapse" aria-labelledby="headingThree_inner1" data-bs-parent="#filter_inner1">
+                                <div class="accordion-body">
+                                  <ul>
+                                    <li class="heading">BUSINESS</li>
+                                    <li>
+                                      <label class="label gold">Accounting
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <label class="label gold">Business Ethics
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <label class="label gold">Entrepreneurship
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <span class="deselect_all">deselect all</span>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item type4">
+                              <h2 class="accordion-header" id="headingFour_inner1">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour_inner1" aria-expanded="false" aria-controls="collapseFour_inner1">
+                                  Funding Goal
+                                </button>
+                              </h2>
+                              <div id="collapseFour_inner1" class="accordion-collapse collapse" aria-labelledby="headingFour_inner1" data-bs-parent="#filter_inner1">
+                                <div class="accordion-body">
+                                  <ul>
+                                    <li class="form">
+                                      <input type="number" maxlength="4" value="1000" class="from" />
+                                      <input type="number" maxlength="4" value="500000" class="to" />
+                                      <input type="text" class="js-range-slider" name="my_range" value="" data-skin="round" data-type="double" data-min="1000" data-max="500000" data-grid="false" />
+                                    </li>
+                                    <li>
+                                      <label class="label green2">under 10%
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <label class="label green2">Over 90%
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <span class="deselect_all">deselect all</span>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-9">
+                <div class="card_search_result">
+                  <ul class="list-inline badge_tag">
+                    <li class="list-inline-item">
+											<span class="badge bg-green">
+												<svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M6.04992 10.6592L6.00193 10.688L5.97314 10.67C-3.11516 5.20811 0.00384399 -0.0630103 3.37717 0.000569407C3.48513 0.000569407 3.5943 0.0113659 3.70227 0.0245617C5.06023 0.188909 5.69963 0.942269 6.00193 1.59006C6.30304 0.942269 6.94363 0.188909 8.3016 0.0305598C11.7793 -0.397703 15.4009 5.02457 6.04992 10.6592Z" fill="white"/>
+												</svg>
+												AQUATIC ECOLOGY <span class="close"><i class="fa fa-close"></i></span>
+											</span>
+                    </li>
+                    <li class="list-inline-item">
+											<span class="badge bg-green">
+												<svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M6.04992 10.6592L6.00193 10.688L5.97314 10.67C-3.11516 5.20811 0.00384399 -0.0630103 3.37717 0.000569407C3.48513 0.000569407 3.5943 0.0113659 3.70227 0.0245617C5.06023 0.188909 5.69963 0.942269 6.00193 1.59006C6.30304 0.942269 6.94363 0.188909 8.3016 0.0305598C11.7793 -0.397703 15.4009 5.02457 6.04992 10.6592Z" fill="white"/>
+												</svg>
+												HUNGER & FOOD SYSTEMS <span class="close"><i class="fa fa-close"></i></span>
+											</span>
+                    </li>
+                    <li class="list-inline-item">
+											<span class="badge bg-green">
+												<svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M6.04992 10.6592L6.00193 10.688L5.97314 10.67C-3.11516 5.20811 0.00384399 -0.0630103 3.37717 0.000569407C3.48513 0.000569407 3.5943 0.0113659 3.70227 0.0245617C5.06023 0.188909 5.69963 0.942269 6.00193 1.59006C6.30304 0.942269 6.94363 0.188909 8.3016 0.0305598C11.7793 -0.397703 15.4009 5.02457 6.04992 10.6592Z" fill="white"/>
+												</svg>
+												TERRESTRIAL ECOLOGY <span class="close"><i class="fa fa-close"></i></span>
+											</span>
+                    </li>
+                    <li class="list-inline-item">
+											<span class="badge bg-red">
+												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M0.440995 10.8131C0.156915 11.0972 0 11.4752 0 11.9115C0 12.7416 0.674909 13.4165 1.50498 13.4165C1.9279 13.4165 2.33389 13.2369 2.61855 12.9242L7.88483 7.13117L6.00418 5.24994L0.440995 10.8131ZM13.9147 5.33511L12.748 4.16845C12.6932 4.11362 12.6191 4.08329 12.5415 4.08329H12.2499V3.79162C12.2499 3.71404 12.2189 3.63996 12.1647 3.58513L9.83139 1.25182C9.36356 0.783991 8.57957 0 6.99992 0C5.42144 0 4.69753 0.723909 4.16845 1.25182C4.08504 1.33523 4.05995 1.46065 4.10545 1.56973C4.15037 1.67881 4.25712 1.74998 4.37495 1.74998C6.72751 1.74998 6.99992 2.74864 6.99992 3.49996C6.99992 4.12412 6.64643 4.59953 6.42068 4.84161L8.32641 6.74734C8.84207 6.39851 9.57473 5.98668 9.91656 6.01702V6.41659C9.91656 6.49418 9.94747 6.56826 10.0017 6.62309L11.46 8.08141C11.5149 8.13566 11.589 8.16658 11.6665 8.16658H11.6765C11.7575 8.16424 11.8334 8.12808 11.8859 8.06741L13.9275 5.7341C14.029 5.61802 14.0232 5.44419 13.9147 5.33511Z" fill="white"/>
+												</svg>
+												ACCOUNTING <span class="close"><i class="fa fa-close"></i></span>
+											</span>
+                    </li>
+                    <li class="list-inline-item">
+											<span class="badge bg-red">
+												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M0.440995 10.8131C0.156915 11.0972 0 11.4752 0 11.9115C0 12.7416 0.674909 13.4165 1.50498 13.4165C1.9279 13.4165 2.33389 13.2369 2.61855 12.9242L7.88483 7.13117L6.00418 5.24994L0.440995 10.8131ZM13.9147 5.33511L12.748 4.16845C12.6932 4.11362 12.6191 4.08329 12.5415 4.08329H12.2499V3.79162C12.2499 3.71404 12.2189 3.63996 12.1647 3.58513L9.83139 1.25182C9.36356 0.783991 8.57957 0 6.99992 0C5.42144 0 4.69753 0.723909 4.16845 1.25182C4.08504 1.33523 4.05995 1.46065 4.10545 1.56973C4.15037 1.67881 4.25712 1.74998 4.37495 1.74998C6.72751 1.74998 6.99992 2.74864 6.99992 3.49996C6.99992 4.12412 6.64643 4.59953 6.42068 4.84161L8.32641 6.74734C8.84207 6.39851 9.57473 5.98668 9.91656 6.01702V6.41659C9.91656 6.49418 9.94747 6.56826 10.0017 6.62309L11.46 8.08141C11.5149 8.13566 11.589 8.16658 11.6665 8.16658H11.6765C11.7575 8.16424 11.8334 8.12808 11.8859 8.06741L13.9275 5.7341C14.029 5.61802 14.0232 5.44419 13.9147 5.33511Z" fill="white"/>
+												</svg>
+												BOOKKEEPING <span class="close"><i class="fa fa-close"></i></span>
+											</span>
+                    </li>
+                    <li class="list-inline-item">
+											<span class="badge bg-gold">
+												<svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M0.75043 11.91C0.43704 12.1354 0 11.9115 0 11.5254V2.05293C0 0.91913 0.91913 0 2.05293 0H6.78941C7.92326 0 8.84234 0.91913 8.84234 2.05293V11.5254C8.84234 11.9115 8.40535 12.1354 8.09191 11.91L4.42116 9.26898L0.75043 11.91Z" fill="white"/>
+												</svg>
+												ACCOUNTING <span class="close"><i class="fa fa-close"></i></span>
+											</span>
+                    </li>
+                  </ul>
+                  <div class="row">
+                    <div class="col-12 col-md-4">
+                      <div class="card">
+                        <ul class="list-inline badge_tag">
+                          <li class="list-inline-item">
+											  		<span class="badge bg-green">
+														terrestrial
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-green">
+														hunger
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-red">
+														bookkeeping
+													</span>
+                          </li>
+                        </ul>
+                        <img src="../assets/images/img13.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Santa Ana Trail Cleanup</h5>
+                          <h6>Santa Ana, Texas, USA</h6>
+                          <p class="card-text">Connecting women with mentorship & access to applicable techniques for daily...</p>
+                          <div class="progress_flex">
+                            <span class="progress_flex_span">$56,395 Raised</span>
+                            <span class="progress_flex_span">$60,000 Goal</span>
+                          </div>
+                          <div class="progress">
+                            <div class="progress-bar bg-green2" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <div class="bottom_flex">
+                            <a href="#" class="btn btn-purple-dark">Contact</a>
+                            <a href="#" class="read_more_link">Read More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <div class="card">
+                        <ul class="list-inline badge_tag">
+                          <li class="list-inline-item">
+											  		<span class="badge bg-green">
+														terrestrial
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-green">
+														hunger
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-red">
+														ACCOUNTING
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-black">
+														+1
+													</span>
+                          </li>
+                        </ul>
+                        <img src="../assets/images/img14.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Urban Farm Initiative</h5>
+                          <h6>Memphis, Tennessee, USA</h6>
+                          <p class="card-text">Weekly training with local leaders to explore techniques for community...</p>
+                          <div class="progress_flex">
+                            <span class="progress_flex_span">$13,654 Raised</span>
+                            <span class="progress_flex_span">$15,000 Goal</span>
+                          </div>
+                          <div class="progress">
+                            <div class="progress-bar bg-green2" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <div class="bottom_flex">
+                            <a href="#" class="btn btn-purple-dark">Contact</a>
+                            <a href="#" class="read_more_link">Read More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <div class="card">
+                        <ul class="list-inline badge_tag">
+                          <li class="list-inline-item">
+											  		<span class="badge bg-green">
+														hunger
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-red">
+														ACCOUNTING
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-gold">
+														ACCOUNTING
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-black">
+														+1
+													</span>
+                          </li>
+                        </ul>
+                        <img src="../assets/images/img15.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Food Train Nashik</h5>
+                          <h6>Nashik, Maharashtra, India</h6>
+                          <p class="card-text">Making healthy foods easily accessible by connecting local public transit wit...</p>
+                          <div class="progress_flex">
+                            <span class="progress_flex_span">$92,395 Raised</span>
+                            <span class="progress_flex_span">$100,000 Goal</span>
+                          </div>
+                          <div class="progress">
+                            <div class="progress-bar bg-green2" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <div class="bottom_flex">
+                            <a href="#" class="btn btn-purple-dark">Contact</a>
+                            <a href="#" class="read_more_link">Read More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 col-md-4">
+                      <div class="card">
+                        <ul class="list-inline badge_tag">
+                          <li class="list-inline-item">
+											  		<span class="badge bg-green">
+														terrestrial
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-green">
+														hunger
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-red">
+														ACCOUNTING
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-black">
+														+4
+													</span>
+                          </li>
+                        </ul>
+                        <img src="../assets/images/img16.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Beach Cleanup</h5>
+                          <h6>Redondo Beach, California, USA</h6>
+                          <p class="card-text">Volunteer cleanup of public beaches that line the coasts Come join...</p>
+                          <div class="progress_flex">
+                            <span class="progress_flex_span">$64,395 Raised</span>
+                            <span class="progress_flex_span">$70,000 Goal</span>
+                          </div>
+                          <div class="progress">
+                            <div class="progress-bar bg-green2" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <div class="bottom_flex">
+                            <a href="#" class="btn btn-purple-dark">Contact</a>
+                            <a href="#" class="read_more_link">Read More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <div class="card">
+                        <ul class="list-inline badge_tag">
+                          <li class="list-inline-item">
+											  		<span class="badge bg-green">
+														hunger
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-red">
+														bookkeeping
+													</span>
+                          </li>
+                        </ul>
+                        <img src="../assets/images/img17.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Arts & Culture Festival</h5>
+                          <h6>San Francisco, California, USA</h6>
+                          <p class="card-text">Connecting local businesses and creatives to share in a , food, and...</p>
+                          <div class="progress_flex">
+                            <span class="progress_flex_span">$9,845 Raised</span>
+                            <span class="progress_flex_span">$10,000 Goal</span>
+                          </div>
+                          <div class="progress">
+                            <div class="progress-bar bg-green2" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <div class="bottom_flex">
+                            <a href="#" class="btn btn-purple-dark">Contact</a>
+                            <a href="#" class="read_more_link">Read More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <div class="card">
+                        <ul class="list-inline badge_tag">
+                          <li class="list-inline-item">
+											  		<span class="badge bg-green">
+														aquatic
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-red">
+														ACCOUNTING
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-gold">
+														ACCOUNTING
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-black">
+														+1
+													</span>
+                          </li>
+                        </ul>
+                        <img src="../assets/images/img18.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Local Watershed Stewardship</h5>
+                          <h6>Chelan, Washington, USA </h6>
+                          <p class="card-text">A volunteer run project committed to wise stewardship of local, so th...</p>
+                          <div class="progress_flex">
+                            <span class="progress_flex_span">$56,395 Raised</span>
+                            <span class="progress_flex_span">$70,000 Goal</span>
+                          </div>
+                          <div class="progress">
+                            <div class="progress-bar bg-green2" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <div class="bottom_flex">
+                            <a href="#" class="btn btn-purple-dark">Contact</a>
+                            <a href="#" class="read_more_link">Read More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 col-md-4">
+                      <div class="card">
+                        <ul class="list-inline badge_tag">
+                          <li class="list-inline-item">
+											  		<span class="badge bg-green">
+														hunger
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-red">
+														bookkeeping
+													</span>
+                          </li>
+                        </ul>
+                        <img src="../assets/images/img19.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Open Mic & Benefit Show</h5>
+                          <h6>Nashville, Tennessee, USA </h6>
+                          <p class="card-text">Local artists and musicians coming together to for the food bank...</p>
+                          <div class="progress_flex">
+                            <span class="progress_flex_span">$56,395 Raised</span>
+                            <span class="progress_flex_span">$70,000 Goal</span>
+                          </div>
+                          <div class="progress">
+                            <div class="progress-bar bg-green2" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <div class="bottom_flex">
+                            <a href="#" class="btn btn-purple-dark">Contact</a>
+                            <a href="#" class="read_more_link">Read More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <div class="card">
+                        <ul class="list-inline badge_tag">
+                          <li class="list-inline-item">
+											  		<span class="badge bg-green">
+														terrestrial
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-green">
+														aquatic
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-green">
+														hunger
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-black">
+														+5
+													</span>
+                          </li>
+                        </ul>
+                        <img src="../assets/images/img20.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Activist Arts Collective Workshop</h5>
+                          <h6>Providence, Rhode Island, USA</h6>
+                          <p class="card-text">How can we best engage community members the arts to benefit...</p>
+                          <div class="progress_flex">
+                            <span class="progress_flex_span">$10,345 Raised</span>
+                            <span class="progress_flex_span">$12,000 Goal</span>
+                          </div>
+                          <div class="progress">
+                            <div class="progress-bar bg-green2" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <div class="bottom_flex">
+                            <a href="#" class="btn btn-purple-dark">Contact</a>
+                            <a href="#" class="read_more_link">Read More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <div class="card">
+                        <ul class="list-inline badge_tag">
+                          <li class="list-inline-item">
+											  		<span class="badge bg-red">
+														ACCOUNTING
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-red">
+														bookkeeping
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-gold">
+														ACCOUNTING
+													</span>
+                          </li>
+                        </ul>
+                        <img src="../assets/images/img21.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">After School Music Workshop</h5>
+                          <h6>Cleveland, Ohio, USA</h6>
+                          <p class="card-text">Immersing local teens with access to safe programming empowering...</p>
+                          <div class="progress_flex">
+                            <span class="progress_flex_span">$41,000 Raised</span>
+                            <span class="progress_flex_span">$45,300 Goal</span>
+                          </div>
+                          <div class="progress">
+                            <div class="progress-bar bg-green2" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <div class="bottom_flex">
+                            <a href="#" class="btn btn-purple-dark">Contact</a>
+                            <a href="#" class="read_more_link">Read More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 col-md-4">
+                      <div class="card">
+                        <ul class="list-inline badge_tag">
+                          <li class="list-inline-item">
+											  		<span class="badge bg-green">
+														terrestrial
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-green">
+														hunger
+													</span>
+                          </li>
+                        </ul>
+                        <img src="../assets/images/img22.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Infrastructure for Local Farms</h5>
+                          <h6>Sa Pa, Lao Cai, Vietnam</h6>
+                          <p class="card-text">Help equip local farms with tools they need to grow for their communit...</p>
+                          <div class="progress_flex">
+                            <span class="progress_flex_span">$56,395 Raised</span>
+                            <span class="progress_flex_span">$70,000 Goal</span>
+                          </div>
+                          <div class="progress">
+                            <div class="progress-bar bg-green2" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <div class="bottom_flex">
+                            <a href="#" class="btn btn-purple-dark">Contact</a>
+                            <a href="#" class="read_more_link">Read More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <div class="card">
+                        <ul class="list-inline badge_tag">
+                          <li class="list-inline-item">
+											  		<span class="badge bg-green">
+														hunger
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-red">
+														ACCOUNTING
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-gold">
+														ACCOUNTING
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-black">
+														+1
+													</span>
+                          </li>
+                        </ul>
+                        <img src="../assets/images/img23.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Lunch for Kids</h5>
+                          <h6>CDMX, Mexico </h6>
+                          <p class="card-text">Help connect children with healthy lunches the intersection of San Migue...</p>
+                          <div class="progress_flex">
+                            <span class="progress_flex_span">$140,000 Raised</span>
+                            <span class="progress_flex_span">$150,000 Goal</span>
+                          </div>
+                          <div class="progress">
+                            <div class="progress-bar bg-green2" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <div class="bottom_flex">
+                            <a href="#" class="btn btn-purple-dark">Contact</a>
+                            <a href="#" class="read_more_link">Read More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <div class="card">
+                        <ul class="list-inline badge_tag">
+                          <li class="list-inline-item">
+											  		<span class="badge bg-green">
+														terrestrial
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-green">
+														aquatic
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-green">
+														hunger
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-black">
+														+5
+													</span>
+                          </li>
+                        </ul>
+                        <img src="../assets/images/img24.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">March for Climate Justice</h5>
+                          <h6>Harlem, New York, USA</h6>
+                          <p class="card-text">Support local movement builders in bringing voice crisis that fac...</p>
+                          <div class="progress_flex">
+                            <span class="progress_flex_span">$56,395 Raised</span>
+                            <span class="progress_flex_span">$70,000 Goal</span>
+                          </div>
+                          <div class="progress">
+                            <div class="progress-bar bg-green2" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <div class="bottom_flex">
+                            <a href="#" class="btn btn-purple-dark">Contact</a>
+                            <a href="#" class="read_more_link">Read More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="people" role="tabpanel" aria-labelledby="people-tab">
+            <div class="row">
+              <div class="col-12 col-md-3">
+                <div class="marketplace_filter_card">
+                  <div class="accordion" id="filter_main2">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne2">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
+                          Filters
+                        </button>
+                      </h2>
+                      <div id="collapseOne2" class="accordion-collapse collapse show" aria-labelledby="headingOne2" data-bs-parent="#filter_main2">
+                        <div class="accordion-body">
+                          <div class="accordion" id="filter_inner2">
+                            <div class="accordion-item type1">
+                              <h2 class="accordion-header" id="headingOne_inner2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne_inner2" aria-expanded="true" aria-controls="collapseOne_inner2">
+                                  Purpose
+                                </button>
+                              </h2>
+                              <div id="collapseOne_inner2" class="accordion-collapse collapse" aria-labelledby="headingOne_inner2" data-bs-parent="#filter_inner2">
+                                <div class="accordion-body">
+                                  <ul>
+                                    <li>
+                                      <label class="label green">Aquatic Ecology
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <label class="label green">Civil Rights
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <label class="label green">Clean Energy
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <label class="label green">Clean Water & Sanitation
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <span class="deselect_all">deselect all</span>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item type2">
+                              <h2 class="accordion-header" id="headingTwo_inner2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo_inner2" aria-expanded="false" aria-controls="collapseTwo_inner2">
+                                  Skills
+                                </button>
+                              </h2>
+                              <div id="collapseTwo_inner2" class="accordion-collapse collapse" aria-labelledby="headingTwo_inner2" data-bs-parent="#filter_inner2">
+                                <div class="accordion-body">
+                                  <ul>
+                                    <li class="heading">ANIMAL WELFARE</li>
+                                    <li>
+                                      <label class="label red">Animal Care
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <label class="label red">Aquatic Animal Care
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <label class="label red">Veterinary
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                    </li>
+                                    <li class="heading">ARTS</li>
+                                    <li>
+                                      <label class="label red">Acting
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <label class="label red">Dance
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <label class="label red">Drawing
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <span class="deselect_all">deselect all</span>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item type3">
+                              <h2 class="accordion-header" id="headingThree_inner2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree_inner2" aria-expanded="false" aria-controls="collapseThree_inner2">
+                                  Expertise
+                                </button>
+                              </h2>
+                              <div id="collapseThree_inner2" class="accordion-collapse collapse" aria-labelledby="headingThree_inner2" data-bs-parent="#filter_inner2">
+                                <div class="accordion-body">
+                                  <ul>
+                                    <li class="heading">BUSINESS</li>
+                                    <li>
+                                      <label class="label gold">Accounting
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <label class="label gold">Business Ethics
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <label class="label gold">Entrepreneurship
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                      </label>
+                                    </li>
+                                    <li>
+                                      <span class="deselect_all">deselect all</span>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-9">
+                <div class="card_search_result">
+                  <ul class="list-inline badge_tag">
+                    <li class="list-inline-item">
+											<span class="badge bg-green">
+												<svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M6.04992 10.6592L6.00193 10.688L5.97314 10.67C-3.11516 5.20811 0.00384399 -0.0630103 3.37717 0.000569407C3.48513 0.000569407 3.5943 0.0113659 3.70227 0.0245617C5.06023 0.188909 5.69963 0.942269 6.00193 1.59006C6.30304 0.942269 6.94363 0.188909 8.3016 0.0305598C11.7793 -0.397703 15.4009 5.02457 6.04992 10.6592Z" fill="white"/>
+												</svg>
+												AQUATIC ECOLOGY <span class="close"><i class="fa fa-close"></i></span>
+											</span>
+                    </li>
+                    <li class="list-inline-item">
+											<span class="badge bg-red">
+												<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M0.440995 10.8131C0.156915 11.0972 0 11.4752 0 11.9115C0 12.7416 0.674909 13.4165 1.50498 13.4165C1.9279 13.4165 2.33389 13.2369 2.61855 12.9242L7.88483 7.13117L6.00418 5.24994L0.440995 10.8131ZM13.9147 5.33511L12.748 4.16845C12.6932 4.11362 12.6191 4.08329 12.5415 4.08329H12.2499V3.79162C12.2499 3.71404 12.2189 3.63996 12.1647 3.58513L9.83139 1.25182C9.36356 0.783991 8.57957 0 6.99992 0C5.42144 0 4.69753 0.723909 4.16845 1.25182C4.08504 1.33523 4.05995 1.46065 4.10545 1.56973C4.15037 1.67881 4.25712 1.74998 4.37495 1.74998C6.72751 1.74998 6.99992 2.74864 6.99992 3.49996C6.99992 4.12412 6.64643 4.59953 6.42068 4.84161L8.32641 6.74734C8.84207 6.39851 9.57473 5.98668 9.91656 6.01702V6.41659C9.91656 6.49418 9.94747 6.56826 10.0017 6.62309L11.46 8.08141C11.5149 8.13566 11.589 8.16658 11.6665 8.16658H11.6765C11.7575 8.16424 11.8334 8.12808 11.8859 8.06741L13.9275 5.7341C14.029 5.61802 14.0232 5.44419 13.9147 5.33511Z" fill="white"/>
+												</svg>
+												Animal Care <span class="close"><i class="fa fa-close"></i></span>
+											</span>
+                    </li>
+                    <li class="list-inline-item">
+											<span class="badge bg-gold">
+												<svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M0.75043 11.91C0.43704 12.1354 0 11.9115 0 11.5254V2.05293C0 0.91913 0.91913 0 2.05293 0H6.78941C7.92326 0 8.84234 0.91913 8.84234 2.05293V11.5254C8.84234 11.9115 8.40535 12.1354 8.09191 11.91L4.42116 9.26898L0.75043 11.91Z" fill="white"/>
+												</svg>
+												ACCOUNTING <span class="close"><i class="fa fa-close"></i></span>
+											</span>
+                    </li>
+                  </ul>
+                  <div class="row">
+                    <div class="col-12 col-md-4">
+                      <div class="card">
+                        <ul class="list-inline badge_tag">
+                          <li class="list-inline-item">
+											  		<span class="badge bg-green">
+														Aquatic..
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-red">
+														Animal..
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-gold">
+														Accounting
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-black">
+														+1
+													</span>
+                          </li>
+                        </ul>
+                        <div class="text-center">
+                          <div class="img_box">
+                            <img src="../assets/images/people1.png" alt="#">
+                            <div class="active_icon"></div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <div class="text-center">
+                            <h5 class="card-title">Courtney Henry</h5>
+                            <h6>Writer</h6>
+                          </div>
+                          <p class="card-text">Proin vulputate leo ac bibendum rutrum. Nulla facilisi. Vivamus a diam sem...</p>
+                          <div class="bottom_flex">
+                            <a href="#" class="btn btn-purple-dark">Contact</a>
+                            <a href="#" class="read_more_link">Read More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <div class="card">
+                        <ul class="list-inline badge_tag">
+                          <li class="list-inline-item">
+											  		<span class="badge bg-green">
+														Aquatic..
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-red">
+														Animal..
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-gold">
+														Accounting
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-black">
+														+1
+													</span>
+                          </li>
+                        </ul>
+                        <div class="text-center">
+                          <div class="img_box">
+                            <img src="../assets/images/people2.png" alt="#">
+                            <div class="active_icon"></div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <div class="text-center">
+                            <h5 class="card-title">Courtney Henry</h5>
+                            <h6>Writer</h6>
+                          </div>
+                          <p class="card-text">Proin vulputate leo ac bibendum rutrum. Nulla facilisi. Vivamus a diam sem...</p>
+                          <div class="bottom_flex">
+                            <a href="#" class="btn btn-purple-dark">Contact</a>
+                            <a href="#" class="read_more_link">Read More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <div class="card">
+                        <ul class="list-inline badge_tag">
+                          <li class="list-inline-item">
+											  		<span class="badge bg-green">
+														Aquatic..
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-red">
+														Animal..
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-gold">
+														Accounting
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-black">
+														+1
+													</span>
+                          </li>
+                        </ul>
+                        <div class="text-center">
+                          <div class="img_box">
+                            <img src="../assets/images/people3.png" alt="#">
+                            <div class="active_icon"></div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <div class="text-center">
+                            <h5 class="card-title">Courtney Henry</h5>
+                            <h6>Writer</h6>
+                          </div>
+                          <p class="card-text">Proin vulputate leo ac bibendum rutrum. Nulla facilisi. Vivamus a diam sem...</p>
+                          <div class="bottom_flex">
+                            <a href="#" class="btn btn-purple-dark">Contact</a>
+                            <a href="#" class="read_more_link">Read More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 col-md-4">
+                      <div class="card">
+                        <ul class="list-inline badge_tag">
+                          <li class="list-inline-item">
+											  		<span class="badge bg-green">
+														Aquatic..
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-red">
+														Animal..
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-gold">
+														Accounting
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-black">
+														+1
+													</span>
+                          </li>
+                        </ul>
+                        <div class="text-center">
+                          <div class="img_box">
+                            <img src="../assets/images/people4.png" alt="#">
+                            <div class="active_icon"></div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <div class="text-center">
+                            <h5 class="card-title">Courtney Henry</h5>
+                            <h6>Writer</h6>
+                          </div>
+                          <p class="card-text">Proin vulputate leo ac bibendum rutrum. Nulla facilisi. Vivamus a diam sem...</p>
+                          <div class="bottom_flex">
+                            <a href="#" class="btn btn-purple-dark">Contact</a>
+                            <a href="#" class="read_more_link">Read More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <div class="card">
+                        <ul class="list-inline badge_tag">
+                          <li class="list-inline-item">
+											  		<span class="badge bg-green">
+														Aquatic..
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-red">
+														Animal..
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-gold">
+														Accounting
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-black">
+														+1
+													</span>
+                          </li>
+                        </ul>
+                        <div class="text-center">
+                          <div class="img_box">
+                            <img src="../assets/images/people5.png" alt="#">
+                            <div class="active_icon"></div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <div class="text-center">
+                            <h5 class="card-title">Courtney Henry</h5>
+                            <h6>Writer</h6>
+                          </div>
+                          <p class="card-text">Proin vulputate leo ac bibendum rutrum. Nulla facilisi. Vivamus a diam sem...</p>
+                          <div class="bottom_flex">
+                            <a href="#" class="btn btn-purple-dark">Contact</a>
+                            <a href="#" class="read_more_link">Read More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <div class="card">
+                        <ul class="list-inline badge_tag">
+                          <li class="list-inline-item">
+											  		<span class="badge bg-green">
+														Aquatic..
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-red">
+														Animal..
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-gold">
+														Accounting
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-black">
+														+1
+													</span>
+                          </li>
+                        </ul>
+                        <div class="text-center">
+                          <div class="img_box">
+                            <img src="../assets/images/people6.png" alt="#">
+                            <div class="active_icon"></div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <div class="text-center">
+                            <h5 class="card-title">Courtney Henry</h5>
+                            <h6>Writer</h6>
+                          </div>
+                          <p class="card-text">Proin vulputate leo ac bibendum rutrum. Nulla facilisi. Vivamus a diam sem...</p>
+                          <div class="bottom_flex">
+                            <a href="#" class="btn btn-purple-dark">Contact</a>
+                            <a href="#" class="read_more_link">Read More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 col-md-4">
+                      <div class="card">
+                        <ul class="list-inline badge_tag">
+                          <li class="list-inline-item">
+											  		<span class="badge bg-green">
+														Aquatic..
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-red">
+														Animal..
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-gold">
+														Accounting
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-black">
+														+1
+													</span>
+                          </li>
+                        </ul>
+                        <div class="text-center">
+                          <div class="img_box">
+                            <img src="../assets/images/people7.png" alt="#">
+                            <div class="active_icon"></div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <div class="text-center">
+                            <h5 class="card-title">Courtney Henry</h5>
+                            <h6>Writer</h6>
+                          </div>
+                          <p class="card-text">Proin vulputate leo ac bibendum rutrum. Nulla facilisi. Vivamus a diam sem...</p>
+                          <div class="bottom_flex">
+                            <a href="#" class="btn btn-purple-dark">Contact</a>
+                            <a href="#" class="read_more_link">Read More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <div class="card">
+                        <ul class="list-inline badge_tag">
+                          <li class="list-inline-item">
+											  		<span class="badge bg-green">
+														Aquatic..
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-red">
+														Animal..
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-gold">
+														Accounting
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-black">
+														+1
+													</span>
+                          </li>
+                        </ul>
+                        <div class="text-center">
+                          <div class="img_box">
+                            <img src="../assets/images/people8.png" alt="#">
+                            <div class="active_icon"></div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <div class="text-center">
+                            <h5 class="card-title">Courtney Henry</h5>
+                            <h6>Writer</h6>
+                          </div>
+                          <p class="card-text">Proin vulputate leo ac bibendum rutrum. Nulla facilisi. Vivamus a diam sem...</p>
+                          <div class="bottom_flex">
+                            <a href="#" class="btn btn-purple-dark">Contact</a>
+                            <a href="#" class="read_more_link">Read More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <div class="card">
+                        <ul class="list-inline badge_tag">
+                          <li class="list-inline-item">
+											  		<span class="badge bg-green">
+														Aquatic..
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-red">
+														Animal..
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-gold">
+														Accounting
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-black">
+														+1
+													</span>
+                          </li>
+                        </ul>
+                        <div class="text-center">
+                          <div class="img_box">
+                            <img src="../assets/images/people9.png" alt="#">
+                            <div class="active_icon"></div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <div class="text-center">
+                            <h5 class="card-title">Courtney Henry</h5>
+                            <h6>Writer</h6>
+                          </div>
+                          <p class="card-text">Proin vulputate leo ac bibendum rutrum. Nulla facilisi. Vivamus a diam sem...</p>
+                          <div class="bottom_flex">
+                            <a href="#" class="btn btn-purple-dark">Contact</a>
+                            <a href="#" class="read_more_link">Read More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 col-md-4">
+                      <div class="card">
+                        <ul class="list-inline badge_tag">
+                          <li class="list-inline-item">
+											  		<span class="badge bg-green">
+														Aquatic..
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-red">
+														Animal..
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-gold">
+														Accounting
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-black">
+														+1
+													</span>
+                          </li>
+                        </ul>
+                        <div class="text-center">
+                          <div class="img_box">
+                            <img src="../assets/images/people10.png" alt="#">
+                            <div class="active_icon"></div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <div class="text-center">
+                            <h5 class="card-title">Courtney Henry</h5>
+                            <h6>Writer</h6>
+                          </div>
+                          <p class="card-text">Proin vulputate leo ac bibendum rutrum. Nulla facilisi. Vivamus a diam sem...</p>
+                          <div class="bottom_flex">
+                            <a href="#" class="btn btn-purple-dark">Contact</a>
+                            <a href="#" class="read_more_link">Read More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <div class="card">
+                        <ul class="list-inline badge_tag">
+                          <li class="list-inline-item">
+											  		<span class="badge bg-green">
+														Aquatic..
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-red">
+														Animal..
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-gold">
+														Accounting
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-black">
+														+1
+													</span>
+                          </li>
+                        </ul>
+                        <div class="text-center">
+                          <div class="img_box">
+                            <img src="../assets/images/people11.png" alt="#">
+                            <div class="active_icon"></div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <div class="text-center">
+                            <h5 class="card-title">Courtney Henry</h5>
+                            <h6>Writer</h6>
+                          </div>
+                          <p class="card-text">Proin vulputate leo ac bibendum rutrum. Nulla facilisi. Vivamus a diam sem...</p>
+                          <div class="bottom_flex">
+                            <a href="#" class="btn btn-purple-dark">Contact</a>
+                            <a href="#" class="read_more_link">Read More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                      <div class="card">
+                        <ul class="list-inline badge_tag">
+                          <li class="list-inline-item">
+											  		<span class="badge bg-green">
+														Aquatic..
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-red">
+														Animal..
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-gold">
+														Accounting
+													</span>
+                          </li>
+                          <li class="list-inline-item">
+											  		<span class="badge bg-black">
+														+1
+													</span>
+                          </li>
+                        </ul>
+                        <div class="text-center">
+                          <div class="img_box">
+                            <img src="../assets/images/people12.png" alt="#">
+                            <div class="active_icon"></div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <div class="text-center">
+                            <h5 class="card-title">Courtney Henry</h5>
+                            <h6>Writer</h6>
+                          </div>
+                          <p class="card-text">Proin vulputate leo ac bibendum rutrum. Nulla facilisi. Vivamus a diam sem...</p>
+                          <div class="bottom_flex">
+                            <a href="#" class="btn btn-purple-dark">Contact</a>
+                            <a href="#" class="read_more_link">Read More</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
