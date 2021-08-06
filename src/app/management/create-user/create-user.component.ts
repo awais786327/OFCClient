@@ -64,6 +64,7 @@ export class CreateUserComponent implements OnInit {
       const result = await this.createUserService.createUser(payload);
       if (result) {
         createUserForm.reset();
+        this.counter = 0;
       }
     } catch (error) {
       console.log('create user error: ', error);
