@@ -11,16 +11,7 @@ export class CreateUserPreferencesComponent implements OnInit {
   counter: any;
   isLoading: any = false;
 
-  createUserPreferencesFormPayload: any = {
-    FirstName: 'Mohammad',
-    LastName: 'Awais',
-    UserName: 'user111',
-    NickName: 'awais',
-    Email: 'awais3227443@gmail.com',
-    Password: 'awais123123',
-    Question: 'question 1',
-    Answer: 'answer 1',
-  };
+  createUserPreferencesFormPayload: any = {};
 
   constructor(
     public loadingBarService: LoadingBarService,
