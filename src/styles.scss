@@ -24,3 +24,22 @@ a[routerlinkactive="active"].active {
     color: red;
   }
 }
+
+// hide icons
+.toast-container {
+  .ngx-toastr {
+    padding: 15px !important;
+  }
+  .toast-info {
+    background-image: none !important;
+  }
+  .toast-error {
+    background-image: none !important;
+  }
+  .toast-success {
+    background-image: none !important;
+  }
+  .toast-warning {
+    background-image: none !important;
+  }
+}

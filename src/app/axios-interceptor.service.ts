@@ -4,6 +4,8 @@ import { ToastrService as ToasterService } from 'ngx-toastr';
 import { environment } from '../environments/environment';
 import axios from 'axios';
 
+const token = '972d06df-b5ef-4aa0-9578-9a4b96b170e6'; // temporary authentication
+
 axios.defaults.baseURL = environment.baseURL;
 axios.defaults.headers[`hasLogs`] = false;
 axios.defaults.headers[`hasToken`] = true;
@@ -18,7 +20,10 @@ let inResponseError = false;
 export class AxiosInterceptorService {
   loadingBar = this.loadingBarService.useRef();
 
-  constructor(private loadingBarService: LoadingBarService, private toastr: ToasterService) {
+  constructor(
+    private loadingBarService: LoadingBarService,
+    private toastr: ToasterService
+  ) {
     this.initAxiosInterceptor();
     // this.initAuthRefreshInterceptor();
   }
@@ -36,9 +41,8 @@ export class AxiosInterceptorService {
           console.log('request:', request);
         }
         if (request.headers.hasToken) {
-          request.headers.common[`Authorization`] = localStorage.getItem(
-            'token'
-          );
+          request.headers.common[`Authorization`] =
+            localStorage.getItem('token') || token;
         }
         if (request.headers.hasLoading) {
         }

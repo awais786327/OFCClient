@@ -11,6 +11,6 @@ export class AppComponent {
   title = 'app-currentcos';
 
   constructor() {
-    console.log($);
+    // console.log($);
   }
 }

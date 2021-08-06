@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
 import { CommonModule } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoadingBarModule } from '@ngx-loading-bar/core';
 
 import { AxiosInterceptorService } from './axios-interceptor.service';
@@ -38,8 +39,9 @@ import { CreateUserPreferencesComponent } from './management/create-user-prefere
     AppRoutingModule,
     FormsModule,
     CommonModule,
-    LoadingBarModule,
+    BrowserAnimationsModule,
     ToastrModule.forRoot(),
+    LoadingBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
