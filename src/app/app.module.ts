@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
 import { CommonModule } from '@angular/common';
+import { LoadingBarModule } from '@ngx-loading-bar/core';
 
 import { AxiosInterceptorService } from './axios-interceptor.service';
 import { ToastrModule } from 'ngx-toastr';
@@ -37,6 +38,7 @@ import { CreateUserPreferencesComponent } from './management/create-user-prefere
     AppRoutingModule,
     FormsModule,
     CommonModule,
+    LoadingBarModule,
     ToastrModule.forRoot(),
   ],
   providers: [],
