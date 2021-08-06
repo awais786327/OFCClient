@@ -2,24 +2,18 @@ import { Injectable } from '@angular/core';
 import axios from 'axios';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class CreateUserService {
-
-  constructor() { }
+  constructor() {}
 
   // tslint:disable-next-line:typedef
   async getCaptcha() {
     return new Promise((resolve, reject) => {
       axios
-        .get(`register/captcha`)
+        .get(`/register/captcha`)
         .then((response: any) => {
-          console.log('response:', response);
-          // if (response.result && response.result.emailTemplates) {
-          //   resolve(response.result.emailTemplates);
-          // } else {
-          //   resolve([]);
-          // }
+          resolve(response.data);
         })
         .catch((error) => {
           reject(error);
