@@ -6,20 +6,19 @@ import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoadingBarModule } from '@ngx-loading-bar/core';
 
-import { AxiosInterceptorService } from './axios-interceptor.service';
 import { ToastrModule } from 'ngx-toastr';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
+import { HeaderComponent } from './components/header/header.component';
 import { GridComponent } from './marketplace/grid/grid.component';
 import { ListComponent } from './marketplace/list/list.component';
 import { MapComponent } from './marketplace/map/map.component';
 import { CreateGroupComponent } from './management/create-group/create-group.component';
 import { CreateProjectComponent } from './management/create-project/create-project.component';
 import { CreateUserProfileComponent } from './management/create-user-profile/create-user-profile.component';
-import { CreateUserComponent } from './management/create-user/create-user.component';
 import { CreateUserPreferencesComponent } from './management/create-user-preferences/create-user-preferences.component';
+import { AxiosInterceptorServiceV2 } from './axiosInterceptorV2';
 
 @NgModule({
   declarations: [
@@ -31,7 +30,6 @@ import { CreateUserPreferencesComponent } from './management/create-user-prefere
     CreateGroupComponent,
     CreateProjectComponent,
     CreateUserProfileComponent,
-    CreateUserComponent,
     CreateUserPreferencesComponent,
   ],
   imports: [
@@ -47,5 +45,5 @@ import { CreateUserPreferencesComponent } from './management/create-user-prefere
   bootstrap: [AppComponent],
 })
 export class AppModule {
-  constructor(axiosIn: AxiosInterceptorService) {}
+  constructor(axiosIn: AxiosInterceptorServiceV2) {}
 }

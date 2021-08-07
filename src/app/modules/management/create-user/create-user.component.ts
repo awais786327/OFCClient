@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { CreateUserService } from './create-user.service';
 import { DomSanitizer } from '@angular/platform-browser';
 import { LoadingBarService } from '@ngx-loading-bar/core';
+import { CreateUserServiceV2 } from '../../../services/create-user.service';
 
 @Component({
   selector: 'app-create-user',
@@ -10,22 +10,17 @@ import { LoadingBarService } from '@ngx-loading-bar/core';
 })
 export class CreateUserComponent implements OnInit {
   isLoading: any = false;
-
   counter: any;
   captchaImageUrl: any;
-
   createUserFormPayload: any = {};
-
   captchaObject: any = {};
 
   constructor(
     private sanitizer: DomSanitizer,
     public loadingBarService: LoadingBarService,
-    public createUserService: CreateUserService
+    public createUserService: CreateUserServiceV2
   ) {
-    this.loadingBarService
-      .useRef()
-      .value$.subscribe((v: any) => (this.isLoading = !!v));
+    this.loadingBarService.useRef().value$.subscribe((v: any) => (this.isLoading = !!v));
   }
 
   ngOnInit(): void {
@@ -37,7 +32,6 @@ export class CreateUserComponent implements OnInit {
     this.counter = index;
   }
 
-  // tslint:disable-next-line:typedef
   async initCaptcha() {
     try {
       const result = await this.createUserService.getCaptcha();
@@ -54,7 +48,6 @@ export class CreateUserComponent implements OnInit {
     }
   }
 
-  // tslint:disable-next-line:typedef
   async createUser(createUserForm: any) {
     if (createUserForm.invalid) {
       return;
