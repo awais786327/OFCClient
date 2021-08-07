@@ -20,6 +20,7 @@ import { CreateProjectComponent } from './management/create-project/create-proje
 import { CreateUserProfileComponent } from './management/create-user-profile/create-user-profile.component';
 import { CreateUserComponent } from './management/create-user/create-user.component';
 import { CreateUserPreferencesComponent } from './management/create-user-preferences/create-user-preferences.component';
+import { AxiosInterceptorServiceV2 } from './axiosInterceptorV2';
 
 @NgModule({
   declarations: [
@@ -47,5 +48,6 @@ import { CreateUserPreferencesComponent } from './management/create-user-prefere
   bootstrap: [AppComponent],
 })
 export class AppModule {
-  constructor(axiosIn: AxiosInterceptorService) {}
+  constructor(axiosIn: AxiosInterceptorServiceV2) {}
+  // constructor() {}
 }

@@ -1,6 +1,10 @@
 import { Injectable } from '@angular/core';
 import { ToastrService as ToasterService } from 'ngx-toastr';
 import axios from 'axios';
+import { createApiUrl } from '../../utils/createApiUrl';
+import { API_ENDPOINTS } from '../../constants/apiEndpoints';
+import apiCaller from '../../utils/apiCaller';
+import { fetchApiHeaders } from '../../utils/fetchApiHeaders';
 
 @Injectable({
   providedIn: 'root',
@@ -8,40 +12,19 @@ import axios from 'axios';
 export class CreateUserPreferencesService {
   constructor(private toastr: ToasterService) {}
 
-  // tslint:disable-next-line:typedef
-  async getCaptcha() {
-    return await axios
-      .get(`/register/captcha`)
-      .then((response) => {
-        return response.data;
-      })
-      .catch((error) => {
-        return error;
-      });
-  }
-
-  // tslint:disable-next-line:typedef
   async createUserPreferences(payload: any) {
-    return await axios({
-      method: 'POST',
-      url: `/profile`,
-      data: payload,
-      headers: {
-        hasLogs: false,
-      },
-    })
-      .then((response) => {
-        console.log(response.data);
-        if (response?.data?.UserId) {
-          this.toastr.success('User added successfully!', '');
-        } else {
-          this.toastr.error(response.data.Message, '');
-          return null;
-        }
-        return response.data;
-      })
-      .catch((error) => {
-        return error;
-      });
+    try {
+      const url = createApiUrl(API_ENDPOINTS.PROFILE);
+      const response: any = await apiCaller.post(url, payload, fetchApiHeaders());
+      if (response?.data?.UserId) {
+        this.toastr.success('User added successfully!', '');
+      } else {
+        this.toastr.error(response.data.Message, '');
+        return;
+      }
+      return response.data;
+    } catch (error) {
+      return error;
+    }
   }
 }
