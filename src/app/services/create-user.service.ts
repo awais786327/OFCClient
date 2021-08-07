@@ -1,14 +1,14 @@
 import { Injectable } from '@angular/core';
 import { ToastrService as ToasterService } from 'ngx-toastr';
-import { createApiUrl } from '../../utils/createApiUrl';
-import { API_ENDPOINTS } from '../../constants/apiEndpoints';
-import apiCaller from '../../utils/apiCaller';
-import { fetchApiHeaders } from '../../utils/fetchApiHeaders';
+import { API_ENDPOINTS } from '../constants/apiEndpoints';
+import apiCaller from '../utils/apiCaller';
+import { createApiUrl } from '../utils/createApiUrl';
+import { fetchApiHeaders } from '../utils/fetchApiHeaders';
 
 @Injectable({
   providedIn: 'root',
 })
-export class CreateUserService {
+export class CreateUserServiceV2 {
   constructor(private toastr: ToasterService) {}
 
   async getCaptcha() {
