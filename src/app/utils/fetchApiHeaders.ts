@@ -1,8 +1,16 @@
-export const fetchApiHeaders = (showToast = true, hasLoading = true, hasLogs = false) => {
+interface IFetchHeaders {
+  showToast?: boolean;
+  hasLoading?: boolean;
+  token?: boolean;
+}
+
+export const fetchApiHeaders = (args?: IFetchHeaders) => {
+  const { hasLoading = true, showToast = true, token = true } = args || {};
+
   const headers = {
-    hasLogs,
     hasLoading,
     showToast,
+    token,
   };
 
   return {

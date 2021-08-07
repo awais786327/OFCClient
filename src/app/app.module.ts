@@ -6,7 +6,6 @@ import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoadingBarModule } from '@ngx-loading-bar/core';
 
-import { AxiosInterceptorService } from './axios-interceptor.service';
 import { ToastrModule } from 'ngx-toastr';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -49,5 +48,4 @@ import { AxiosInterceptorServiceV2 } from './axiosInterceptorV2';
 })
 export class AppModule {
   constructor(axiosIn: AxiosInterceptorServiceV2) {}
-  // constructor() {}
 }
