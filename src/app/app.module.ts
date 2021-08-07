@@ -17,7 +17,6 @@ import { MapComponent } from './marketplace/map/map.component';
 import { CreateGroupComponent } from './management/create-group/create-group.component';
 import { CreateProjectComponent } from './management/create-project/create-project.component';
 import { CreateUserProfileComponent } from './management/create-user-profile/create-user-profile.component';
-import { CreateUserPreferencesComponent } from './management/create-user-preferences/create-user-preferences.component';
 import { AxiosInterceptorServiceV2 } from './axiosInterceptorV2';
 
 @NgModule({
@@ -30,7 +29,6 @@ import { AxiosInterceptorServiceV2 } from './axiosInterceptorV2';
     CreateGroupComponent,
     CreateProjectComponent,
     CreateUserProfileComponent,
-    CreateUserPreferencesComponent,
   ],
   imports: [
     BrowserModule,

@@ -17,9 +17,7 @@ export class CreateUserPreferencesComponent implements OnInit {
     public loadingBarService: LoadingBarService,
     public createUserPreferencesService: CreateUserPreferencesService
   ) {
-    this.loadingBarService
-      .useRef()
-      .value$.subscribe((v: any) => (this.isLoading = !!v));
+    this.loadingBarService.useRef().value$.subscribe((v: any) => (this.isLoading = !!v));
   }
 
   ngOnInit(): void {
@@ -39,8 +37,7 @@ export class CreateUserPreferencesComponent implements OnInit {
       const payload = {
         ...createUserPreferencesForm.form.value,
       };
-      const result =
-        await this.createUserPreferencesService.createUserPreferences(payload);
+      const result = await this.createUserPreferencesService.createUserPreferences(payload);
       if (result?.UserId) {
         createUserPreferencesForm.reset();
         this.counter = 0;

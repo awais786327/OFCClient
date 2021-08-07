@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { LoadingBarService } from '@ngx-loading-bar/core';
-import { CreateUserServiceV2 } from '../../../services/create-user.service';
+import { CreateUserServiceV2 } from './create-user.service';
 
 @Component({
   selector: 'app-create-user',

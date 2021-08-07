@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
 import { ToastrService as ToasterService } from 'ngx-toastr';
 import axios from 'axios';
-import { createApiUrl } from '../../utils/createApiUrl';
-import { API_ENDPOINTS } from '../../constants/apiEndpoints';
-import apiCaller from '../../utils/apiCaller';
-import { fetchApiHeaders } from '../../utils/fetchApiHeaders';
+import { createApiUrl } from '../../../utils/createApiUrl';
+import { API_ENDPOINTS } from '../../../constants/apiEndpoints';
+import apiCaller from '../../../utils/apiCaller';
+import { fetchApiHeaders } from '../../../utils/fetchApiHeaders';
 
 @Injectable({
   providedIn: 'root',
