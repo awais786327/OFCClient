@@ -32,6 +32,10 @@ const routes: Routes = [
     path: 'marketplace',
     loadChildren: () => import('./modules/marketplace/marketplace.module').then((m) => m.MarketplaceModule),
   },
+  {
+    path: 'profile',
+    loadChildren: () => import('./modules/profile/profile-routing.module').then((m) => m.ProfileRoutingModule),
+  },
   // otherwise redirect to specific route
   { path: '**', redirectTo: 'grid' },
 ];
