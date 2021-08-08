@@ -34,7 +34,7 @@ const routes: Routes = [
   },
   {
     path: 'profile',
-    loadChildren: () => import('./modules/profile/profile-routing.module').then((m) => m.ProfileRoutingModule),
+    loadChildren: () => import('./modules/profile/profile.module').then((m) => m.ProfileModule),
   },
   // otherwise redirect to specific route
   { path: '**', redirectTo: 'grid' },
