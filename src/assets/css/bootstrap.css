@@ -4367,6 +4367,7 @@ textarea.form-control-lg {
 .card-img-top,
 .card-img-bottom {
   width: 100%;
+  border-radius: 8px;
 }
 
 .card-img,
@@ -10884,9 +10885,11 @@ textarea.form-control-lg {
     -ms-transition: all ease .4s;
     -o-transition: all ease .4s;
     box-shadow: none !important;
+    display: inline-block;
 }
 .btn-white:hover,.btn-white:focus{
     background: var(--bs-grey);
+    color: var(--bs-black);
 }
 input.form-control{
     border: 1px solid var(--bs-grey);
@@ -11022,6 +11025,14 @@ form{
     background-color: var(--global-green-light);
     border: 1px solid var(--global-green-light);
 }
+.label.black input:checked ~ .checkmark {
+    background-color: var(--bs-black);
+    border: 1px solid var(--bs-black);
+}
+.label.blue input:checked ~ .checkmark {
+    background-color: var(--bs-blue);
+    border: 1px solid var(--bs-blue);
+}
 .bg-green{
     background-color: var(--global-green);
 }
@@ -11036,6 +11047,9 @@ form{
 }
 .bg-black{
     background-color: var(--bs-black);
+}
+.bg-blue{
+    background-color: var(--pro-blue);
 }
 .badge{
     border-radius: 6px;
@@ -11071,6 +11085,7 @@ form{
     -ms-transition: all ease .4s;
     -o-transition: all ease .4s;
     box-shadow: none !important;
+    display: inline-block;
 }
 .btn-purple-dark:hover,.btn-purple-dark:focus{
     background: var(--pro-purple-light);
@@ -11090,6 +11105,7 @@ form{
     -ms-transition: all ease .4s;
     -o-transition: all ease .4s;
     box-shadow: none !important;
+    display: inline-block;
 }
 .btn-green:hover,.btn-green:focus{
     background: #2c5358;
@@ -11169,7 +11185,9 @@ form{
     margin-top: 3rem;
     width: 55%;
     position: relative;
+    border-radius: 50%;
 }
+
 .card .img_box .active_icon{
     background: #7EA686;
     border: 2px solid #FFFFFF;
@@ -11247,4 +11265,108 @@ select.form-control{
   .upload-btn-wrapper .btn-upload{
     height: 8.5rem;
   }
+}
+.btn-grey{
+    border: 1px solid var(--pro-grey);
+    background: var(--pro-grey);
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: .6rem 3.5rem;
+    color: white;
+    font-weight: 600;
+    transition: all ease .4s;
+    -webkit-transition: all ease .4s;
+    -moz-transition: all ease .4s;
+    -ms-transition: all ease .4s;
+    -o-transition: all ease .4s;
+    box-shadow: none !important;
+    display: inline-block;
+}
+.btn-grey:hover,.btn-grey:focus{
+    background: #6d727b;
+    color: white;
+}
+.radio_check{
+    display: block;
+    position: relative;
+    padding-left: 2.25rem;
+    cursor: pointer;
+    color: var(--global-darkest-grey);
+    font-size: .9rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.radio_check a{
+    color: var(--global-darkest-grey);
+    text-decoration: underline;
+}
+.radio_check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.radio_check .checkmark {
+    position: absolute;
+    top: -.15rem;
+    left: 0;
+    height: 1.5rem;
+    width: 1.5rem;
+    border: 1px solid var(--bs-grey);
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: transparent;
+    transition: all ease .4s;
+    -webkit-transition: all ease .4s;
+    -moz-transition: all ease .4s;
+    -ms-transition: all ease .4s;
+    -o-transition: all ease .4s;
+    border-radius: 50%;
+}
+.radio_check:hover input ~ .checkmark {
+    background-color: transparent;
+}
+.radio_check input:checked ~ .checkmark {
+    background-color: white;
+}
+.radio_check .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.radio_check input:checked ~ .checkmark:after {
+    display: block;
+}
+.radio_check .checkmark:after {
+    top: .2rem;
+    left: .2rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: var(--pro-blue);
+}
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--bs-grey-light);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--pro-grey);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--pro-blue);
+}
+.gutter_padding{
+    padding: 0 1.5rem;
 }

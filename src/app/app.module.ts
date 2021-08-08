@@ -11,9 +11,6 @@ import { ToastrModule } from 'ngx-toastr';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
-import { GridComponent } from './marketplace/grid/grid.component';
-import { ListComponent } from './marketplace/list/list.component';
-import { MapComponent } from './marketplace/map/map.component';
 import { CreateGroupComponent } from './management/create-group/create-group.component';
 import { CreateProjectComponent } from './management/create-project/create-project.component';
 import { CreateUserProfileComponent } from './management/create-user-profile/create-user-profile.component';
@@ -23,9 +20,6 @@ import { AxiosInterceptorServiceV2 } from './axiosInterceptorV2';
   declarations: [
     AppComponent,
     HeaderComponent,
-    GridComponent,
-    ListComponent,
-    MapComponent,
     CreateGroupComponent,
     CreateProjectComponent,
     CreateUserProfileComponent,

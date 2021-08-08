@@ -16,6 +16,10 @@
 	html,body{
 		font-size: 14px;
 	}
+	.marketplace_filter_card .accordion-body ul li.form{
+	    position: relative;
+	    margin-bottom: 2rem;
+	}
 }
 @media(max-width: 1366px){
 	html,body{
@@ -31,6 +35,10 @@
 	html,body{
 		font-size: 10px;
 	}
+	.marketplace_filter_card .accordion-body ul li.form{
+	    position: relative;
+	    margin-bottom: 3rem;
+	}
 }
 @media(max-width: 991px){
 	.market_search_bar ul li a{
@@ -43,6 +51,10 @@
 @media(max-width: 767px){
 	html,body{
 		font-size: 14px;
+	}
+	.marketplace_filter_card .accordion-body ul li.form{
+	    position: relative;
+	    margin-bottom: 1rem;
 	}
 	.navbar-expand-lg .navbar-collapse{
 		flex: 0 0 100%;
@@ -65,5 +77,103 @@
 	}
 	.irs--round{
 		height: 4rem;
+	}
+	.profile_header .white_box{
+	    margin-top: 5rem;
+	}
+	.profile_header .white_box .profile_flex{
+	    display: block;
+	}
+	.profile_header .white_box .profile_flex .img_box{
+	    display: block;
+	    margin: auto;
+	    text-align: center;
+	    margin-bottom: 2rem;
+	}
+	.profile_header .white_box .profile_flex .text_box{
+	    padding-left: 0;
+	}
+	.profile_header .white_box .profile_btn_flex{
+	    width: 100%;
+	}
+	.profile_dashboard #overview .white_box{
+	    width: 100%;
+	}
+	.profile_dashboard #dashboard .single-col{
+	    width: 100%;
+	    flex: 0 0 100%;
+	}
+	.profile_dashboard #dashboard .impact_flex{
+	    width: 70%;
+	    margin: 1rem auto;
+	    padding: 3rem 1rem;
+	}
+	.profile_dashboard #dashboard .nav-tabs{
+	    display: block;
+	}
+	.profile_dashboard #dashboard .nav-tabs li{
+	    padding: 1rem 1rem;
+	}
+	.profile_dashboard #management .white_box .top_option .button_flex{
+	    justify-content: center;
+	    margin-bottom: .5rem;
+	}
+	.profile_dashboard #management .white_box .top_option .list_flex{
+	    justify-content: center;
+	}
+	#feed .post_creater .post_creater_opt .opt_wrap{
+	    justify-content: center;
+	    margin-bottom: 1rem;
+	}
+	#feed .post_creater .post_creater_opt .opt_wrap2{
+	    margin-bottom: 0;
+	}
+	.modal-content .modal-header .btn-close{
+	    top: 1rem;
+	    right: 1rem;
+	}
+	.modal-body .radio_check{
+		margin-bottom: 1rem;
+	}
+	#projects .card_search_result_m{
+		margin-top: 1rem;
+	}
+	.modal-body .card_modal .img_box{
+	    margin-bottom: 1rem;
+	}
+	.modal-body .card_modal .img_box img{
+	    width: 50%;
+	    display: block;
+	    margin: auto;
+	    margin-bottom: 1rem;
+	}
+	.modal-body .card_modal .br-grey{
+	    border: 0;
+	    border-bottom: 1px solid var(--bs-grey);
+	    padding-bottom: 1rem;
+	    margin-bottom: 1rem;
+	}
+	.modal-content .arrow-left{
+	    left: 0;
+	}
+	.modal-content .arrow-right{
+	    right: 0;
+	}
+	#new_task_review_popup .modal-content{
+	    flex-direction: column;
+	}
+	#new_task_review_popup .grey_side{
+	    border-radius: 10px;
+	    border-bottom-left-radius: 0;
+	    border-bottom-right-radius: 0;
+	}
+	.modal-body .donation_wrap .nav-tabs li{
+	    flex: 0 0 100%
+	}
+	#checkout_popup .modal-content{
+    	flex-direction: column
+	}
+	#checkout_popup .checkout_form,#checkout_popup .checkout_side{
+	    flex: 0 0 100%;
 	}
 }
