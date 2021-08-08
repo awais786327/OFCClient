@@ -3,13 +3,14 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProfileRoutingModule } from './profile-routing.module';
 
+import { ProfileHeaderComponent } from './shared/profile-header/profile-header.component';
+
 import { GroupComponent } from './group/group.component';
 import { ProjectComponent } from './project/project.component';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
-import { ProfileHeaderComponent } from './shared/profile-header/profile-header.component';
 
 @NgModule({
-  declarations: [GroupComponent, ProjectComponent, ProjectDetailComponent, ProfileHeaderComponent],
+  declarations: [ProfileHeaderComponent, GroupComponent, ProjectComponent, ProjectDetailComponent],
   imports: [FormsModule, ProfileRoutingModule, CommonModule],
 })
 export class ProfileModule {}
