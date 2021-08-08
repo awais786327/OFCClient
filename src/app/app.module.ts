@@ -9,21 +9,14 @@ import { LoadingBarModule } from '@ngx-loading-bar/core';
 import { ToastrModule } from 'ngx-toastr';
 
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
-import { CreateGroupComponent } from './management/create-group/create-group.component';
-import { CreateProjectComponent } from './management/create-project/create-project.component';
-import { CreateUserProfileComponent } from './management/create-user-profile/create-user-profile.component';
+
 import { AxiosInterceptorServiceV2 } from './axiosInterceptorV2';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    CreateGroupComponent,
-    CreateProjectComponent,
-    CreateUserProfileComponent,
-  ],
+  declarations: [AppComponent, HeaderComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
