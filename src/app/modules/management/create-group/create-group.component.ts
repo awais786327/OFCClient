@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CreateGroupService } from './create-group.service';
 
 @Component({
   selector: 'app-create-group',
@@ -11,19 +12,19 @@ export class CreateGroupComponent implements OnInit {
 
   groupFormPayload: any = {};
   /*{
-    groupName: 'Pilot Group',
-    description: 'Pilot Group',
-    tags: 'Pilot Group',
-    location: 'Ahmdabad',
-    isGlobal: 'true',
-    allowProfile: 'true',
-    isPublic: 'true',
-    groupTypeID: 1,
-    isAllowUserToInvite: 'true',
-    memberList: [1, 31, 32],
+    "Groupname": "Pilot Group 1",
+    "Description": "Pilot Group 1",
+    "Tags": "Pilot Group 1",
+    "Location": "Ahmdabad",
+    "IsGlobal": "true",
+    "AllowProfile": "true",
+    "IsPublic": "true",
+    "GroupTypeID": 1,
+    "IsAllowUserToInvite": "true",
+    "MemberList": [1,31,32]
   }*/
 
-  constructor() {}
+  constructor(public creteGroupService: CreateGroupService) {}
 
   ngOnInit(): void {
     this.counter = 0;
@@ -35,7 +36,21 @@ export class CreateGroupComponent implements OnInit {
   }
 
   // tslint:disable-next-line:typedef
-  addGroup(groupForm: any) {
-    console.log(groupForm);
+  async addGroup(groupForm: any) {
+    const payload = {
+      IsGlobal: 'true',
+      AllowProfile: 'true',
+      IsPublic: 'true',
+      GroupTypeID: 1,
+      IsAllowUserToInvite: 'true',
+      MemberList: [1, 31, 32],
+      ...groupForm.form.value,
+    };
+    console.log(payload);
+    const result = await this.creteGroupService.addGroup(payload);
+    if (result) {
+      groupForm.reset();
+      this.counter = 0;
+    }
   }
 }

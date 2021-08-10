@@ -972,7 +972,104 @@ body{
 .profile_dashboard #overview .white_box .br-grey{
     border-right: 1px solid var(--bs-grey);
 }
-
+.profile_dashboard #overview .white_box .group_list{
+    margin-bottom: .5rem;
+}
+.profile_dashboard #overview .white_box .group_list li{
+    margin-right: .25rem;
+}
+.profile_dashboard #overview .white_box .group_list li img{
+    width: 2.5rem;
+    border-radius: 50%;
+}
+.profile_dashboard #overview .white_box .day_wrap{
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    margin-top: .5rem;
+}
+.profile_dashboard #overview .white_box .day_wrap h6{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: .775rem;
+    color: var(--pro-grey);
+    margin-top: .5rem;
+    font-weight: 700;
+}
+.profile_dashboard #overview .white_box .day_wrap .navigate{
+    text-align: right;
+}
+.profile_dashboard #overview .white_box .day_wrap .navigate li img{
+    width: .5rem;
+}
+.profile_dashboard #overview .white_box .calendar_flex{
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    margin-top: .5rem;
+}
+.profile_dashboard #overview .white_box .calendar_flex .calendar_row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.profile_dashboard #overview .white_box .calendar_flex .calendar_th{
+    flex: 0 0 14.28%;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--bs-black);
+    font-size: .875rem;
+    font-weight: 700;
+}
+.profile_dashboard #overview .white_box .calendar_flex .calendar_td{
+    flex: 0 0 14.28%;
+    text-align: center;
+    cursor: pointer;
+}
+.profile_dashboard #overview .white_box .calendar_flex .calendar_td .inner{
+    color: var(--bs-black);
+    font-size: 1.05rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    transition: all ease .4s;
+    -webkit-transition: all ease .4s;
+    -moz-transition: all ease .4s;
+    -ms-transition: all ease .4s;
+    -o-transition: all ease .4s;
+    position: relative;
+    border-radius: 50%;
+}
+.profile_dashboard #overview .white_box .calendar_flex .calendar_td .active_icon{
+    background: var(--global-green);
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    right: .5rem;
+    bottom: .5rem;
+    visibility: hidden;
+    opacity: 0;
+    transition: all ease .4s;
+    -webkit-transition: all ease .4s;
+    -moz-transition: all ease .4s;
+    -ms-transition: all ease .4s;
+    -o-transition: all ease .4s;
+}
+.profile_dashboard #overview .white_box .calendar_flex .calendar_td .active_icon.active{
+    visibility: visible;
+    opacity: 1;
+}
+.profile_dashboard #overview .white_box .calendar_flex .calendar_td:hover .inner,
+.profile_dashboard #overview .white_box .calendar_flex .calendar_td:focus .inner,
+.profile_dashboard #overview .white_box .calendar_flex .calendar_td.selected .inner{
+    background: var(--pro-blue);
+    color: white;
+}
 
 
 

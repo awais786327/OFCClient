@@ -75,7 +75,7 @@
                 <input type="text" name="Tags" [(ngModel)]="groupFormPayload.Tags" class="form-control" placeholder="Tagline" required>
               </div>
               <div class="form-group">
-                <label class="form-label">Location</label>
+                <label class="form-label required">Location</label>
                 <form method="post">
                   <input type="text" name="Location" [(ngModel)]="groupFormPayload.Location" placeholder="Search Location" class="form-control required" required>
                   <button class="search-button">
@@ -97,7 +97,7 @@
               </div>
               <hr>
               <div class="text-right">
-                <button type="button" [disabled]="!groupForm.valid || isLoading" class="btn btn-purple-dark" (click)="go(1)">Next</button>
+                <button type="button" class="btn btn-purple-dark" (click)="go(1)">Next</button>
               </div>
             </div>
           </div>
@@ -116,10 +116,10 @@
               <hr>
               <div class="button_flex">
                 <div class="text-left">
-                  <button class="btn btn-white" (click)="go(0)">Back</button>
+                  <button type="button" class="btn btn-white" (click)="go(0)">Back</button>
                 </div>
                 <div class="text-right">
-                  <button class="btn btn-purple-dark" (click)="go(2)">Next</button>
+                  <button type="button" class="btn btn-purple-dark" (click)="go(2)">Next</button>
                 </div>
               </div>
             </div>
@@ -196,10 +196,10 @@
               <hr>
               <div class="button_flex">
                 <div class="text-left">
-                  <button class="btn btn-white" (click)="go(1)">Back</button>
+                  <button type="button" class="btn btn-white" (click)="go(1)">Back</button>
                 </div>
-                <div class="text-right">
-                  <button class="btn btn-purple-dark">Create</button>
+                <div class="text-right" title="{{groupForm.invalid ? 'Fill all required values' : ''}}">
+                  <button type="submit" class="btn btn-purple-dark" [disabled]="groupForm.invalid">Create</button>
                 </div>
               </div>
             </div>
