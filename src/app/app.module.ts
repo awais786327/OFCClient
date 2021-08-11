@@ -14,9 +14,10 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 
 import { AxiosInterceptorServiceV2 } from './axiosInterceptorV2';
+import { NotificationsComponent } from './components/notifications/notifications.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent],
+  declarations: [AppComponent, HeaderComponent, NotificationsComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

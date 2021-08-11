@@ -9,6 +9,7 @@ const routes: Routes = [
   {
     path: '',
     children: [
+      { path: '', redirectTo: 'card-grid' },
       { path: 'card-grid', component: CardGridComponent },
       { path: 'card-list', component: CardListComponent },
       { path: 'card-map', component: CardMapComponent },
