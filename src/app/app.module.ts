@@ -10,6 +10,8 @@ import { ToastrModule } from 'ngx-toastr';
 
 import { AppRoutingModule } from './app-routing.module';
 
+import { KendoModule } from './kendo/kendo.module';
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 
@@ -19,6 +21,7 @@ import { NotificationsComponent } from './components/notifications/notifications
 @NgModule({
   declarations: [AppComponent, HeaderComponent, NotificationsComponent],
   imports: [
+    KendoModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,

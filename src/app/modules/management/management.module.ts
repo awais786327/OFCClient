@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ManagementRoutingModule } from './management-routing.module';
 
+import { KendoModule } from '../../kendo/kendo.module';
+
 import { CreateGroupComponent } from './create-group/create-group.component';
 import { CreateProjectComponent } from './create-project/create-project.component';
 import { CreateUserComponent } from './create-user/create-user.component';
@@ -17,6 +19,6 @@ import { CreateUserProfileComponent } from './create-user-profile/create-user-pr
     CreateUserPreferencesComponent,
     CreateUserProfileComponent,
   ],
-  imports: [FormsModule, ManagementRoutingModule, CommonModule],
+  imports: [KendoModule, FormsModule, ManagementRoutingModule, CommonModule],
 })
 export class ManagementModule {}

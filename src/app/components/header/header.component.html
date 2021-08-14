@@ -200,7 +200,8 @@
       <div class="row">
         <div class="col-12">
           <form method="post">
-            <input type="text" name="" placeholder="Search Project" class="form-control" />
+            <app-autocomplete [placeholder]="'Search Project..'"></app-autocomplete>
+<!--            <input type="text" name="" placeholder="Search Project" class="form-control" />-->
             <button class="search-button">
               <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect
@@ -270,7 +271,8 @@
       <div class="row">
         <div class="col-12">
           <form method="post">
-            <input type="text" name="" placeholder="Search Group" class="form-control" />
+            <app-autocomplete [placeholder]="'Search Group..'"></app-autocomplete>
+<!--            <input type="text" name="" placeholder="Search Group" class="form-control" />-->
             <button class="search-button">
               <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect
@@ -358,7 +360,8 @@
   <div class="gutter_padding pb-0">
     <h4>Chat</h4>
     <form method="post">
-      <input type="text" name="" placeholder="Search users, groups or chat history" class="form-control" />
+      <app-autocomplete [placeholder]="'Search users, groups or chat history..'"></app-autocomplete>
+<!--      <input type="text" name="" placeholder="Search users, groups or chat history" class="form-control" />-->
     </form>
     <div class="active_wrap chat_user_slider">
       <div>
