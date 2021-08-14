@@ -17,9 +17,10 @@ import { HeaderComponent } from './components/header/header.component';
 
 import { AxiosInterceptorServiceV2 } from './axiosInterceptorV2';
 import { NotificationsComponent } from './components/notifications/notifications.component';
+import { DonationComponent } from './components/donation/donation.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, NotificationsComponent],
+  declarations: [AppComponent, HeaderComponent, NotificationsComponent, DonationComponent],
   imports: [
     KendoModule,
     BrowserModule,

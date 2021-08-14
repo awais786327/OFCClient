@@ -5,6 +5,7 @@ declare var $: any;
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
   isPublicRoute: boolean = false;
@@ -26,7 +27,9 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  ngAfterViewInit(): void {}
+  ngAfterViewInit(): void {
+    this.jqueryLoad();
+  }
 
   jqueryLoad() {
     /*Chat_Box*/
@@ -41,6 +44,8 @@ export class HeaderComponent implements OnInit {
     });
 
     $('html').click(function () {
+      $('#my-project-menu, #my-project').removeClass('active');
+      $('#my-group-menu, #my-group').removeClass('active');
       $('.chat_box, .chat_box .person_chat, .chat_box .person_chat .message_typer .upload_flex').removeClass('active');
     });
 
@@ -57,6 +62,30 @@ export class HeaderComponent implements OnInit {
       infinite: true,
       slidesToShow: 6,
       slidesToScroll: 1,
+    });
+
+    /*Megadropdown 2*/
+    $('#my-group').click(function () {
+      $('.mega_dropdown, #my-project, #my-group').removeClass('active');
+      $('#my-group-menu, #my-group').addClass('active');
+      event.stopPropagation();
+    });
+
+    $('#my-group-menu').click(function () {
+      event.stopPropagation();
+    });
+
+    /*Megadropdown 1*/
+    // $('#my-project, #my-group').removeAttr('href');
+
+    $('#my-project').click(function () {
+      $('.mega_dropdown, #my-project, #my-group').removeClass('active');
+      $('#my-project-menu, #my-project').addClass('active');
+      event.stopPropagation();
+    });
+
+    $('#my-project-menu').click(function () {
+      event.stopPropagation();
     });
   }
 }

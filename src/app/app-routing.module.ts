@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DonationComponent } from './components/donation/donation.component';
 import { NotificationsComponent } from './components/notifications/notifications.component';
 
 const routes: Routes = [
@@ -7,6 +8,10 @@ const routes: Routes = [
   {
     path: 'notifications',
     component: NotificationsComponent,
+  },
+  {
+    path: 'donations',
+    component: DonationComponent,
   },
   {
     path: 'onboarding',
