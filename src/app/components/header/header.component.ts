@@ -9,12 +9,14 @@ declare var $: any;
 })
 export class HeaderComponent implements OnInit {
   isPublicRoute: boolean = false;
+  slickSliderLoaded = false;
 
   constructor(private router: Router) {
     this.router.events.subscribe((event: NavigationEnd) => {
       if (event instanceof NavigationEnd) {
         if (document.location.pathname.includes('onboarding')) {
           this.isPublicRoute = true;
+          this.slickSliderLoaded = false;
         } else {
           this.isPublicRoute = false;
           setTimeout(() => {
@@ -28,7 +30,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {}
 
   ngAfterViewInit(): void {
-    this.jqueryLoad();
+    // this.jqueryLoad();
   }
 
   jqueryLoad() {
@@ -58,11 +60,16 @@ export class HeaderComponent implements OnInit {
       return false;
     });
 
-    $('.chat_user_slider').slick({
-      infinite: true,
-      slidesToShow: 6,
-      slidesToScroll: 1,
-    });
+    if(!this.slickSliderLoaded){
+      console.log('working..... 12')
+      this.slickSliderLoaded = true;
+      $('.chat_user_slider').slick({
+        infinite: true,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+      });
+    }
+    
 
     /*Megadropdown 2*/
     $('#my-group').click(function () {
@@ -71,12 +78,11 @@ export class HeaderComponent implements OnInit {
       event.stopPropagation();
     });
 
-    $('#my-group-menu').click(function () {
-      event.stopPropagation();
-    });
+    $("#my-group-menu a").click(function() {
+      $('#my-group-menu, #my-group').removeClass('active');
+    })
 
     /*Megadropdown 1*/
-    // $('#my-project, #my-group').removeAttr('href');
 
     $('#my-project').click(function () {
       $('.mega_dropdown, #my-project, #my-group').removeClass('active');
@@ -87,5 +93,15 @@ export class HeaderComponent implements OnInit {
     $('#my-project-menu').click(function () {
       event.stopPropagation();
     });
+
+    $("#my-project-menu a").click(function() {
+      $('#my-project-menu, #my-project').removeClass('active');
+    })
+
+    // merged 2 separate event which are doing same thing
+    $('#my-group-menu, #my-project-menu').click(function () {
+      event.stopPropagation();
+    });
+
   }
 }
