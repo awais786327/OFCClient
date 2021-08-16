@@ -89,7 +89,8 @@
               <div class="form-group">
                 <label class="form-label required">Project Description</label>
                 <p>A few sentences about the purpose of this project</p>
-                <textarea class="form-control" name="Description" [(ngModel)]="groupFormPayload.Description" placeholder="Description" required></textarea>
+                <app-rtfeditor name="Description" placeholder="Description" [(ngModel)]="groupFormPayload.Description" required></app-rtfeditor>
+<!--                <textarea class="form-control" name="Description" [(ngModel)]="groupFormPayload.Description" placeholder="Description" required></textarea>-->
               </div>
               <div class="form-group">
                 <label class="form-label">Sponsoring Organization</label>
@@ -111,7 +112,7 @@
               <div class="form-group">
                 <label class="form-label">Group Description</label>
                 <p>Up to 800 words on the objective of the project</p>
-                <img src="../assets/images/text-editor.png" alt="#" class="text_editor_placeholder">
+                <app-rtfeditor name="Group-Description" placeholder="Group Description"></app-rtfeditor>
               </div>
               <hr>
               <div class="button_flex">

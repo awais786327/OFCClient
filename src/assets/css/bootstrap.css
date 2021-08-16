@@ -46,6 +46,7 @@
   --global-green-light: #597E61;
   --global-darkest-grey: #111827;
   --global-blueish-grey: #2D3647;
+  --global-redd: #BC2B2B;
 }
 
 *,
@@ -11089,6 +11090,26 @@ form{
 }
 .btn-purple-dark:hover,.btn-purple-dark:focus{
     background: var(--pro-purple-light);
+    color: white;
+}
+.btn-red{
+    border: 1px solid var(--global-redd);
+    box-sizing: border-box;
+    background: var(--global-redd);
+    border-radius: 6px;
+    padding: .6rem 3.5rem;
+    color: white;
+    font-weight: 600;
+    transition: all ease .4s;
+    -webkit-transition: all ease .4s;
+    -moz-transition: all ease .4s;
+    -ms-transition: all ease .4s;
+    -o-transition: all ease .4s;
+    box-shadow: none !important;
+    display: inline-block;
+}
+.btn-red:hover,.btn-red:focus{
+    background: #831d1d;
     color: white;
 }
 .btn-green{

@@ -88,7 +88,8 @@
             <p>Select images to upload (jpg, jepg, png and gif). </p>
             <div class="form-group">
               <label class="form-label">Description</label>
-              <textarea type="text" name="" class="form-control" placeholder="Description"></textarea>
+              <app-rtfeditor name="Description" placeholder="Description"></app-rtfeditor>
+<!--              <textarea type="text" name="" class="form-control" placeholder="Description"></textarea>-->
             </div>
             <div class="form-group">
               <label class="form-label">Tags</label>
@@ -131,7 +132,8 @@
             </div>
             <div class="form-group">
               <label class="form-label">Description</label>
-              <textarea type="text" name="" class="form-control" placeholder="Description"></textarea>
+              <app-rtfeditor name="Description" placeholder="Description"></app-rtfeditor>
+<!--              <textarea type="text" name="" class="form-control" placeholder="Description"></textarea>-->
             </div>
             <div class="form-group">
               <label class="form-label">Tags</label>
@@ -343,7 +345,8 @@
         </div>
         <div class="form-group">
           <label class="form-label">Description</label>
-          <textarea placeholder="Description" class="form-control"></textarea>
+          <app-rtfeditor name="Description" placeholder="Description"></app-rtfeditor>
+<!--          <textarea placeholder="Description" class="form-control"></textarea>-->
         </div>
         <div class="form-group">
           <label class="form-label">Assignee</label>
@@ -707,7 +710,8 @@
                       </div>
                       <div class="tab-pane fade" id="place1" role="tabpanel" aria-labelledby="place1-tab">
                         <form method="post">
-                          <input type="text" name="" placeholder="Search a location" class="form-control">
+                          <app-autocomplete [placeholder]="'Search a location..'"></app-autocomplete>
+<!--                          <input type="text" name="" placeholder="Search a location" class="form-control">-->
                           <button class="search-button">
                             <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <rect x="1.91188e-07" y="0.0450582" width="8.81618" height="3.95849" rx="1.97924" transform="matrix(0.46356 0.46356 -0.463556 0.463564 20.1889 18.3167)" fill="#272D35" stroke="#272D35" stroke-width="0.0972"></rect>
@@ -934,7 +938,8 @@
             </div>
             <h5 class="small_text">Related projects</h5>
             <form method="post" class="form_with_searchDrop">
-              <input type="text" name="" placeholder="Search a location" class="form-control search_dropdown--btn">
+              <app-autocomplete [placeholder]="'Search a location..'"></app-autocomplete>
+<!--              <input type="text" name="" placeholder="Search a location" class="form-control search_dropdown&#45;&#45;btn">-->
               <button class="search-button">
                 <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect x="1.91188e-07" y="0.0450582" width="8.81618" height="3.95849" rx="1.97924" transform="matrix(0.46356 0.46356 -0.463556 0.463564 20.1889 18.3167)" fill="#272D35" stroke="#272D35" stroke-width="0.0972"></rect>

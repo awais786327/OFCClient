@@ -54,12 +54,13 @@
               "node_modules/ngx-toastr/toastr.css"
             ],
             "scripts": [
-              "src/assets/js/jquery-3.3.1.js",
+              "src/assets/kendo/jquery.min.js",
               "node_modules/ion-rangeslider/js/ion.rangeSlider.min.js",
-              "node_modules/slick-carousel/slick/slick.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.bundle.js",
+              "node_modules/slick-carousel/slick/slick.min.js",
               "src/assets/js/custom.js",
-              "src/assets/js/rangeSlider.js"
+              "src/assets/js/rangeSlider.js",
+              "src/assets/kendo/kendo.all.min.js"
             ]
           },
           "configurations": {

@@ -1,7 +1,22 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DonationComponent } from './components/donation/donation.component';
+import { NotificationsComponent } from './components/notifications/notifications.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: 'onboarding', pathMatch: 'full' },
+  {
+    path: 'notifications',
+    component: NotificationsComponent,
+  },
+  {
+    path: 'donations',
+    component: DonationComponent,
+  },
+  {
+    path: 'onboarding',
+    loadChildren: () => import('./modules/onboarding/onboarding.module').then((m) => m.OnboardingModule),
+  },
   {
     path: 'management',
     loadChildren: () => import('./modules/management/management.module').then((m) => m.ManagementModule),
@@ -15,6 +30,7 @@ const routes: Routes = [
     loadChildren: () => import('./modules/profile/profile.module').then((m) => m.ProfileModule),
   },
   // otherwise redirect to specific route
+  // { path: '/', redirectTo: 'onboarding', pathMatch: 'full' },
   { path: '**', redirectTo: '/' },
 ];
 

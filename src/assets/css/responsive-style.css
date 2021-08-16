@@ -11,6 +11,9 @@
 	.hidden-xs{
 		display: none !important;
 	}
+	input, select, textarea{
+		font-size: 16px !important;
+	}
 }
 @media(max-width: 1440px){
 	html,body{
@@ -175,5 +178,13 @@
 	}
 	#checkout_popup .checkout_form,#checkout_popup .checkout_side{
 	    flex: 0 0 100%;
+	}
+	.onboard_section .print_top{
+	    width: 100%;
+	    left: 0;
+	}
+	.onboard_section .print_bot{
+	    width: 100%;
+	    left: 0;
 	}
 }
