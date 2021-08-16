@@ -237,6 +237,7 @@ body{
 .dropdown-menu.notificate .bottom_notif .notify_flex .img_box .alert_icon{
     position: absolute;
     right: 0;
+    border: 1px solid #fff;
     bottom: 0;
     background: #BC2B2B;
     width: 1.15rem;
@@ -4334,4 +4335,12 @@ body{
 .notification_section .bottom_notif .notify_flex .text_box .button_flex .btn-red{
     padding: .5rem 1rem;
     text-transform: uppercase;
+}
+
+.chat_box .gutter_padding:nth-child(3){
+    height: calc(100vh - 18.9rem);
+    overflow: auto;
+}
+.close-menu, .close-menu-toggle{
+    display: none;
 }

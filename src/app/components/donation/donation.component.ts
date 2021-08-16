@@ -30,15 +30,5 @@ export class DonationComponent implements OnInit {
       $('.' + className).removeClass('active');
       $('.' + className + '1').addClass('active');
     });
-
-    $('.modal-header .btn-close').click(function () {
-      $('#donation_popup, .modal-backdrop').removeClass('show');
-      $('#donation_popup, .modal-backdrop').addClass('hide');
-
-      setTimeout(() => {
-        $('#donation_popup, .modal-backdrop').removeClass('d-block');
-        $('#donation_popup, .modal-backdrop').addClass('d-none');
-      }, 500);
-    });
   }
 }
