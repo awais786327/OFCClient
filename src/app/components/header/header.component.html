@@ -2,40 +2,190 @@
 <section class="nav_section" *ngIf="!isPublicRoute">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-      <a class="navbar-brand" href="/"><img src="../assets/images/logo_icon.svg" alt="#" /> Open Impact</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="mobile-navbrand visible-xs">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="../assets/images/logo_icon.svg" alt="#" /> Open Impact</a>
+      </div>
+      <a class="navbar-brand hidden-xs" href="#"><img src="../assets/images/logo_icon.svg" alt="#" /> Open Impact</a>
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 visible-xs flex-dir">
+        <li class="nav-item">
+          <a class="nav-link round_icon chat_icon" href="#"><img src="../assets/images/chat.svg" alt="#" /></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle round_icon bell_icon"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <img src="../assets/images/bell.svg" alt="#" />
+          </a>
+          <div class="dropdown-menu notificate" aria-labelledby="navbarDropdown">
+            <div class="top_heading">
+              <h4>Notification <span>(6)</span></h4>
+              <a href="#" class="clear_all">Clear All</a>
+            </div>
+            <div class="bottom_notif">
+              <div class="notify_flex">
+                <div class="img_box">
+                  <img src="../assets/images/collab1.png" alt="#" />
+                </div>
+                <div class="text_box">
+                  <a href="#" class="notifi_link"
+                    >Aliquam consequat dolor ex. Aenean nec justo tincidunt, vehicula lorem non.</a
+                  >
+                  <ul class="list-inline">
+                    <li class="list-inline-item">Art In Revolt</li>
+                    <li class="list-inline-item">2 hours ago</li>
+                    <li class="list-inline-item">
+                      <a href="#">Dismiss</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="notify_flex">
+                <div class="img_box">
+                  <img src="../assets/images/collab1.png" alt="#" />
+                </div>
+                <div class="text_box">
+                  <a href="#" class="notifi_link"
+                    >Aliquam consequat dolor ex. Aenean nec justo tincidunt, vehicula lorem non.</a
+                  >
+                  <ul class="list-inline">
+                    <li class="list-inline-item">Art In Revolt</li>
+                    <li class="list-inline-item">2 hours ago</li>
+                    <li class="list-inline-item">
+                      <a href="#">Dismiss</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="notify_flex">
+                <div class="img_box">
+                  <img src="../assets/images/collab1.png" alt="#" />
+                </div>
+                <div class="text_box">
+                  <a href="#" class="notifi_link"
+                    >Aliquam consequat dolor ex. Aenean nec justo tincidunt, vehicula lorem non.</a
+                  >
+                  <ul class="list-inline">
+                    <li class="list-inline-item">Art In Revolt</li>
+                    <li class="list-inline-item">2 hours ago</li>
+                    <li class="list-inline-item">
+                      <a href="#">Dismiss</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="notify_flex">
+                <div class="img_box">
+                  <img src="../assets/images/collab1.png" alt="#" />
+                </div>
+                <div class="text_box">
+                  <a href="#" class="notifi_link"
+                    >Aliquam consequat dolor ex. Aenean nec justo tincidunt, vehicula lorem non.</a
+                  >
+                  <ul class="list-inline">
+                    <li class="list-inline-item">Art In Revolt</li>
+                    <li class="list-inline-item">2 hours ago</li>
+                    <li class="list-inline-item">
+                      <a href="#">Dismiss</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <a href="#" class="view_all">View All Notifications</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <img src="../assets/images/user.png" alt="#" />
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Discussions</a></li>
+            <li><a class="dropdown-item" href="#">Dashboard</a></li>
+            <li><a class="dropdown-item" href="#">Overview</a></li>
+            <li><a class="dropdown-item" href="#">My projects</a></li>
+            <li><a class="dropdown-item" href="#">Management</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" href="#">Log out</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- <a class="navbar-brand" href="/"><img src="../assets/images/logo_icon.svg" alt="#" /> Open Impact</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
-      </button>
+      </button> -->
+
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav m-auto">
-          <li class="nav-item dropdown">
-            <a class="nav-link" href="javascript:" id="managementDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
+          <!-- <li class="nav-item dropdown">
+            <a
+              class="nav-link"
+              href="javascript:"
+              id="managementDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
               Management
             </a>
             <ul class="dropdown-menu" aria-labelledby="managementDropdown">
               <li>
-                <a class="dropdown-item" routerLink="/management/create-group" routerLinkActive="active">Create
-                  Group</a>
+                <a class="dropdown-item" routerLink="/management/create-group" routerLinkActive="active"
+                  >Create Group</a
+                >
               </li>
               <li>
-                <a class="dropdown-item" routerLink="/management/create-project" routerLinkActive="active">Create
-                  Project</a>
+                <a class="dropdown-item" routerLink="/management/create-project" routerLinkActive="active"
+                  >Create Project</a
+                >
               </li>
               <li>
-                <a class="dropdown-item" routerLink="/management/create-user-preferences"
-                  routerLinkActive="active">Create User Preferences</a>
+                <a class="dropdown-item" routerLink="/management/create-user-preferences" routerLinkActive="active"
+                  >Create User Preferences</a
+                >
               </li>
               <li>
                 <a class="dropdown-item" routerLink="/management/create-user" routerLinkActive="active">Create User</a>
               </li>
               <li>
-                <a class="dropdown-item" routerLink="/management/create-user-profile" routerLinkActive="active">Create
-                  User Profile</a>
+                <a class="dropdown-item" routerLink="/management/create-user-profile" routerLinkActive="active"
+                  >Create User Profile</a
+                >
               </li>
             </ul>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link active" href="javascript:void(0);" id="my-project">My Projects</a>
           </li>
@@ -49,7 +199,7 @@
             <a class="nav-link" routerLink="/donations">Donate</a>
           </li>
         </ul>
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 hidden-xs">
           <li class="nav-item">
             <a class="nav-link round_icon chat_icon" href="javascript:">
               <img src="../assets/images/chat.svg" alt="#" />
@@ -57,8 +207,14 @@
           </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle round_icon bell_icon" href="#" id="navbarDropdown" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
+            <a
+              class="nav-link dropdown-toggle round_icon bell_icon"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
               <img src="../assets/images/bell.svg" alt="#" />
             </a>
             <div class="dropdown-menu notificate" aria-labelledby="navbarDropdown">
@@ -73,8 +229,9 @@
                     <div class="alert_icon"><i class="fa fa-exclamation" aria-hidden="true"></i></div>
                   </div>
                   <div class="text_box">
-                    <a href="#" class="notifi_link">Aliquam consequat dolor ex. Aenean nec justo tincidunt, vehicula
-                      lorem non.</a>
+                    <a href="#" class="notifi_link"
+                      >Aliquam consequat dolor ex. Aenean nec justo tincidunt, vehicula lorem non.</a
+                    >
                     <ul class="list-inline">
                       <li class="list-inline-item">Art In Revolt</li>
                       <li class="list-inline-item">2 hours ago</li>
@@ -90,8 +247,9 @@
                     <div class="alert_icon"><i class="fa fa-exclamation" aria-hidden="true"></i></div>
                   </div>
                   <div class="text_box">
-                    <a href="#" class="notifi_link">Aliquam consequat dolor ex. Aenean nec justo tincidunt, vehicula
-                      lorem non.</a>
+                    <a href="#" class="notifi_link"
+                      >Aliquam consequat dolor ex. Aenean nec justo tincidunt, vehicula lorem non.</a
+                    >
                     <ul class="list-inline">
                       <li class="list-inline-item">Art In Revolt</li>
                       <li class="list-inline-item">2 hours ago</li>
@@ -106,8 +264,9 @@
                     <img src="../assets/images/collab1.png" alt="#" />
                   </div>
                   <div class="text_box">
-                    <a href="#" class="notifi_link">Aliquam consequat dolor ex. Aenean nec justo tincidunt, vehicula
-                      lorem non.</a>
+                    <a href="#" class="notifi_link"
+                      >Aliquam consequat dolor ex. Aenean nec justo tincidunt, vehicula lorem non.</a
+                    >
                     <ul class="list-inline">
                       <li class="list-inline-item">Art In Revolt</li>
                       <li class="list-inline-item">2 hours ago</li>
@@ -122,8 +281,9 @@
                     <img src="../assets/images/collab1.png" alt="#" />
                   </div>
                   <div class="text_box">
-                    <a href="#" class="notifi_link">Aliquam consequat dolor ex. Aenean nec justo tincidunt, vehicula
-                      lorem non.</a>
+                    <a href="#" class="notifi_link"
+                      >Aliquam consequat dolor ex. Aenean nec justo tincidunt, vehicula lorem non.</a
+                    >
                     <ul class="list-inline">
                       <li class="list-inline-item">Art In Revolt</li>
                       <li class="list-inline-item">2 hours ago</li>
@@ -140,13 +300,19 @@
           </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="navbarDropdown" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
+            <a
+              class="nav-link dropdown-toggle"
+              href="javascript:void(0);"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
               Leslie Alexander
               <img src="../assets/images/user.png" alt="#" />
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" routerLink="/profile">Discussions</a></li>
+              <li><a class="dropdown-item" href="javascript:">Discussions</a></li>
               <li><a class="dropdown-item" href="javascript:">Dashboard</a></li>
               <li><a class="dropdown-item" href="javascript:">Overview</a></li>
               <li><a class="dropdown-item" href="javascript:">My projects</a></li>
@@ -172,11 +338,26 @@
             <!--            <input type="text" name="" placeholder="Search Project" class="form-control" />-->
             <button class="search-button">
               <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="1.91188e-07" y="0.0450582" width="8.81618" height="3.95849" rx="1.97924"
-                  transform="matrix(0.46356 0.46356 -0.463556 0.463564 20.1889 18.3167)" fill="#272D35" stroke="#272D35"
-                  stroke-width="0.0972" />
-                <ellipse cx="13.5" cy="13.5" rx="9.54594" ry="9.54594" transform="rotate(45 13.5 13.5)" stroke="#272D35"
-                  stroke-width="3" />
+                <rect
+                  x="1.91188e-07"
+                  y="0.0450582"
+                  width="8.81618"
+                  height="3.95849"
+                  rx="1.97924"
+                  transform="matrix(0.46356 0.46356 -0.463556 0.463564 20.1889 18.3167)"
+                  fill="#272D35"
+                  stroke="#272D35"
+                  stroke-width="0.0972"
+                />
+                <ellipse
+                  cx="13.5"
+                  cy="13.5"
+                  rx="9.54594"
+                  ry="9.54594"
+                  transform="rotate(45 13.5 13.5)"
+                  stroke="#272D35"
+                  stroke-width="3"
+                />
               </svg>
             </button>
           </form>
@@ -232,11 +413,26 @@
             <!--            <input type="text" name="" placeholder="Search Group" class="form-control" />-->
             <button class="search-button">
               <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="1.91188e-07" y="0.0450582" width="8.81618" height="3.95849" rx="1.97924"
-                  transform="matrix(0.46356 0.46356 -0.463556 0.463564 20.1889 18.3167)" fill="#272D35" stroke="#272D35"
-                  stroke-width="0.0972" />
-                <ellipse cx="13.5" cy="13.5" rx="9.54594" ry="9.54594" transform="rotate(45 13.5 13.5)" stroke="#272D35"
-                  stroke-width="3" />
+                <rect
+                  x="1.91188e-07"
+                  y="0.0450582"
+                  width="8.81618"
+                  height="3.95849"
+                  rx="1.97924"
+                  transform="matrix(0.46356 0.46356 -0.463556 0.463564 20.1889 18.3167)"
+                  fill="#272D35"
+                  stroke="#272D35"
+                  stroke-width="0.0972"
+                />
+                <ellipse
+                  cx="13.5"
+                  cy="13.5"
+                  rx="9.54594"
+                  ry="9.54594"
+                  transform="rotate(45 13.5 13.5)"
+                  stroke="#272D35"
+                  stroke-width="3"
+                />
               </svg>
             </button>
           </form>
@@ -271,8 +467,15 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
       <a class="navbar-brand" href="#"><img src="../assets/images/logo_icon.svg" alt="#" /> Open Impact</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -513,9 +716,12 @@
               How are you doing?
               <span class="emo_icon">
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
                     d="M7 0C10.866 0 14 3.13401 14 7C14 10.866 10.866 14 7 14C3.13401 14 0 10.866 0 7C0 3.13401 3.13401 0 7 0ZM9.74864 9.16994C9.05225 10.0619 8.15271 10.4968 7.0001 10.4968C5.84749 10.4968 4.94795 10.0619 4.25155 9.16994C4.05329 8.91601 3.68671 8.87088 3.43277 9.06915C3.17884 9.26741 3.13371 9.63399 3.33198 9.88792C4.25042 11.0642 5.48977 11.6635 7.0001 11.6635C8.51043 11.6635 9.74977 11.0642 10.6682 9.88792C10.8665 9.63399 10.8214 9.26741 10.5674 9.06915C10.3135 8.87088 9.94691 8.91601 9.74864 9.16994ZM4.6666 4.6667C4.18335 4.6667 3.7916 5.18904 3.7916 5.83337C3.7916 6.4777 4.18335 7.00004 4.6666 7.00004C5.14984 7.00004 5.5416 6.4777 5.5416 5.83337C5.5416 5.18904 5.14984 4.6667 4.6666 4.6667ZM9.3334 4.6667C8.85016 4.6667 8.4584 5.18904 8.4584 5.83337C8.4584 6.4777 8.85016 7.00004 9.3334 7.00004C9.81665 7.00004 10.2084 6.4777 10.2084 5.83337C10.2084 5.18904 9.81665 4.6667 9.3334 4.6667Z"
-                    fill="#D6DCE4" />
+                    fill="#D6DCE4"
+                  />
                 </svg>
               </span>
             </div>
@@ -585,9 +791,12 @@
           <input type="text" name="" placeholder="Aa" class="form-control" />
           <span class="emoji_icon">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
                 d="M7 0C10.866 0 14 3.13401 14 7C14 10.866 10.866 14 7 14C3.13401 14 0 10.866 0 7C0 3.13401 3.13401 0 7 0ZM9.74864 9.16994C9.05225 10.0619 8.15271 10.4968 7.0001 10.4968C5.84749 10.4968 4.94795 10.0619 4.25155 9.16994C4.05329 8.91601 3.68671 8.87088 3.43277 9.06915C3.17884 9.26741 3.13371 9.63399 3.33198 9.88792C4.25042 11.0642 5.48977 11.6635 7.0001 11.6635C8.51043 11.6635 9.74977 11.0642 10.6682 9.88792C10.8665 9.63399 10.8214 9.26741 10.5674 9.06915C10.3135 8.87088 9.94691 8.91601 9.74864 9.16994ZM4.6666 4.6667C4.18335 4.6667 3.7916 5.18904 3.7916 5.83337C3.7916 6.4777 4.18335 7.00004 4.6666 7.00004C5.14984 7.00004 5.5416 6.4777 5.5416 5.83337C5.5416 5.18904 5.14984 4.6667 4.6666 4.6667ZM9.3334 4.6667C8.85016 4.6667 8.4584 5.18904 8.4584 5.83337C8.4584 6.4777 8.85016 7.00004 9.3334 7.00004C9.81665 7.00004 10.2084 6.4777 10.2084 5.83337C10.2084 5.18904 9.81665 4.6667 9.3334 4.6667Z"
-                fill="#D6DCE4"></path>
+                fill="#D6DCE4"
+              ></path>
             </svg>
           </span>
         </div>

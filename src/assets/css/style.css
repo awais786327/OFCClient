@@ -3901,7 +3901,7 @@ body{
     line-height: 1.65;
     margin-bottom: 0;
 }
-.chat_box .msg_timeline{
+.chat_box .msg_timeline {
     height: calc(100vh - 25rem);
     overflow-y: auto;
     padding-top: .5rem;
@@ -4343,4 +4343,7 @@ body{
 }
 .close-menu, .close-menu-toggle{
     display: none;
+}
+.table_box .table th{
+    text-align: left !important;
 }

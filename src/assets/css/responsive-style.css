@@ -1,18 +1,36 @@
 .visible-xs{
 	display: none !important;
 }
+table.visible-xs{
+	display: none !important;
+}
 .hidden-xs{
-	display: block !important;
+	display: flex !important;
+}
+table.hidden-xs{
+	display: table !important;
 }
 @media(max-width: 767px){
 	.visible-xs{
-		display: block !important;
+		display: flex !important;
+	}
+	table.visible-xs{
+		display: table !important;
 	}
 	.hidden-xs{
 		display: none !important;
 	}
+	table.hidden-xs{
+		display: none !important;
+	}
 	input, select, textarea{
 		font-size: 16px !important;
+	}
+	.table_box .table {
+	    min-width: 100%;
+	}
+	.table_box .table th{
+		text-align: left !important;
 	}
 }
 @media(max-width: 1440px){
@@ -70,7 +88,7 @@
 		margin-top: 1rem;
 	}
 	.nav_section{
-		padding: .25rem 0rem;
+		padding: .5rem 0rem;
 	}
 	.market_search_bar{
 		padding: .5rem 0;
@@ -211,12 +229,6 @@
     left: 0;
     width: 100%;
 }
-.nav_section {
-    position: relative;
-}
-body {
-    padding-top: 0rem;
-}
 .navbar-light .navbar-nav .nav-link.dropdown-toggle {
     text-align: center;
 }
@@ -245,10 +257,10 @@ body {
 	margin-top: 0;
 }
 .chat_box{
-	padding-top: 2rem;
+	padding-top: 3rem;
 }
 .chat_box .gutter_padding:nth-child(3) {
-    height: calc(100vh - 16.9rem);
+    height: calc(100vh - 17.9rem);
     overflow: auto;
 }
 .navbar-light .navbar-nav .dropdown .dropdown-menu.notificate{
@@ -268,20 +280,40 @@ body {
 }
 .navbar-light .navbar-nav .nav-item.item1-50{
 	justify-content: flex-end;
-	padding-right: 10px;
+	padding-right: 0px;
 }
 .navbar-light .navbar-nav .nav-item.item2-50{
 	justify-content: flex-start;
-	padding-left: 10px;
+	padding-left: 0px;
 }
 .navbar-expand-lg .navbar-nav.flex-dir{
 	display: inline-block;
-	width: 100%;
+	width:initial;
+	flex-direction: row !important;
+	margin-bottom: 0 !important;
 }
 .navbar-expand-lg .navbar-nav.flex-dir li.last-child{
 	width: 100%;
 	display: inline-block;
-	margin-top: 30px;
+	margin-top: 0px;
+}
+.chat_box .chat_top_opt{
+    padding-top: 1rem;
+}
+.navbar-light .navbar-toggler:focus{
+	box-shadow: 0 0 0;
+	border: 0;
+}
+.navbar-light .navbar-nav .nav-link.dropdown-toggle{
+	padding-left: 0;
+}
+.navbar-light .navbar-nav .nav-link.dropdown-toggle img{
+	border: 0;
+	padding: 0;
+	width: 3rem;
+}
+.chat_box .msg_timeline {
+    height: calc(100vh - 26rem);
 }
 }
 
