@@ -34,6 +34,13 @@ export class HeaderComponent implements OnInit {
   }
 
   jqueryLoad() {
+    $('#navbarSupportedContent .navbar-nav a').click(function(){
+      if(window.innerWidth < 767) {
+        console.log('window.innerWidth ::: ', window.innerWidth)
+        $('.navbar-toggler').click();
+      }
+    });
+
     /*Chat_Box*/
     $('.chat_icon').click(function () {
       $('.chat_box').addClass('active');
@@ -92,7 +99,6 @@ export class HeaderComponent implements OnInit {
       // event.stopPropagation();
 
       $("#my-group-menu .close-menu").remove(); // remove all prepended element from dom
-
 
       $('.navbar-light .navbar-nav .nav-link').removeClass('active');
       var e = $(this).attr('id');
