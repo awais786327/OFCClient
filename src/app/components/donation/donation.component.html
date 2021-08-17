@@ -335,7 +335,7 @@
 									</div>
 									<div class="col-12 col-md-6">
 										<div class="opt_wrap opt_wrap2">
-											<a href="#" class="opt_flex">
+											<a href="javascript:void(0)" class="opt_flex" (click)="openAttachmentModal()">
 												Attachment <span class="icon"><img src="../assets/images/zip.svg"></span>
 											</a>
 											<a href="#" class="opt_flex" data-bs-toggle="modal" data-bs-target="#upload_photo_video">
@@ -5367,7 +5367,7 @@
 	    </div>
 	  </div>
 	</div>
-	<div class="modal fade" id="donation_popup" tabindex="-1" aria-labelledby="donationLabel" aria-hidden="true">
+	<div class="modal fade show d-block" id="donation_popup" tabindex="-1" aria-labelledby="donationLabel" aria-hidden="true">
 	  <div class="modal-dialog modal-lg">
 	    <div class="modal-content">
 	      <div class="modal-header justify-content-center">
@@ -5769,7 +5769,7 @@
 						<a href="#" class="cancel_link" data-bs-dismiss="modal">Cancel</a>
 					</div>
 					<div class="col-6 text-right">
-						<span class="adjust_link">Adjust</span><button type="button" class="btn btn-purple-dark steps-btn" indexClass="donation_step" indexno="3">Confirm</button>
+						<span class="adjust_link">Adjust</span><button (click)="openCheckoutModal()" type="button" class="btn btn-purple-dark steps-btn" indexClass="donation_step" indexno="3">Confirm</button>
 					</div>
 				</div>
 	      	</div>
@@ -5777,7 +5777,7 @@
 	    </div>
 	  </div>
 	</div>
-	<div class="modal fade show d-block" id="checkout_popup" tabindex="-1" aria-labelledby="checkoutLabel" aria-hidden="true">
+	<div class="modal fade" id="checkout_popup" tabindex="-1" aria-labelledby="checkoutLabel" aria-hidden="true">
 	  <div class="modal-dialog modal-lg">
 	    <div class="modal-content">
 	      <div class="checkout_form">
@@ -5944,5 +5944,326 @@
 	    </div>
 	  </div>
 	</div>
+
+	<div class="modal fade" id="upload" tabindex="-1" aria-labelledby="upload_photo_videoLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title">Attachment</h5>
+			  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+				  <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+					  <path d="M1.18922 8.12L3.98922 5.32L6.80922 8.12L7.84922 7.08L5.02922 4.28L7.84922 1.46L6.82922 0.44L3.98922 3.26L1.16922 0.44L0.149219 1.46L2.96922 4.28L0.149219 7.08L1.18922 8.12Z" fill="#7B3E6D"/>
+				  </svg>
+			  </button>
+			</div>
+			<div class="modal-body">
+			  <ul class="nav nav-tabs" id="myTabContentUpload" role="tablist">
+				<li class="nav-item" role="presentation">
+				  <button class="nav-link active" id="upload-new-tab" data-bs-toggle="tab" data-bs-target="#upload-new" type="button" role="tab" aria-controls="upload-new" aria-selected="true">Upload New</button>
+				</li>
+				<li class="nav-item" role="presentation">
+				  <button class="nav-link" id="existing-tab" data-bs-toggle="tab" data-bs-target="#existing" type="button" role="tab" aria-controls="existing" aria-selected="false">Existing From Library</button>
+				</li>
+			  </ul>
+			  <div class="tab-content" id="myTabContentUploadContent">
+				<div class="tab-pane fade show active" id="upload-new" role="tabpanel" aria-labelledby="upload-new-tab">
+					<div class="form-group">
+					  <label class="form-label">Select files to upload</label>
+					  <div class="row">
+						  <div class="col-12 col-10">
+							  <input type="text" name="" class="form-control" placeholder="Or Drag and drop files here">
+						  </div>
+						  <div class="col-12 col-2 text-right">
+							  <a href="#" class="btn btn-purple-dark">Select</a>
+						  </div>
+					  </div>
+				  </div>
+				  <p>Select images to upload (jpg, jepg, png and gif). </p>
+				  <div class="form-group">
+					  <label class="form-label">Description</label>
+					  <textarea type="text" name="" class="form-control" placeholder="Description"></textarea>
+				  </div>
+				  <div class="form-group">
+					  <label class="form-label">Tags</label>
+				  </div>
+				  <div class="white_box">
+					  <ul class="list-inline badge_tag">
+						  <li class="list-inline-item">
+							  <span class="badge bg-green">
+								  <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+									  <path d="M6.04992 10.6592L6.00193 10.688L5.97314 10.67C-3.11516 5.20811 0.00384399 -0.0630103 3.37717 0.000569407C3.48513 0.000569407 3.5943 0.0113659 3.70227 0.0245617C5.06023 0.188909 5.69963 0.942269 6.00193 1.59006C6.30304 0.942269 6.94363 0.188909 8.3016 0.0305598C11.7793 -0.397703 15.4009 5.02457 6.04992 10.6592Z" fill="white"></path>
+								  </svg>
+								  AQUATIC ECOLOGY <span class="close"><i class="fa fa-close"></i></span>
+							  </span>
+						  </li>
+						  <li class="list-inline-item">
+							  <span class="badge bg-green">
+								  <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+									  <path d="M6.04992 10.6592L6.00193 10.688L5.97314 10.67C-3.11516 5.20811 0.00384399 -0.0630103 3.37717 0.000569407C3.48513 0.000569407 3.5943 0.0113659 3.70227 0.0245617C5.06023 0.188909 5.69963 0.942269 6.00193 1.59006C6.30304 0.942269 6.94363 0.188909 8.3016 0.0305598C11.7793 -0.397703 15.4009 5.02457 6.04992 10.6592Z" fill="white"></path>
+								  </svg>
+								  HUNGER &amp; FOOD SYSTEMS <span class="close"><i class="fa fa-close"></i></span>
+							  </span>
+						  </li>
+						  <li class="list-inline-item">
+							  <span class="badge bg-green">
+								  <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+									  <path d="M6.04992 10.6592L6.00193 10.688L5.97314 10.67C-3.11516 5.20811 0.00384399 -0.0630103 3.37717 0.000569407C3.48513 0.000569407 3.5943 0.0113659 3.70227 0.0245617C5.06023 0.188909 5.69963 0.942269 6.00193 1.59006C6.30304 0.942269 6.94363 0.188909 8.3016 0.0305598C11.7793 -0.397703 15.4009 5.02457 6.04992 10.6592Z" fill="white"></path>
+								  </svg>
+								  TERRESTRIAL ECOLOGY <span class="close"><i class="fa fa-close"></i></span>
+							  </span>
+						  </li>
+					  </ul>
+				  </div>
+				  <hr>
+				  <button type="button" class="btn btn-purple-dark" data-bs-dismiss="modal">Add</button>
+				</div>
+				<div class="tab-pane fade" id="existing" role="tabpanel" aria-labelledby="existing-tab">
+					<div class="white_box white_box_manage">
+						<div class="top_option">
+							<div class="row">
+								<div class="col-12 col-md-6">
+									<div class="button_flex">
+										<a href="#" class="btn-white">NEW FOLDER</a>
+										<a href="#" class="btn-white">UPLOAD</a>
+									</div>
+								</div>
+								<div class="col-12 col-md-6">
+									<div class="list_flex">
+										<form method="post">
+										  <input type="text" name="" placeholder="" class="form-control">
+										  <button class="search-button">
+											  <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+												  <rect x="1.91188e-07" y="0.0450582" width="8.81618" height="3.95849" rx="1.97924" transform="matrix(0.46356 0.46356 -0.463556 0.463564 20.1889 18.3167)" fill="#272D35" stroke="#272D35" stroke-width="0.0972"></rect>
+												  <ellipse cx="13.5" cy="13.5" rx="9.54594" ry="9.54594" transform="rotate(45 13.5 13.5)" stroke="#272D35" stroke-width="3"></ellipse>
+											  </svg>
+										  </button>
+									  </form>
+										<ul class="nav nav-tabs" id="myTabManagement" role="tablist">
+										<li class="nav-item" role="presentation">
+										  <button class="nav-link active" id="gridd-tab" data-bs-toggle="tab" data-bs-target="#gridd" type="button" role="tab" aria-controls="gridd" aria-selected="true">
+											  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+												  <path d="M0 11.0769H4.15385V6.92308H0V11.0769ZM0 4.15385H4.15385V0H0V4.15385ZM0 18H4.15385V13.8462H0V18ZM6.92308 18H11.0769V13.8462H6.92308V18ZM13.8462 11.0769H18V6.92308H13.8462V11.0769ZM6.92308 11.0769H11.0769V6.92308H6.92308V11.0769ZM13.8462 18H18V13.8462H13.8462V18ZM13.8462 0V4.15385H18V0H13.8462ZM6.92308 4.15385H11.0769V0H6.92308V4.15385Z" fill="white"/>
+											  </svg>
+										  </button>
+										</li>
+										<li class="nav-item" role="presentation">
+										  <button class="nav-link" id="listt-tab" data-bs-toggle="tab" data-bs-target="#listt" type="button" role="tab" aria-controls="listt" aria-selected="false">
+											  <svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+												  <path d="M0.75 8.25H3.25V5.75H0.75V8.25ZM0.75 13.25H3.25V10.75H0.75V13.25ZM0.75 3.25H3.25V0.75H0.75V3.25ZM5.75 8.25H23.25V5.75H5.75V8.25ZM5.75 13.25H23.25V10.75H5.75V13.25ZM5.75 0.75V3.25H23.25V0.75H5.75Z" fill="white"/>
+											  </svg>
+										  </button>
+										</li>
+									  </ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-content" id="myTabManagementContent">
+						<div class="tab-pane fade show active p-0" id="gridd" role="tabpanel" aria-labelledby="gridd-tab">
+							<div class="row">
+								<div class="col-12 col-md-4">
+									<div class="side_opt">
+										<a href="#" class="side_opt_link">Document</a>
+										<a href="#" class="side_opt_link active">Picture</a>
+									</div>
+								</div>
+								<div class="col-12 col-md-8">
+									<div class="uploaded_wrap">
+										<div class="row">
+											<div class="col-6 col-md-3">
+												<a href="#" class="upload_col">
+													<div class="img_box selected">
+														<img src="../assets/images/donate_img.png" alt="#">
+														<span class="check"><i class="fa fa-check"></i></span>
+													</div>
+													<div class="file_name">File name</div>
+													<div class="file_type">JPG</div>
+												</a>
+											</div>
+											<div class="col-6 col-md-3">
+												<a href="#" class="upload_col">
+													<div class="img_box">
+														<img src="../assets/images/donate_img.png" alt="#">
+														<span class="check"><i class="fa fa-check"></i></span>
+													</div>
+													<div class="file_name">File name</div>
+													<div class="file_type">JPG</div>
+												</a>
+											</div>
+											<div class="col-6 col-md-3">
+												<a href="#" class="upload_col">
+													<div class="img_box">
+														<img src="../assets/images/donate_img.png" alt="#">
+														<span class="check"><i class="fa fa-check"></i></span>
+													</div>
+													<div class="file_name">File name</div>
+													<div class="file_type">JPG</div>
+												</a>
+											</div>
+											<div class="col-6 col-md-3">
+												<a href="#" class="upload_col">
+													<div class="img_box">
+														<img src="../assets/images/donate_img.png" alt="#">
+														<span class="check"><i class="fa fa-check"></i></span>
+													</div>
+													<div class="file_name">File name</div>
+													<div class="file_type">JPG</div>
+												</a>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-6 col-md-3">
+												<a href="#" class="upload_col">
+													<div class="img_box">
+														<img src="../assets/images/donate_img.png" alt="#">
+														<span class="check"><i class="fa fa-check"></i></span>
+													</div>
+													<div class="file_name">File name</div>
+													<div class="file_type">JPG</div>
+												</a>
+											</div>
+											<div class="col-6 col-md-3">
+												<a href="#" class="upload_col">
+													<div class="img_box">
+														<img src="../assets/images/donate_img.png" alt="#">
+														<span class="check"><i class="fa fa-check"></i></span>
+													</div>
+													<div class="file_name">File name</div>
+													<div class="file_type">JPG</div>
+												</a>
+											</div>
+											<div class="col-6 col-md-3">
+												<a href="#" class="upload_col">
+													<div class="img_box">
+														<img src="../assets/images/donate_img.png" alt="#">
+														<span class="check"><i class="fa fa-check"></i></span>
+													</div>
+													<div class="file_name">File name</div>
+													<div class="file_type">JPG</div>
+												</a>
+											</div>
+											<div class="col-6 col-md-3">
+												<a href="#" class="upload_col">
+													<div class="img_box">
+														<img src="../assets/images/donate_img.png" alt="#">
+														<span class="check"><i class="fa fa-check"></i></span>
+													</div>
+													<div class="file_name">File name</div>
+													<div class="file_type">JPG</div>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade p-0" id="listt" role="tabpanel" aria-labelledby="listt-tab">
+							<div class="row">
+								<div class="col-12 col-md-4">
+									<div class="side_opt">
+										<a href="#" class="side_opt_link">Document</a>
+										<a href="#" class="side_opt_link active">Picture</a>
+									</div>
+								</div>
+								<div class="col-12 col-md-8">
+									<div class="uploaded_wrap">
+										<div class="row">
+											<div class="col-6 col-md-3">
+												<a href="#" class="upload_col">
+													<div class="img_box selected">
+														<img src="../assets/images/donate_img.png" alt="#">
+														<span class="check"><i class="fa fa-check"></i></span>
+													</div>
+													<div class="file_name">File name</div>
+													<div class="file_type">JPG</div>
+												</a>
+											</div>
+											<div class="col-6 col-md-3">
+												<a href="#" class="upload_col">
+													<div class="img_box">
+														<img src="../assets/images/donate_img.png" alt="#">
+														<span class="check"><i class="fa fa-check"></i></span>
+													</div>
+													<div class="file_name">File name</div>
+													<div class="file_type">JPG</div>
+												</a>
+											</div>
+											<div class="col-6 col-md-3">
+												<a href="#" class="upload_col">
+													<div class="img_box">
+														<img src="../assets/images/donate_img.png" alt="#">
+														<span class="check"><i class="fa fa-check"></i></span>
+													</div>
+													<div class="file_name">File name</div>
+													<div class="file_type">JPG</div>
+												</a>
+											</div>
+											<div class="col-6 col-md-3">
+												<a href="#" class="upload_col">
+													<div class="img_box">
+														<img src="../assets/images/donate_img.png" alt="#">
+														<span class="check"><i class="fa fa-check"></i></span>
+													</div>
+													<div class="file_name">File name</div>
+													<div class="file_type">JPG</div>
+												</a>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-6 col-md-3">
+												<a href="#" class="upload_col">
+													<div class="img_box">
+														<img src="../assets/images/donate_img.png" alt="#">
+														<span class="check"><i class="fa fa-check"></i></span>
+													</div>
+													<div class="file_name">File name</div>
+													<div class="file_type">JPG</div>
+												</a>
+											</div>
+											<div class="col-6 col-md-3">
+												<a href="#" class="upload_col">
+													<div class="img_box">
+														<img src="../assets/images/donate_img.png" alt="#">
+														<span class="check"><i class="fa fa-check"></i></span>
+													</div>
+													<div class="file_name">File name</div>
+													<div class="file_type">JPG</div>
+												</a>
+											</div>
+											<div class="col-6 col-md-3">
+												<a href="#" class="upload_col">
+													<div class="img_box">
+														<img src="../assets/images/donate_img.png" alt="#">
+														<span class="check"><i class="fa fa-check"></i></span>
+													</div>
+													<div class="file_name">File name</div>
+													<div class="file_type">JPG</div>
+												</a>
+											</div>
+											<div class="col-6 col-md-3">
+												<a href="#" class="upload_col">
+													<div class="img_box">
+														<img src="../assets/images/donate_img.png" alt="#">
+														<span class="check"><i class="fa fa-check"></i></span>
+													</div>
+													<div class="file_name">File name</div>
+													<div class="file_type">JPG</div>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					  </div>
+					</div>
+				  <hr>
+				  <button type="button" class="btn btn-purple-dark" data-bs-dismiss="modal">Add</button>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
     
     <div class="modal-backdrop fade show"></div>
