@@ -14,9 +14,9 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#"><img src="../assets/images/logo_icon.svg" alt="#" /> Open Impact</a>
+        <a routerLink="/profile" class="navbar-brand"><img src="../assets/images/logo_icon.svg" alt="#" /> Open Impact</a>
       </div>
-      <a class="navbar-brand hidden-xs" href="#"><img src="../assets/images/logo_icon.svg" alt="#" /> Open Impact</a>
+      <a routerLink="/profile" class="navbar-brand hidden-xs"><img src="../assets/images/logo_icon.svg" alt="#" /> Open Impact</a>
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0 visible-xs flex-dir">
         <li class="nav-item">
           <a class="nav-link round_icon chat_icon" href="#"><img src="../assets/images/chat.svg" alt="#" /></a>
@@ -149,7 +149,7 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav m-auto">
-          <!-- <li class="nav-item dropdown">
+          <li class="nav-item dropdown">
             <a
               class="nav-link"
               href="javascript:"
@@ -163,17 +163,17 @@
             <ul class="dropdown-menu" aria-labelledby="managementDropdown">
               <li>
                 <a class="dropdown-item" routerLink="/management/create-group" routerLinkActive="active"
-                  >Create Group</a
+                >Create Group</a
                 >
               </li>
               <li>
                 <a class="dropdown-item" routerLink="/management/create-project" routerLinkActive="active"
-                  >Create Project</a
+                >Create Project</a
                 >
               </li>
               <li>
                 <a class="dropdown-item" routerLink="/management/create-user-preferences" routerLinkActive="active"
-                  >Create User Preferences</a
+                >Create User Preferences</a
                 >
               </li>
               <li>
@@ -181,11 +181,11 @@
               </li>
               <li>
                 <a class="dropdown-item" routerLink="/management/create-user-profile" routerLinkActive="active"
-                  >Create User Profile</a
+                >Create User Profile</a
                 >
               </li>
             </ul>
-          </li> -->
+          </li>
           <li class="nav-item">
             <a class="nav-link active" href="javascript:void(0);" id="my-project">My Projects</a>
           </li>
@@ -466,7 +466,7 @@
 <section class="nav_section" *ngIf="isPublicRoute">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-      <a class="navbar-brand" href="#"><img src="../assets/images/logo_icon.svg" alt="#" /> Open Impact</a>
+      <a routerLink="/profile" class="navbar-brand"><img src="../assets/images/logo_icon.svg" alt="#" /> Open Impact</a>
       <button
         class="navbar-toggler"
         type="button"
