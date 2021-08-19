@@ -33,13 +33,20 @@ export class HeaderComponent implements OnInit {
     // this.jqueryLoad();
   }
 
+  toggleNavbar() {
+    if (window.innerWidth < 767) {
+      console.log('window.innerWidth ::: ', window.innerWidth);
+      $('.navbar-toggler').click();
+    }
+  }
+
   jqueryLoad() {
-    $('#navbarSupportedContent .navbar-nav a').click(function(){
+    /*$('#navbarSupportedContent .navbar-nav a').click(function(){
       if(window.innerWidth < 767) {
         console.log('window.innerWidth ::: ', window.innerWidth)
         $('.navbar-toggler').click();
       }
-    });
+    });*/
 
     /*Chat_Box*/
     $('.chat_icon').click(function () {
@@ -98,7 +105,7 @@ export class HeaderComponent implements OnInit {
       // $('#my-group-menu, #my-group').addClass('active');
       // event.stopPropagation();
 
-      $("#my-group-menu .close-menu").remove(); // remove all prepended element from dom
+      $('#my-group-menu .close-menu').remove(); // remove all prepended element from dom
 
       $('.navbar-light .navbar-nav .nav-link').removeClass('active');
       var e = $(this).attr('id');
@@ -121,7 +128,7 @@ export class HeaderComponent implements OnInit {
       // $('#my-project-menu, #my-project').addClass('active');
       // event.stopPropagation();
 
-      $("#my-project-menu .close-menu").remove(); // remove all prepended element from dom
+      $('#my-project-menu .close-menu').remove(); // remove all prepended element from dom
 
       $('.navbar-light .navbar-nav .nav-link').removeClass('active');
       var e = $(this).attr('id');
@@ -146,42 +153,32 @@ export class HeaderComponent implements OnInit {
       event.stopPropagation();
     });
 
-    $(".mega_dropdown a").click(function(){
-      $(".navbar-toggler").click();
-    })
+    $('.mega_dropdown a').click(function () {
+      $('.navbar-toggler').click();
+    });
 
-    // 
-    $(".navbar-light .navbar-nav .nav-link.dropdown-toggle").click(function () {
-      $(this).next().hasClass("cross-add") ||
-        ($(this).next().addClass("cross-add"),
-        $(this).next().prepend('<span class="close-menu-toggle">X</span>')),
+    //
+    $('.navbar-light .navbar-nav .nav-link.dropdown-toggle').click(function () {
+      $(this).next().hasClass('cross-add') ||
+        ($(this).next().addClass('cross-add'), $(this).next().prepend('<span class="close-menu-toggle">X</span>')),
         clickToggleMenu();
     }),
-    $(".chat_icon").parent().addClass("item-50 item1-50"),
-    $(".bell_icon").parent().addClass("item-50 item2-50"),
-    $(".nav-item.item2-50").next().addClass("last-child"),
-    $(".bell_icon").parent().parent().addClass("flex-dir"),
-    $(".navbar-light .navbar-nav .dropdown .dropdown-menu.notificate").click(
-      function () {
+      $('.chat_icon').parent().addClass('item-50 item1-50'),
+      $('.bell_icon').parent().addClass('item-50 item2-50'),
+      $('.nav-item.item2-50').next().addClass('last-child'),
+      $('.bell_icon').parent().parent().addClass('flex-dir'),
+      $('.navbar-light .navbar-nav .dropdown .dropdown-menu.notificate').click(function () {
         event.stopPropagation();
-      }
-    ),
-    $(".navbar-light .navbar-nav .nav-link.round_icon.chat_icon").click(
-      function () {
-        $(
-          ".dropdown-menu, .dropdown-toggle, .navbar-expand-lg .navbar-collapse"
-        ).removeClass("show"),
-          $(".navbar-light .navbar-toggler").addClass("collapsed");
-      }
-    ),
-    $(document).ready(function () {
-      $(".chat_box .person_chat .message_typer .btn-white").click(function () {
-        $(".chat_box .person_chat .message_typer .upload_flex").toggleClass(
-          "active"
-        );
+      }),
+      $('.navbar-light .navbar-nav .nav-link.round_icon.chat_icon').click(function () {
+        $('.dropdown-menu, .dropdown-toggle, .navbar-expand-lg .navbar-collapse').removeClass('show'),
+          $('.navbar-light .navbar-toggler').addClass('collapsed');
+      }),
+      $(document).ready(function () {
+        $('.chat_box .person_chat .message_typer .btn-white').click(function () {
+          $('.chat_box .person_chat .message_typer .upload_flex').toggleClass('active');
+        });
       });
-    });
-    // 
-    
+    //
   }
 }

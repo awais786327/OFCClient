@@ -161,41 +161,41 @@
               Management
             </a>
             <ul class="dropdown-menu" aria-labelledby="managementDropdown">
-              <li>
+              <li (click)="toggleNavbar()">
                 <a class="dropdown-item" routerLink="/management/create-group" routerLinkActive="active"
                 >Create Group</a
                 >
               </li>
-              <li>
+              <li (click)="toggleNavbar()">
                 <a class="dropdown-item" routerLink="/management/create-project" routerLinkActive="active"
                 >Create Project</a
                 >
               </li>
-              <li>
+              <li (click)="toggleNavbar()">
                 <a class="dropdown-item" routerLink="/management/create-user-preferences" routerLinkActive="active"
                 >Create User Preferences</a
                 >
               </li>
-              <li>
+              <li (click)="toggleNavbar()">
                 <a class="dropdown-item" routerLink="/management/create-user" routerLinkActive="active">Create User</a>
               </li>
-              <li>
+              <li (click)="toggleNavbar()">
                 <a class="dropdown-item" routerLink="/management/create-user-profile" routerLinkActive="active"
                 >Create User Profile</a
                 >
               </li>
             </ul>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" (click)="toggleNavbar()">
             <a class="nav-link active" href="javascript:void(0);" id="my-project">My Projects</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" (click)="toggleNavbar()">
             <a class="nav-link" href="javascript:void(0);" id="my-group">My Groups</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" (click)="toggleNavbar()">
             <a class="nav-link" routerLink="/marketplace/card-grid">Marketplace</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" (click)="toggleNavbar()">
             <a class="nav-link" routerLink="/donations">Donate</a>
           </li>
         </ul>
