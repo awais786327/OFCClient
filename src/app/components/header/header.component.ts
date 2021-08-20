@@ -35,8 +35,8 @@ export class HeaderComponent implements OnInit {
 
   jqueryLoad() {
     $('#navbarSupportedContent .navbar-nav a').click(function(){
-      if(window.innerWidth < 767) {
-        console.log('window.innerWidth ::: ', window.innerWidth)
+      let id = $(this).attr('id');
+      if(!['my-project', 'my-group'].includes(id) && window.innerWidth < 767) {
         $('.navbar-toggler').click();
       }
     });
@@ -68,7 +68,6 @@ export class HeaderComponent implements OnInit {
     });
 
     if (!this.slickSliderLoaded) {
-      console.log('working..... 12');
       this.slickSliderLoaded = true;
       $('.chat_user_slider').slick({
         infinite: true,

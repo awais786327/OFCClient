@@ -10,6 +10,11 @@ table.visible-xs{
 table.hidden-xs{
 	display: table !important;
 }
+@media(min-width: 1320px){
+	.profile_dashboard .container{
+		max-width: 1270px;
+	}
+}
 @media(max-width: 767px){
 	.visible-xs{
 		display: flex !important;
@@ -51,6 +56,9 @@ table.hidden-xs{
 	html,body{
 		font-size: 12px;
 	}
+		body {
+    padding-top: 4.6rem;
+}
 }
 @media(max-width: 1024px){
 	html,body{
@@ -60,6 +68,9 @@ table.hidden-xs{
 	    position: relative;
 	    margin-bottom: 3rem;
 	}
+	body {
+    padding-top: 5.2rem;
+}
 }
 @media(max-width: 991px){
 	.market_search_bar ul li a{
@@ -73,6 +84,9 @@ table.hidden-xs{
 	html,body{
 		font-size: 14px;
 	}
+		body {
+    padding-top: 4rem;
+}
 	.marketplace_filter_card .accordion-body ul li.form{
 	    position: relative;
 	    margin-bottom: 1rem;
@@ -286,13 +300,13 @@ table.hidden-xs{
 	justify-content: flex-start;
 	padding-left: 0px;
 }
-.navbar-expand-lg .navbar-nav.flex-dir{
+.navbar-expand-md .navbar-nav.flex-dir{
 	display: inline-block;
 	width:initial;
 	flex-direction: row !important;
 	margin-bottom: 0 !important;
 }
-.navbar-expand-lg .navbar-nav.flex-dir li.last-child{
+.navbar-expand-md .navbar-nav.flex-dir li.last-child{
 	width: 100%;
 	display: inline-block;
 	margin-top: 0px;
@@ -314,6 +328,26 @@ table.hidden-xs{
 }
 .chat_box .msg_timeline {
     height: calc(100vh - 26rem);
+}
+.table_box .table tr:nth-child(odd) td{
+	border: 0;
+}
+.modal-body .top_option .button_flex{
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.modal-body .top_option .list_flex{
+    justify-content: center;
+}
+.modal-body .tab-pane .uploaded_wrap{
+    padding: 1.25rem;
+}
+.navbar-expand-md .navbar-collapse{
+	    flex: 0 0 100%;
+}
+.navbar-light .navbar-toggler{
+	padding-right: 0;
+	margin-left: .3rem;
 }
 }
 
