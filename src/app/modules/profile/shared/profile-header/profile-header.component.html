@@ -52,6 +52,7 @@
   </div>
 </section>
 
+
 <div class="modal fade" id="upload_photo_video" tabindex="-1" aria-labelledby="upload_photo_videoLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
@@ -59,117 +60,115 @@
         <h5 class="modal-title">Photo/Video</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
           <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1.18922 8.12L3.98922 5.32L6.80922 8.12L7.84922 7.08L5.02922 4.28L7.84922 1.46L6.82922 0.44L3.98922 3.26L1.16922 0.44L0.149219 1.46L2.96922 4.28L0.149219 7.08L1.18922 8.12Z" fill="#7B3E6D"/>
-          </svg>
+        <path d="M1.18922 8.12L3.98922 5.32L6.80922 8.12L7.84922 7.08L5.02922 4.28L7.84922 1.46L6.82922 0.44L3.98922 3.26L1.16922 0.44L0.149219 1.46L2.96922 4.28L0.149219 7.08L1.18922 8.12Z" fill="#7B3E6D"/>
+      </svg>
         </button>
       </div>
       <div class="modal-body">
         <ul class="nav nav-tabs" id="myTabContentUpload" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="photo-tab" data-bs-toggle="tab" data-bs-target="#photo" type="button" role="tab" aria-controls="photo" aria-selected="true">Photo</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="video-tab" data-bs-toggle="tab" data-bs-target="#video" type="button" role="tab" aria-controls="video" aria-selected="false">Video</button>
-          </li>
-        </ul>
-        <div class="tab-content" id="myTabContentUploadContent">
-          <div class="tab-pane fade show active" id="photo" role="tabpanel" aria-labelledby="photo-tab">
-            <div class="form-group">
-              <label class="form-label">Select images</label>
-              <div class="row">
-                <div class="col-10">
-                  <input type="text" name="" class="form-control" placeholder="Or Drag and drop files here">
-                </div>
-                <div class="col-2 text-right">
-                  <a href="#" class="btn btn-purple-dark">Select</a>
-                </div>
-              </div>
-            </div>
-            <p>Select images to upload (jpg, jepg, png and gif). </p>
-            <div class="form-group">
-              <label class="form-label">Description</label>
-              <app-rtfeditor name="Description" placeholder="Description"></app-rtfeditor>
-<!--              <textarea type="text" name="" class="form-control" placeholder="Description"></textarea>-->
-            </div>
-            <div class="form-group">
-              <label class="form-label">Tags</label>
-            </div>
-            <div class="white_box">
-              <ul class="list-inline badge_tag">
-                <li class="list-inline-item">
-							<span class="badge bg-green">
-								<svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M6.04992 10.6592L6.00193 10.688L5.97314 10.67C-3.11516 5.20811 0.00384399 -0.0630103 3.37717 0.000569407C3.48513 0.000569407 3.5943 0.0113659 3.70227 0.0245617C5.06023 0.188909 5.69963 0.942269 6.00193 1.59006C6.30304 0.942269 6.94363 0.188909 8.3016 0.0305598C11.7793 -0.397703 15.4009 5.02457 6.04992 10.6592Z" fill="white"></path>
-								</svg>
-								AQUATIC ECOLOGY <span class="close"><i class="fa fa-close"></i></span>
-							</span>
-                </li>
-                <li class="list-inline-item">
-							<span class="badge bg-green">
-								<svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M6.04992 10.6592L6.00193 10.688L5.97314 10.67C-3.11516 5.20811 0.00384399 -0.0630103 3.37717 0.000569407C3.48513 0.000569407 3.5943 0.0113659 3.70227 0.0245617C5.06023 0.188909 5.69963 0.942269 6.00193 1.59006C6.30304 0.942269 6.94363 0.188909 8.3016 0.0305598C11.7793 -0.397703 15.4009 5.02457 6.04992 10.6592Z" fill="white"></path>
-								</svg>
-								HUNGER &amp; FOOD SYSTEMS <span class="close"><i class="fa fa-close"></i></span>
-							</span>
-                </li>
-                <li class="list-inline-item">
-							<span class="badge bg-green">
-								<svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M6.04992 10.6592L6.00193 10.688L5.97314 10.67C-3.11516 5.20811 0.00384399 -0.0630103 3.37717 0.000569407C3.48513 0.000569407 3.5943 0.0113659 3.70227 0.0245617C5.06023 0.188909 5.69963 0.942269 6.00193 1.59006C6.30304 0.942269 6.94363 0.188909 8.3016 0.0305598C11.7793 -0.397703 15.4009 5.02457 6.04992 10.6592Z" fill="white"></path>
-								</svg>
-								TERRESTRIAL ECOLOGY <span class="close"><i class="fa fa-close"></i></span>
-							</span>
-                </li>
-              </ul>
-            </div>
-            <hr>
-            <button type="button" class="btn btn-purple-dark" data-bs-dismiss="modal">Add</button>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="photo-tab" data-bs-toggle="tab" data-bs-target="#photo" type="button" role="tab" aria-controls="photo" aria-selected="true">Photo</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="video-tab" data-bs-toggle="tab" data-bs-target="#video" type="button" role="tab" aria-controls="video" aria-selected="false">Video</button>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContentUploadContent">
+      <div class="tab-pane fade show active" id="photo" role="tabpanel" aria-labelledby="photo-tab">
+        <div class="form-group">
+        <label class="form-label">Select images</label>
+        <div class="row">
+          <div class="col-10">
+            <input type="text" name="" class="form-control" placeholder="Or Drag and drop files here">
           </div>
-          <div class="tab-pane fade" id="video" role="tabpanel" aria-labelledby="video-tab">
-            <div class="form-group">
-              <label class="form-label">Video Link</label>
-              <input type="text" name="" class="form-control" placeholder="YouTube Video URL">
-            </div>
-            <div class="form-group">
-              <label class="form-label">Description</label>
-              <app-rtfeditor name="Description" placeholder="Description"></app-rtfeditor>
-<!--              <textarea type="text" name="" class="form-control" placeholder="Description"></textarea>-->
-            </div>
-            <div class="form-group">
-              <label class="form-label">Tags</label>
-            </div>
-            <div class="white_box">
-              <ul class="list-inline badge_tag">
-                <li class="list-inline-item">
-							<span class="badge bg-green">
-								<svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M6.04992 10.6592L6.00193 10.688L5.97314 10.67C-3.11516 5.20811 0.00384399 -0.0630103 3.37717 0.000569407C3.48513 0.000569407 3.5943 0.0113659 3.70227 0.0245617C5.06023 0.188909 5.69963 0.942269 6.00193 1.59006C6.30304 0.942269 6.94363 0.188909 8.3016 0.0305598C11.7793 -0.397703 15.4009 5.02457 6.04992 10.6592Z" fill="white"></path>
-								</svg>
-								AQUATIC ECOLOGY <span class="close"><i class="fa fa-close"></i></span>
-							</span>
-                </li>
-                <li class="list-inline-item">
-							<span class="badge bg-green">
-								<svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M6.04992 10.6592L6.00193 10.688L5.97314 10.67C-3.11516 5.20811 0.00384399 -0.0630103 3.37717 0.000569407C3.48513 0.000569407 3.5943 0.0113659 3.70227 0.0245617C5.06023 0.188909 5.69963 0.942269 6.00193 1.59006C6.30304 0.942269 6.94363 0.188909 8.3016 0.0305598C11.7793 -0.397703 15.4009 5.02457 6.04992 10.6592Z" fill="white"></path>
-								</svg>
-								HUNGER &amp; FOOD SYSTEMS <span class="close"><i class="fa fa-close"></i></span>
-							</span>
-                </li>
-                <li class="list-inline-item">
-							<span class="badge bg-green">
-								<svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M6.04992 10.6592L6.00193 10.688L5.97314 10.67C-3.11516 5.20811 0.00384399 -0.0630103 3.37717 0.000569407C3.48513 0.000569407 3.5943 0.0113659 3.70227 0.0245617C5.06023 0.188909 5.69963 0.942269 6.00193 1.59006C6.30304 0.942269 6.94363 0.188909 8.3016 0.0305598C11.7793 -0.397703 15.4009 5.02457 6.04992 10.6592Z" fill="white"></path>
-								</svg>
-								TERRESTRIAL ECOLOGY <span class="close"><i class="fa fa-close"></i></span>
-							</span>
-                </li>
-              </ul>
-            </div>
-            <hr>
-            <button type="button" class="btn btn-purple-dark" data-bs-dismiss="modal">Add</button>
+          <div class="col-2 text-right">
+            <a href="#" class="btn btn-purple-dark">Select</a>
           </div>
         </div>
+      </div>
+      <p>Select images to upload (jpg, jepg, png and gif). </p>
+      <div class="form-group">
+        <label class="form-label">Description</label>
+        <textarea type="text" name="" class="form-control" placeholder="Description"></textarea>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Tags</label>
+      </div>
+      <div class="white_box">
+        <ul class="list-inline badge_tag">
+          <li class="list-inline-item">
+            <span class="badge bg-green">
+              <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.04992 10.6592L6.00193 10.688L5.97314 10.67C-3.11516 5.20811 0.00384399 -0.0630103 3.37717 0.000569407C3.48513 0.000569407 3.5943 0.0113659 3.70227 0.0245617C5.06023 0.188909 5.69963 0.942269 6.00193 1.59006C6.30304 0.942269 6.94363 0.188909 8.3016 0.0305598C11.7793 -0.397703 15.4009 5.02457 6.04992 10.6592Z" fill="white"></path>
+              </svg>
+              AQUATIC ECOLOGY <span class="close"><i class="fa fa-close"></i></span>
+            </span>
+          </li>
+          <li class="list-inline-item">
+            <span class="badge bg-green">
+              <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.04992 10.6592L6.00193 10.688L5.97314 10.67C-3.11516 5.20811 0.00384399 -0.0630103 3.37717 0.000569407C3.48513 0.000569407 3.5943 0.0113659 3.70227 0.0245617C5.06023 0.188909 5.69963 0.942269 6.00193 1.59006C6.30304 0.942269 6.94363 0.188909 8.3016 0.0305598C11.7793 -0.397703 15.4009 5.02457 6.04992 10.6592Z" fill="white"></path>
+              </svg>
+              HUNGER &amp; FOOD SYSTEMS <span class="close"><i class="fa fa-close"></i></span>
+            </span>
+          </li>
+          <li class="list-inline-item">
+            <span class="badge bg-green">
+              <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.04992 10.6592L6.00193 10.688L5.97314 10.67C-3.11516 5.20811 0.00384399 -0.0630103 3.37717 0.000569407C3.48513 0.000569407 3.5943 0.0113659 3.70227 0.0245617C5.06023 0.188909 5.69963 0.942269 6.00193 1.59006C6.30304 0.942269 6.94363 0.188909 8.3016 0.0305598C11.7793 -0.397703 15.4009 5.02457 6.04992 10.6592Z" fill="white"></path>
+              </svg>
+              TERRESTRIAL ECOLOGY <span class="close"><i class="fa fa-close"></i></span>
+            </span>
+          </li>
+        </ul>
+      </div>
+      <hr>
+      <button type="button" class="btn btn-purple-dark" data-bs-dismiss="modal">Add</button>
+      </div>
+      <div class="tab-pane fade" id="video" role="tabpanel" aria-labelledby="video-tab">
+        <div class="form-group">
+        <label class="form-label">Video Link</label>
+        <input type="text" name="" class="form-control" placeholder="YouTube Video URL">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Description</label>
+        <textarea type="text" name="" class="form-control" placeholder="Description"></textarea>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Tags</label>
+      </div>
+      <div class="white_box">
+        <ul class="list-inline badge_tag">
+          <li class="list-inline-item">
+            <span class="badge bg-green">
+              <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.04992 10.6592L6.00193 10.688L5.97314 10.67C-3.11516 5.20811 0.00384399 -0.0630103 3.37717 0.000569407C3.48513 0.000569407 3.5943 0.0113659 3.70227 0.0245617C5.06023 0.188909 5.69963 0.942269 6.00193 1.59006C6.30304 0.942269 6.94363 0.188909 8.3016 0.0305598C11.7793 -0.397703 15.4009 5.02457 6.04992 10.6592Z" fill="white"></path>
+              </svg>
+              AQUATIC ECOLOGY <span class="close"><i class="fa fa-close"></i></span>
+            </span>
+          </li>
+          <li class="list-inline-item">
+            <span class="badge bg-green">
+              <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.04992 10.6592L6.00193 10.688L5.97314 10.67C-3.11516 5.20811 0.00384399 -0.0630103 3.37717 0.000569407C3.48513 0.000569407 3.5943 0.0113659 3.70227 0.0245617C5.06023 0.188909 5.69963 0.942269 6.00193 1.59006C6.30304 0.942269 6.94363 0.188909 8.3016 0.0305598C11.7793 -0.397703 15.4009 5.02457 6.04992 10.6592Z" fill="white"></path>
+              </svg>
+              HUNGER &amp; FOOD SYSTEMS <span class="close"><i class="fa fa-close"></i></span>
+            </span>
+          </li>
+          <li class="list-inline-item">
+            <span class="badge bg-green">
+              <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.04992 10.6592L6.00193 10.688L5.97314 10.67C-3.11516 5.20811 0.00384399 -0.0630103 3.37717 0.000569407C3.48513 0.000569407 3.5943 0.0113659 3.70227 0.0245617C5.06023 0.188909 5.69963 0.942269 6.00193 1.59006C6.30304 0.942269 6.94363 0.188909 8.3016 0.0305598C11.7793 -0.397703 15.4009 5.02457 6.04992 10.6592Z" fill="white"></path>
+              </svg>
+              TERRESTRIAL ECOLOGY <span class="close"><i class="fa fa-close"></i></span>
+            </span>
+          </li>
+        </ul>
+      </div>
+      <hr>
+      <button type="button" class="btn btn-purple-dark" data-bs-dismiss="modal">Add</button>
+      </div>
+    </div>
       </div>
     </div>
   </div>
@@ -181,8 +180,8 @@
         <h5 class="modal-title">to do's</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
           <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1.18922 8.12L3.98922 5.32L6.80922 8.12L7.84922 7.08L5.02922 4.28L7.84922 1.46L6.82922 0.44L3.98922 3.26L1.16922 0.44L0.149219 1.46L2.96922 4.28L0.149219 7.08L1.18922 8.12Z" fill="#7B3E6D"/>
-          </svg>
+        <path d="M1.18922 8.12L3.98922 5.32L6.80922 8.12L7.84922 7.08L5.02922 4.28L7.84922 1.46L6.82922 0.44L3.98922 3.26L1.16922 0.44L0.149219 1.46L2.96922 4.28L0.149219 7.08L1.18922 8.12Z" fill="#7B3E6D"/>
+      </svg>
         </button>
       </div>
       <div class="modal-body">
@@ -190,15 +189,15 @@
           <div class="row">
             <div class="col-12 col-md-9">
               <div class="form-group">
-                <label class="form-label">Title</label>
-                <input type="text" name="" class="form-control" placeholder="">
-              </div>
+            <label class="form-label">Title</label>
+            <input type="text" name="" class="form-control" placeholder="">
+          </div>
             </div>
             <div class="col-12 col-md-3">
               <div class="form-group">
-                <label class="form-label">End Date</label>
-                <input type="text" name="" class="form-control" placeholder="DD/MM/YYYY">
-              </div>
+            <label class="form-label">End Date</label>
+            <input type="text" name="" class="form-control" placeholder="DD/MM/YYYY">
+          </div>
             </div>
           </div>
         </div>
@@ -206,35 +205,35 @@
           <div class="row">
             <div class="col-12 col-md-9">
               <div class="form-group">
-                <label class="form-label">Title</label>
-                <input type="text" name="" class="form-control" placeholder="">
-              </div>
+            <label class="form-label">Title</label>
+            <input type="text" name="" class="form-control" placeholder="">
+          </div>
             </div>
             <div class="col-12 col-md-3">
               <div class="form-group">
-                <label class="form-label">End Date</label>
-                <input type="text" name="" class="form-control" placeholder="DD/MM/YYYY">
-              </div>
+            <label class="form-label">End Date</label>
+            <input type="text" name="" class="form-control" placeholder="DD/MM/YYYY">
+          </div>
             </div>
           </div>
           <div class="rmv_goal">
-					<span class="icon">
-						<svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M1.18922 8.12L3.98922 5.32L6.80922 8.12L7.84922 7.08L5.02922 4.28L7.84922 1.46L6.82922 0.44L3.98922 3.26L1.16922 0.44L0.149219 1.46L2.96922 4.28L0.149219 7.08L1.18922 8.12Z" fill="#7B3E6D"></path>
-						</svg>
-					</span>
-          </div>
+        <span class="icon">
+          <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.18922 8.12L3.98922 5.32L6.80922 8.12L7.84922 7.08L5.02922 4.28L7.84922 1.46L6.82922 0.44L3.98922 3.26L1.16922 0.44L0.149219 1.46L2.96922 4.28L0.149219 7.08L1.18922 8.12Z" fill="#7B3E6D"></path>
+          </svg>
+        </span>
+      </div>
         </div>
         <div class="add_goal">
-				<span class="icon">
-					<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<rect y="14" width="30" height="2" fill="#3C7178"></rect>
-						<rect x="16" width="30" height="2" transform="rotate(90 16 0)" fill="#3C7178"></rect>
-					</svg>
-				</span> Add another To Do
-        </div>
-        <hr>
-        <button type="button" class="btn btn-purple-dark" data-bs-dismiss="modal">Save</button>
+      <span class="icon">
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect y="14" width="30" height="2" fill="#3C7178"></rect>
+          <rect x="16" width="30" height="2" transform="rotate(90 16 0)" fill="#3C7178"></rect>
+        </svg>
+      </span> Add another To Do
+    </div>
+    <hr>
+    <button type="button" class="btn btn-purple-dark" data-bs-dismiss="modal">Save</button>
       </div>
     </div>
   </div>
@@ -246,12 +245,925 @@
         <h5 class="modal-title">Privacy</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
           <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1.18922 8.12L3.98922 5.32L6.80922 8.12L7.84922 7.08L5.02922 4.28L7.84922 1.46L6.82922 0.44L3.98922 3.26L1.16922 0.44L0.149219 1.46L2.96922 4.28L0.149219 7.08L1.18922 8.12Z" fill="#7B3E6D"/>
-          </svg>
+        <path d="M1.18922 8.12L3.98922 5.32L6.80922 8.12L7.84922 7.08L5.02922 4.28L7.84922 1.46L6.82922 0.44L3.98922 3.26L1.16922 0.44L0.149219 1.46L2.96922 4.28L0.149219 7.08L1.18922 8.12Z" fill="#7B3E6D"/>
+      </svg>
         </button>
       </div>
       <div class="modal-body">
         <div class="form-group">
+      <label class="form-label">Privacy</label>
+      <select class="form-control">
+        <option>Connections</option>
+        <option>Connections</option>
+        <option>Connections</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label class="form-label">Filter By</label>
+      <div class="row">
+        <div class="col-6 col-md-2">
+          <label class="radio_check">All
+            <input type="radio" name="t1" checked="checked">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <div class="col-6 col-md-2">
+          <label class="radio_check">Group
+            <input type="radio" name="t1" checked="checked">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <div class="col-6 col-md-2">
+          <label class="radio_check">Individuals
+            <input type="radio" name="t1" checked="checked">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label">Groups</label>
+      <select class="form-control">
+        <option>All</option>
+        <option>All</option>
+        <option>All</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label class="form-label">Members</label>
+      <select class="form-control">
+        <option>Select Member</option>
+        <option>Select Member</option>
+        <option>Select Member</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label class="form-label">Rights</label>
+      <div class="row">
+        <div class="col-6 col-md-2">
+          <label class="radio_check">View
+            <input type="radio" name="t2" checked="checked">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <div class="col-6 col-md-2">
+          <label class="radio_check">Allow
+            <input type="radio" name="t2" checked="checked">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <div class="col-6 col-md-2">
+          <label class="radio_check">Disallow
+            <input type="radio" name="t2" checked="checked">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <button type="button" class="btn btn-purple-dark" data-bs-dismiss="modal">Add</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="new_task_popup" tabindex="-1" aria-labelledby="new_taskLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">New Task</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1.18922 8.12L3.98922 5.32L6.80922 8.12L7.84922 7.08L5.02922 4.28L7.84922 1.46L6.82922 0.44L3.98922 3.26L1.16922 0.44L0.149219 1.46L2.96922 4.28L0.149219 7.08L1.18922 8.12Z" fill="#7B3E6D"/>
+      </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+      <label class="form-label">Name</label>
+      <input type="text" name="" placeholder="Name" class="form-control">
+    </div>
+    <div class="form-group">
+      <label class="form-label">Description</label>
+      <textarea placeholder="Description" class="form-control"></textarea>
+    </div>
+        <div class="form-group">
+      <label class="form-label">Assignee</label>
+      <select class="form-control">
+        <option>Bessie Cooper</option>
+        <option>Bessie Cooper</option>
+        <option>Bessie Cooper</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label class="form-label">Start Date / Time</label>
+      <input type="text" name="" placeholder="DD/MM/YYYY" class="form-control">
+    </div>
+    <div class="form-group">
+      <label class="form-label">End Date / Time</label>
+      <input type="text" name="" placeholder="DD/MM/YYYY" class="form-control">
+    </div>
+    <div class="form-group">
+      <label class="form-label">Hours Expected</label>
+      <input type="text" name="" placeholder="Hours" class="form-control">
+    </div>
+    <div class="form-group">
+      <label class="form-label">Skills Needed</label>
+      <select class="form-control">
+        <option>Item</option>
+        <option>Item</option>
+        <option>Item</option>
+      </select>
+    </div>
+    <ul class="list-inline badge_tag mt-2">
+      <li class="list-inline-item">
+        <span class="badge bg-red">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.440995 10.8131C0.156915 11.0972 0 11.4752 0 11.9115C0 12.7416 0.674909 13.4165 1.50498 13.4165C1.9279 13.4165 2.33389 13.2369 2.61855 12.9242L7.88483 7.13117L6.00418 5.24994L0.440995 10.8131ZM13.9147 5.33511L12.748 4.16845C12.6932 4.11362 12.6191 4.08329 12.5415 4.08329H12.2499V3.79162C12.2499 3.71404 12.2189 3.63996 12.1647 3.58513L9.83139 1.25182C9.36356 0.783991 8.57957 0 6.99992 0C5.42144 0 4.69753 0.723909 4.16845 1.25182C4.08504 1.33523 4.05995 1.46065 4.10545 1.56973C4.15037 1.67881 4.25712 1.74998 4.37495 1.74998C6.72751 1.74998 6.99992 2.74864 6.99992 3.49996C6.99992 4.12412 6.64643 4.59953 6.42068 4.84161L8.32641 6.74734C8.84207 6.39851 9.57473 5.98668 9.91656 6.01702V6.41659C9.91656 6.49418 9.94747 6.56826 10.0017 6.62309L11.46 8.08141C11.5149 8.13566 11.589 8.16658 11.6665 8.16658H11.6765C11.7575 8.16424 11.8334 8.12808 11.8859 8.06741L13.9275 5.7341C14.029 5.61802 14.0232 5.44419 13.9147 5.33511Z" fill="white"/>
+          </svg>
+          ACCOUNTING <span class="close"><i class="fa fa-close"></i></span>
+        </span>
+      </li>
+      <li class="list-inline-item">
+        <span class="badge bg-red">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.440995 10.8131C0.156915 11.0972 0 11.4752 0 11.9115C0 12.7416 0.674909 13.4165 1.50498 13.4165C1.9279 13.4165 2.33389 13.2369 2.61855 12.9242L7.88483 7.13117L6.00418 5.24994L0.440995 10.8131ZM13.9147 5.33511L12.748 4.16845C12.6932 4.11362 12.6191 4.08329 12.5415 4.08329H12.2499V3.79162C12.2499 3.71404 12.2189 3.63996 12.1647 3.58513L9.83139 1.25182C9.36356 0.783991 8.57957 0 6.99992 0C5.42144 0 4.69753 0.723909 4.16845 1.25182C4.08504 1.33523 4.05995 1.46065 4.10545 1.56973C4.15037 1.67881 4.25712 1.74998 4.37495 1.74998C6.72751 1.74998 6.99992 2.74864 6.99992 3.49996C6.99992 4.12412 6.64643 4.59953 6.42068 4.84161L8.32641 6.74734C8.84207 6.39851 9.57473 5.98668 9.91656 6.01702V6.41659C9.91656 6.49418 9.94747 6.56826 10.0017 6.62309L11.46 8.08141C11.5149 8.13566 11.589 8.16658 11.6665 8.16658H11.6765C11.7575 8.16424 11.8334 8.12808 11.8859 8.06741L13.9275 5.7341C14.029 5.61802 14.0232 5.44419 13.9147 5.33511Z" fill="white"/>
+          </svg>
+          BOOKKEEPING <span class="close"><i class="fa fa-close"></i></span>
+        </span>
+      </li>
+    </ul>
+    <div class="form-group">
+      <label class="form-label">Attachments</label>
+      <div class="upload_wrap">
+        <a href="#" class="btn btn-green">Upload</a>
+        <div class="uploaded_file"><img src="../assets/images/cross.svg" alt="#"> Filename.pdf</div>
+        <div class="uploaded_file"><img src="../assets/images/cross.svg" alt="#"> Filename2.pdf</div>
+      </div>
+    </div>
+    <hr>
+    <button type="button" class="btn btn-purple-dark" data-bs-dismiss="modal">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade modal_large" id="new_task_review_popup" tabindex="-1" aria-labelledby="new_task_reviewLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="grey_side">
+          <div class="modal-header">
+          <h5 class="modal-title">Task</h5>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+        <label class="form-label mt-0">Assignment Name</label>
+        <div class="saved_value">Create a better world</div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Assignment Description</label>
+        <div class="saved_value">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac imperdiet nibh. Curabitur sem erat, elementum ut lacus at, dapibus efficitur felis. Fusce pulvinar dui eu ante placerat.</div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Assignee</label>
+        <div class="saved_value">Bessie Cooper</div>
+      </div>
+      <div class="row m-0">
+        <div class="col-12 col-md-6 p-0">
+          <div class="form-group">
+            <label class="form-label">Start Date / Time</label>
+            <div class="saved_value">12/12/2021</div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 p-0">
+          <div class="form-group">
+            <label class="form-label">End Date / Time</label>
+            <div class="saved_value">12/12/2021</div>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Hours Expected</label>
+        <div class="saved_value">15</div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Skills Needed</label>
+        <div class="saved_value">
+          <ul class="list-inline badge_tag">
+            <li class="list-inline-item">
+              <span class="badge bg-red">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.440995 10.8131C0.156915 11.0972 0 11.4752 0 11.9115C0 12.7416 0.674909 13.4165 1.50498 13.4165C1.9279 13.4165 2.33389 13.2369 2.61855 12.9242L7.88483 7.13117L6.00418 5.24994L0.440995 10.8131ZM13.9147 5.33511L12.748 4.16845C12.6932 4.11362 12.6191 4.08329 12.5415 4.08329H12.2499V3.79162C12.2499 3.71404 12.2189 3.63996 12.1647 3.58513L9.83139 1.25182C9.36356 0.783991 8.57957 0 6.99992 0C5.42144 0 4.69753 0.723909 4.16845 1.25182C4.08504 1.33523 4.05995 1.46065 4.10545 1.56973C4.15037 1.67881 4.25712 1.74998 4.37495 1.74998C6.72751 1.74998 6.99992 2.74864 6.99992 3.49996C6.99992 4.12412 6.64643 4.59953 6.42068 4.84161L8.32641 6.74734C8.84207 6.39851 9.57473 5.98668 9.91656 6.01702V6.41659C9.91656 6.49418 9.94747 6.56826 10.0017 6.62309L11.46 8.08141C11.5149 8.13566 11.589 8.16658 11.6665 8.16658H11.6765C11.7575 8.16424 11.8334 8.12808 11.8859 8.06741L13.9275 5.7341C14.029 5.61802 14.0232 5.44419 13.9147 5.33511Z" fill="white"/>
+                </svg>
+                ACCOUNTING <span class="close"><i class="fa fa-close"></i></span>
+              </span>
+            </li>
+            <li class="list-inline-item">
+              <span class="badge bg-red">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.440995 10.8131C0.156915 11.0972 0 11.4752 0 11.9115C0 12.7416 0.674909 13.4165 1.50498 13.4165C1.9279 13.4165 2.33389 13.2369 2.61855 12.9242L7.88483 7.13117L6.00418 5.24994L0.440995 10.8131ZM13.9147 5.33511L12.748 4.16845C12.6932 4.11362 12.6191 4.08329 12.5415 4.08329H12.2499V3.79162C12.2499 3.71404 12.2189 3.63996 12.1647 3.58513L9.83139 1.25182C9.36356 0.783991 8.57957 0 6.99992 0C5.42144 0 4.69753 0.723909 4.16845 1.25182C4.08504 1.33523 4.05995 1.46065 4.10545 1.56973C4.15037 1.67881 4.25712 1.74998 4.37495 1.74998C6.72751 1.74998 6.99992 2.74864 6.99992 3.49996C6.99992 4.12412 6.64643 4.59953 6.42068 4.84161L8.32641 6.74734C8.84207 6.39851 9.57473 5.98668 9.91656 6.01702V6.41659C9.91656 6.49418 9.94747 6.56826 10.0017 6.62309L11.46 8.08141C11.5149 8.13566 11.589 8.16658 11.6665 8.16658H11.6765C11.7575 8.16424 11.8334 8.12808 11.8859 8.06741L13.9275 5.7341C14.029 5.61802 14.0232 5.44419 13.9147 5.33511Z" fill="white"/>
+                </svg>
+                BOOKKEEPING <span class="close"><i class="fa fa-close"></i></span>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Attachments</label>
+        <div class="saved_value">
+          <a href="#" class="download_link">Filename.pdf</a>
+          <a href="#" class="download_link">Filename2.pdf</a>
+        </div>
+      </div>
+        </div>
+      </div>
+      <div class="white_side">
+          <div class="modal-header justify-content-center">
+          <h5 class="modal-title text-center">Project Task Review</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.18922 8.12L3.98922 5.32L6.80922 8.12L7.84922 7.08L5.02922 4.28L7.84922 1.46L6.82922 0.44L3.98922 3.26L1.16922 0.44L0.149219 1.46L2.96922 4.28L0.149219 7.08L1.18922 8.12Z" fill="#7B3E6D"/>
+        </svg>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+        <label class="form-label mt-0">How would you rate your experience working on this project?</label>
+        <ul class="list-inline rating">
+          <li class="list-inline-item">
+            <a href="#">
+              <i class="fa fa-star"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">
+              <i class="fa fa-star"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">
+              <i class="fa fa-star"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">
+              <i class="fa fa-star"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">
+              <i class="fa fa-star-o"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="form-group">
+        <label class="form-label">How would you assess your own contribution to this project?</label>
+        <ul class="list-inline rating">
+          <li class="list-inline-item">
+            <a href="#">
+              <i class="fa fa-star"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">
+              <i class="fa fa-star"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">
+              <i class="fa fa-star"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">
+              <i class="fa fa-star-o"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">
+              <i class="fa fa-star-o"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="form-group">
+        <label class="form-label">One other question as placeholder here</label>
+        <ul class="list-inline rating">
+          <li class="list-inline-item">
+            <a href="#">
+              <i class="fa fa-star"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">
+              <i class="fa fa-star"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">
+              <i class="fa fa-star"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">
+              <i class="fa fa-star-o"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">
+              <i class="fa fa-star-o"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Notes & Comments</label>
+        <textarea placeholder="Comment.." class="form-control"></textarea>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Attachments</label>
+        <div class="upload_wrap">
+          <a href="#" class="btn btn-green">Upload</a>
+          <div class="uploaded_file"><img src="../assets/images/cross.svg" alt="#"> Filename.pdf</div>
+          <div class="uploaded_file"><img src="../assets/images/cross.svg" alt="#"> Filename2.pdf</div>
+        </div>
+      </div>
+      <hr>
+      <button type="button" class="btn btn-purple-dark" data-bs-dismiss="modal">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="project_task_review_popup" tabindex="-1" aria-labelledby="project_task_reviewLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Project Task Review</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1.18922 8.12L3.98922 5.32L6.80922 8.12L7.84922 7.08L5.02922 4.28L7.84922 1.46L6.82922 0.44L3.98922 3.26L1.16922 0.44L0.149219 1.46L2.96922 4.28L0.149219 7.08L1.18922 8.12Z" fill="#7B3E6D"/>
+      </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group form-group2">
+      <label class="form-label mt-0">Assignment Name</label>
+      <input type="text" name="" value="Create a better world" class="form-control">
+    </div>
+    <div class="form-group form-group2">
+      <label class="form-label">Collaborator Name</label>
+      <input type="text" name="" value="Albert Flores" class="form-control">
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <div class="form-group form-group2">
+          <label class="form-label">Completed Date / Time</label>
+          <input type="text" name="" value="6/23/2021  14:35" class="form-control">
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="form-group form-group2">
+          <label class="form-label">Hours Spent</label>
+          <input type="text" name="" value="20" class="form-control">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <div class="form-group form-group2">
+          <label class="form-label">Completed Date / Time</label>
+          <input type="text" name="" value="6/23/2021  14:35" class="form-control">
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="form-group form-group2">
+          <label class="form-label">Hours Spent</label>
+          <input type="text" name="" value="20" class="form-control">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <div class="form-group form-group2">
+          <label class="form-label">Completed Date / Time</label>
+          <input type="text" name="" value="6/23/2021  14:35" class="form-control">
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="form-group form-group2">
+          <label class="form-label">Hours Spent</label>
+          <input type="text" name="" value="20" class="form-control">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <div class="form-group form-group2">
+          <label class="form-label">Completed Date / Time</label>
+          <input type="text" name="" value="6/23/2021  14:35" class="form-control">
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="form-group form-group2">
+          <label class="form-label">Hours Spent</label>
+          <input type="text" name="" value="20" class="form-control">
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label">Skills Needed</label>
+    </div>
+    <ul class="list-inline badge_tag mt-2 mb-4">
+      <li class="list-inline-item">
+        <span class="badge bg-red">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.440995 10.8131C0.156915 11.0972 0 11.4752 0 11.9115C0 12.7416 0.674909 13.4165 1.50498 13.4165C1.9279 13.4165 2.33389 13.2369 2.61855 12.9242L7.88483 7.13117L6.00418 5.24994L0.440995 10.8131ZM13.9147 5.33511L12.748 4.16845C12.6932 4.11362 12.6191 4.08329 12.5415 4.08329H12.2499V3.79162C12.2499 3.71404 12.2189 3.63996 12.1647 3.58513L9.83139 1.25182C9.36356 0.783991 8.57957 0 6.99992 0C5.42144 0 4.69753 0.723909 4.16845 1.25182C4.08504 1.33523 4.05995 1.46065 4.10545 1.56973C4.15037 1.67881 4.25712 1.74998 4.37495 1.74998C6.72751 1.74998 6.99992 2.74864 6.99992 3.49996C6.99992 4.12412 6.64643 4.59953 6.42068 4.84161L8.32641 6.74734C8.84207 6.39851 9.57473 5.98668 9.91656 6.01702V6.41659C9.91656 6.49418 9.94747 6.56826 10.0017 6.62309L11.46 8.08141C11.5149 8.13566 11.589 8.16658 11.6665 8.16658H11.6765C11.7575 8.16424 11.8334 8.12808 11.8859 8.06741L13.9275 5.7341C14.029 5.61802 14.0232 5.44419 13.9147 5.33511Z" fill="white"/>
+          </svg>
+          ACCOUNTING <span class="close"><i class="fa fa-close"></i></span>
+        </span>
+      </li>
+      <li class="list-inline-item">
+        <span class="badge bg-red">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.440995 10.8131C0.156915 11.0972 0 11.4752 0 11.9115C0 12.7416 0.674909 13.4165 1.50498 13.4165C1.9279 13.4165 2.33389 13.2369 2.61855 12.9242L7.88483 7.13117L6.00418 5.24994L0.440995 10.8131ZM13.9147 5.33511L12.748 4.16845C12.6932 4.11362 12.6191 4.08329 12.5415 4.08329H12.2499V3.79162C12.2499 3.71404 12.2189 3.63996 12.1647 3.58513L9.83139 1.25182C9.36356 0.783991 8.57957 0 6.99992 0C5.42144 0 4.69753 0.723909 4.16845 1.25182C4.08504 1.33523 4.05995 1.46065 4.10545 1.56973C4.15037 1.67881 4.25712 1.74998 4.37495 1.74998C6.72751 1.74998 6.99992 2.74864 6.99992 3.49996C6.99992 4.12412 6.64643 4.59953 6.42068 4.84161L8.32641 6.74734C8.84207 6.39851 9.57473 5.98668 9.91656 6.01702V6.41659C9.91656 6.49418 9.94747 6.56826 10.0017 6.62309L11.46 8.08141C11.5149 8.13566 11.589 8.16658 11.6665 8.16658H11.6765C11.7575 8.16424 11.8334 8.12808 11.8859 8.06741L13.9275 5.7341C14.029 5.61802 14.0232 5.44419 13.9147 5.33511Z" fill="white"/>
+          </svg>
+          BOOKKEEPING <span class="close"><i class="fa fa-close"></i></span>
+        </span>
+      </li>
+    </ul>
+    <div class="form-group">
+      <label class="form-label mt-0">How would you rate your experience working on this project?</label>
+      <ul class="list-inline rating">
+        <li class="list-inline-item">
+          <a href="#">
+            <i class="fa fa-star"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#">
+            <i class="fa fa-star"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#">
+            <i class="fa fa-star"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#">
+            <i class="fa fa-star"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#">
+            <i class="fa fa-star-o"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="form-group">
+      <label class="form-label">How would you assess your own contribution to this project?</label>
+      <ul class="list-inline rating">
+        <li class="list-inline-item">
+          <a href="#">
+            <i class="fa fa-star"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#">
+            <i class="fa fa-star"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#">
+            <i class="fa fa-star"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#">
+            <i class="fa fa-star-o"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#">
+            <i class="fa fa-star-o"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="form-group">
+      <label class="form-label">One other question as placeholder here</label>
+      <ul class="list-inline rating">
+        <li class="list-inline-item">
+          <a href="#">
+            <i class="fa fa-star"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#">
+            <i class="fa fa-star"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#">
+            <i class="fa fa-star"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#">
+            <i class="fa fa-star-o"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#">
+            <i class="fa fa-star-o"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="form-group form-group2">
+      <label class="form-label">Notes & Comments</label>
+      <textarea value="" class="form-control">I loved it</textarea>
+    </div>
+    <div class="form-group">
+      <label class="form-label">Attachments</label>
+      <div class="upload_wrap">
+        <div class="uploaded_file">Filename.pdf <a href="#" class="download_link">Download</a></div>
+        <div class="uploaded_file">Filename2.pdf <a href="#" class="download_link">Download</a></div>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-6">
+        <button type="button" class="btn btn-purple-dark" data-bs-dismiss="modal">Submit</button>
+      </div>
+      <div class="col-6 text-right">
+        <button type="button" class="btn btn-white" data-bs-dismiss="modal">Suggest Changes</button>
+      </div>
+    </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade modal_large" id="new_form_popup" tabindex="-1" aria-labelledby="new_formLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="grey_side">
+          <div class="modal-header">
+          <h5 class="modal-title">Task</h5>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+        <label class="form-label mt-0">Assignment Name</label>
+        <div class="saved_value">Create a better world</div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Assignment Description</label>
+        <div class="saved_value">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac imperdiet nibh. Curabitur sem erat, elementum ut lacus at, dapibus efficitur felis. Fusce pulvinar dui eu ante placerat.</div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Assignee</label>
+        <div class="saved_value">Bessie Cooper</div>
+      </div>
+      <div class="row m-0">
+        <div class="col-12 col-md-6 p-0">
+          <div class="form-group">
+            <label class="form-label">Start Date / Time</label>
+            <div class="saved_value">12/12/2021</div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 p-0">
+          <div class="form-group">
+            <label class="form-label">End Date / Time</label>
+            <div class="saved_value">12/12/2021</div>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Hours Expected</label>
+        <div class="saved_value">15</div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Skills Needed</label>
+        <div class="saved_value">
+          <ul class="list-inline badge_tag">
+            <li class="list-inline-item">
+              <span class="badge bg-red">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.440995 10.8131C0.156915 11.0972 0 11.4752 0 11.9115C0 12.7416 0.674909 13.4165 1.50498 13.4165C1.9279 13.4165 2.33389 13.2369 2.61855 12.9242L7.88483 7.13117L6.00418 5.24994L0.440995 10.8131ZM13.9147 5.33511L12.748 4.16845C12.6932 4.11362 12.6191 4.08329 12.5415 4.08329H12.2499V3.79162C12.2499 3.71404 12.2189 3.63996 12.1647 3.58513L9.83139 1.25182C9.36356 0.783991 8.57957 0 6.99992 0C5.42144 0 4.69753 0.723909 4.16845 1.25182C4.08504 1.33523 4.05995 1.46065 4.10545 1.56973C4.15037 1.67881 4.25712 1.74998 4.37495 1.74998C6.72751 1.74998 6.99992 2.74864 6.99992 3.49996C6.99992 4.12412 6.64643 4.59953 6.42068 4.84161L8.32641 6.74734C8.84207 6.39851 9.57473 5.98668 9.91656 6.01702V6.41659C9.91656 6.49418 9.94747 6.56826 10.0017 6.62309L11.46 8.08141C11.5149 8.13566 11.589 8.16658 11.6665 8.16658H11.6765C11.7575 8.16424 11.8334 8.12808 11.8859 8.06741L13.9275 5.7341C14.029 5.61802 14.0232 5.44419 13.9147 5.33511Z" fill="white"/>
+                </svg>
+                ACCOUNTING <span class="close"><i class="fa fa-close"></i></span>
+              </span>
+            </li>
+            <li class="list-inline-item">
+              <span class="badge bg-red">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.440995 10.8131C0.156915 11.0972 0 11.4752 0 11.9115C0 12.7416 0.674909 13.4165 1.50498 13.4165C1.9279 13.4165 2.33389 13.2369 2.61855 12.9242L7.88483 7.13117L6.00418 5.24994L0.440995 10.8131ZM13.9147 5.33511L12.748 4.16845C12.6932 4.11362 12.6191 4.08329 12.5415 4.08329H12.2499V3.79162C12.2499 3.71404 12.2189 3.63996 12.1647 3.58513L9.83139 1.25182C9.36356 0.783991 8.57957 0 6.99992 0C5.42144 0 4.69753 0.723909 4.16845 1.25182C4.08504 1.33523 4.05995 1.46065 4.10545 1.56973C4.15037 1.67881 4.25712 1.74998 4.37495 1.74998C6.72751 1.74998 6.99992 2.74864 6.99992 3.49996C6.99992 4.12412 6.64643 4.59953 6.42068 4.84161L8.32641 6.74734C8.84207 6.39851 9.57473 5.98668 9.91656 6.01702V6.41659C9.91656 6.49418 9.94747 6.56826 10.0017 6.62309L11.46 8.08141C11.5149 8.13566 11.589 8.16658 11.6665 8.16658H11.6765C11.7575 8.16424 11.8334 8.12808 11.8859 8.06741L13.9275 5.7341C14.029 5.61802 14.0232 5.44419 13.9147 5.33511Z" fill="white"/>
+                </svg>
+                BOOKKEEPING <span class="close"><i class="fa fa-close"></i></span>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Attachments</label>
+        <div class="saved_value">
+          <a href="#" class="download_link">Filename.pdf</a>
+          <a href="#" class="download_link">Filename2.pdf</a>
+        </div>
+      </div>
+        </div>
+      </div>
+      <div class="white_side">
+          <div class="modal-header justify-content-center">
+          <h5 class="modal-title text-center">Log Time</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.18922 8.12L3.98922 5.32L6.80922 8.12L7.84922 7.08L5.02922 4.28L7.84922 1.46L6.82922 0.44L3.98922 3.26L1.16922 0.44L0.149219 1.46L2.96922 4.28L0.149219 7.08L1.18922 8.12Z" fill="#7B3E6D"/>
+        </svg>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+        <div class="col-6">
+          <div class="form-group">
+            <label class="form-label mt-0">Completed Date / Time</label>
+            <input type="text" name="" value="6/23/2021  14:35" class="form-control">
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group">
+            <label class="form-label mt-0">Hours Spent</label>
+            <input type="text" name="" value="20" class="form-control">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="form-group">
+            <label class="form-label">Completed Date / Time</label>
+            <input type="text" name="" value="6/23/2021  14:35" class="form-control">
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group">
+            <label class="form-label">Hours Spent</label>
+            <input type="text" name="" value="20" class="form-control">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="form-group">
+            <label class="form-label">Completed Date / Time</label>
+            <input type="text" name="" value="6/23/2021  14:35" class="form-control">
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group">
+            <label class="form-label">Hours Spent</label>
+            <input type="text" name="" value="20" class="form-control">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="form-group">
+            <label class="form-label">Completed Date / Time</label>
+            <input type="text" name="" value="6/23/2021  14:35" class="form-control">
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group">
+            <label class="form-label">Hours Spent</label>
+            <input type="text" name="" value="20" class="form-control">
+          </div>
+        </div>
+      </div>
+      <div class="add_goal">
+        <span class="icon">
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="14" width="30" height="2" fill="#3C7178"></rect>
+            <rect x="16" width="30" height="2" transform="rotate(90 16 0)" fill="#3C7178"></rect>
+          </svg>
+        </span> Add Time
+      </div>
+      <div class="log_time">
+        Total Log time <span>20 hours</span>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Skill Used</label>
+        <form method="post mb-3">
+          <input type="text" name="" placeholder="Search" class="form-control">
+          <button class="search-button">
+            <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1.91188e-07" y="0.0450582" width="8.81618" height="3.95849" rx="1.97924" transform="matrix(0.46356 0.46356 -0.463556 0.463564 20.1889 18.3167)" fill="#272D35" stroke="#272D35" stroke-width="0.0972"></rect>
+              <ellipse cx="13.5" cy="13.5" rx="9.54594" ry="9.54594" transform="rotate(45 13.5 13.5)" stroke="#272D35" stroke-width="3"></ellipse>
+            </svg>
+          </button>
+        </form>
+        <div class="saved_value">
+          <ul class="list-inline badge_tag">
+            <li class="list-inline-item">
+              <span class="badge bg-red">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.440995 10.8131C0.156915 11.0972 0 11.4752 0 11.9115C0 12.7416 0.674909 13.4165 1.50498 13.4165C1.9279 13.4165 2.33389 13.2369 2.61855 12.9242L7.88483 7.13117L6.00418 5.24994L0.440995 10.8131ZM13.9147 5.33511L12.748 4.16845C12.6932 4.11362 12.6191 4.08329 12.5415 4.08329H12.2499V3.79162C12.2499 3.71404 12.2189 3.63996 12.1647 3.58513L9.83139 1.25182C9.36356 0.783991 8.57957 0 6.99992 0C5.42144 0 4.69753 0.723909 4.16845 1.25182C4.08504 1.33523 4.05995 1.46065 4.10545 1.56973C4.15037 1.67881 4.25712 1.74998 4.37495 1.74998C6.72751 1.74998 6.99992 2.74864 6.99992 3.49996C6.99992 4.12412 6.64643 4.59953 6.42068 4.84161L8.32641 6.74734C8.84207 6.39851 9.57473 5.98668 9.91656 6.01702V6.41659C9.91656 6.49418 9.94747 6.56826 10.0017 6.62309L11.46 8.08141C11.5149 8.13566 11.589 8.16658 11.6665 8.16658H11.6765C11.7575 8.16424 11.8334 8.12808 11.8859 8.06741L13.9275 5.7341C14.029 5.61802 14.0232 5.44419 13.9147 5.33511Z" fill="white"/>
+                </svg>
+                ACCOUNTING <span class="close"><i class="fa fa-close"></i></span>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Comment</label>
+        <textarea placeholder="Comment.." class="form-control"></textarea>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Attachments</label>
+        <div class="upload_wrap">
+          <a href="#" class="btn btn-green">Upload</a>
+          <div class="uploaded_file"><img src="../assets/images/cross.svg" alt="#"> Filename.pdf</div>
+          <div class="uploaded_file"><img src="../assets/images/cross.svg" alt="#"> Filename2.pdf</div>
+        </div>
+      </div>
+      <hr>
+      <button type="button" class="btn btn-purple-dark" data-bs-dismiss="modal">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="reporting_popup" tabindex="-1" aria-labelledby="reportingLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Reporting Measurable Results</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1.18922 8.12L3.98922 5.32L6.80922 8.12L7.84922 7.08L5.02922 4.28L7.84922 1.46L6.82922 0.44L3.98922 3.26L1.16922 0.44L0.149219 1.46L2.96922 4.28L0.149219 7.08L1.18922 8.12Z" fill="#7B3E6D"/>
+      </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+      <label class="form-label">Project Name</label>
+      <select class="form-control">
+        <option>Plant more tress</option>
+        <option>Plant more tress</option>
+        <option>Plant more tress</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label class="form-label">Reporter Name</label>
+      <input type="text" name="" class="form-control" value="Albert Flores">
+    </div>
+    <div class="form-group">
+      <label class="form-label">Date / Time</label>
+      <input type="text" name="" class="form-control" placeholder="DD/MM/YYYY">
+    </div>
+    <div class="form-group">
+      <label class="form-label">Measurable Result</label>
+      <select class="form-control">
+        <option>100 tress planted</option>
+        <option>100 tress planted</option>
+        <option>100 tress planted</option>
+      </select>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div class="form-group">
+          <label class="form-label">Number</label>
+          <select class="form-control">
+            <option>50</option>
+            <option>50</option>
+            <option>50</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label">Description</label>
+      <img src="../assets/images/text-editor.png" alt="#" class="text-editor">
+    </div>
+    <div class="form-group">
+      <label class="form-label">Attachments</label>
+      <div class="upload_wrap">
+        <a href="#" class="btn btn-green">Upload</a>
+        <div class="uploaded_file"><img src="../assets/images/cross.svg" alt="#"> Filename.pdf</div>
+        <div class="uploaded_file"><img src="../assets/images/cross.svg" alt="#"> Filename2.pdf</div>
+      </div>
+    </div>
+    <hr>
+    <button type="button" class="btn btn-purple-dark" data-bs-dismiss="modal">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="calendar_filter_popup" tabindex="-1" aria-labelledby="calendar_filterLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Calendar Filter</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1.18922 8.12L3.98922 5.32L6.80922 8.12L7.84922 7.08L5.02922 4.28L7.84922 1.46L6.82922 0.44L3.98922 3.26L1.16922 0.44L0.149219 1.46L2.96922 4.28L0.149219 7.08L1.18922 8.12Z" fill="#7B3E6D"/>
+      </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+      <label class="form-label">Group</label>
+      <form method="post">
+        <input type="text" name="" placeholder="Search Group" class="form-control">
+        <button class="search-button">
+          <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1.91188e-07" y="0.0450582" width="8.81618" height="3.95849" rx="1.97924" transform="matrix(0.46356 0.46356 -0.463556 0.463564 20.1889 18.3167)" fill="#272D35" stroke="#272D35" stroke-width="0.0972"></rect>
+            <ellipse cx="13.5" cy="13.5" rx="9.54594" ry="9.54594" transform="rotate(45 13.5 13.5)" stroke="#272D35" stroke-width="3"></ellipse>
+          </svg>
+        </button>
+      </form>
+    </div>
+    <ul class="list-inline badge_tag mt-2">
+      <li class="list-inline-item">
+        <span class="badge bg-blue">
+          Community Forest Alliance <span class="close"><i class="fa fa-close"></i></span>
+        </span>
+      </li>
+    </ul>
+    <hr>
+    <div class="form-group">
+      <label class="form-label mt-0">Project</label>
+      <form method="post">
+        <input type="text" name="" placeholder="Search Project" class="form-control">
+        <button class="search-button">
+          <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1.91188e-07" y="0.0450582" width="8.81618" height="3.95849" rx="1.97924" transform="matrix(0.46356 0.46356 -0.463556 0.463564 20.1889 18.3167)" fill="#272D35" stroke="#272D35" stroke-width="0.0972"></rect>
+            <ellipse cx="13.5" cy="13.5" rx="9.54594" ry="9.54594" transform="rotate(45 13.5 13.5)" stroke="#272D35" stroke-width="3"></ellipse>
+          </svg>
+        </button>
+      </form>
+    </div>
+    <hr>
+    <button type="button" class="btn btn-purple-dark" data-bs-dismiss="modal">SAVE</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="add_thread_popup" tabindex="-1" aria-labelledby="add_threadLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">New Thread</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1.18922 8.12L3.98922 5.32L6.80922 8.12L7.84922 7.08L5.02922 4.28L7.84922 1.46L6.82922 0.44L3.98922 3.26L1.16922 0.44L0.149219 1.46L2.96922 4.28L0.149219 7.08L1.18922 8.12Z" fill="#7B3E6D"/>
+      </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+      <label class="form-label">Title</label>
+      <input type="text" name="" placeholder="" class="form-control">
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div class="form-group">
+          <label class="form-label">Group</label>
+          <select class="form-control">
+            <option>Group</option>
+            <option>Group</option>
+            <option>Group</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="form-group">
+          <label class="form-label">Active Day Range</label>
+          <select class="form-control">
+            <option>1 Month</option>
+            <option>1 Month</option>
+            <option>1 Month</option>
+          </select>
+        </div>
+      </div>
+    </div>
+        <div class="form-group">
+      <label class="form-label">Description</label>
+      <img src="../assets/images/text-editor.png" alt="#" class="text-editor">
+    </div>
+    <div class="accordion" id="privacy_collapser">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingPrivacy">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePrivacy" aria-expanded="true" aria-controls="collapsePrivacy">
+            Privacy
+          </button>
+        </h2>
+        <div id="collapsePrivacy" class="accordion-collapse collapse show" aria-labelledby="headingPrivacy" data-bs-parent="#privacy_collapser">
+          <div class="accordion-body">
+            <div class="form-group">
           <label class="form-label">Privacy</label>
           <select class="form-control">
             <option>Connections</option>
@@ -321,270 +1233,12 @@
             </div>
           </div>
         </div>
-        <hr>
-        <button type="button" class="btn btn-purple-dark" data-bs-dismiss="modal">Add</button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-<div class="modal fade" id="new_task_popup" tabindex="-1" aria-labelledby="new_taskLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">New Task</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-          <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1.18922 8.12L3.98922 5.32L6.80922 8.12L7.84922 7.08L5.02922 4.28L7.84922 1.46L6.82922 0.44L3.98922 3.26L1.16922 0.44L0.149219 1.46L2.96922 4.28L0.149219 7.08L1.18922 8.12Z" fill="#7B3E6D"/>
-          </svg>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="form-group">
-          <label class="form-label">Name</label>
-          <input type="text" name="" placeholder="Name" class="form-control">
-        </div>
-        <div class="form-group">
-          <label class="form-label">Description</label>
-          <app-rtfeditor name="Description" placeholder="Description"></app-rtfeditor>
-<!--          <textarea placeholder="Description" class="form-control"></textarea>-->
-        </div>
-        <div class="form-group">
-          <label class="form-label">Assignee</label>
-          <select class="form-control">
-            <option>Bessie Cooper</option>
-            <option>Bessie Cooper</option>
-            <option>Bessie Cooper</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label class="form-label">Start Date / Time</label>
-          <input type="text" name="" placeholder="DD/MM/YYYY" class="form-control">
-        </div>
-        <div class="form-group">
-          <label class="form-label">End Date / Time</label>
-          <input type="text" name="" placeholder="DD/MM/YYYY" class="form-control">
-        </div>
-        <div class="form-group">
-          <label class="form-label">Hours Expected</label>
-          <input type="text" name="" placeholder="Hours" class="form-control">
-        </div>
-        <div class="form-group">
-          <label class="form-label">Skills Needed</label>
-          <select class="form-control">
-            <option>Item</option>
-            <option>Item</option>
-            <option>Item</option>
-          </select>
-        </div>
-        <ul class="list-inline badge_tag mt-2">
-          <li class="list-inline-item">
-					<span class="badge bg-red">
-						<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M0.440995 10.8131C0.156915 11.0972 0 11.4752 0 11.9115C0 12.7416 0.674909 13.4165 1.50498 13.4165C1.9279 13.4165 2.33389 13.2369 2.61855 12.9242L7.88483 7.13117L6.00418 5.24994L0.440995 10.8131ZM13.9147 5.33511L12.748 4.16845C12.6932 4.11362 12.6191 4.08329 12.5415 4.08329H12.2499V3.79162C12.2499 3.71404 12.2189 3.63996 12.1647 3.58513L9.83139 1.25182C9.36356 0.783991 8.57957 0 6.99992 0C5.42144 0 4.69753 0.723909 4.16845 1.25182C4.08504 1.33523 4.05995 1.46065 4.10545 1.56973C4.15037 1.67881 4.25712 1.74998 4.37495 1.74998C6.72751 1.74998 6.99992 2.74864 6.99992 3.49996C6.99992 4.12412 6.64643 4.59953 6.42068 4.84161L8.32641 6.74734C8.84207 6.39851 9.57473 5.98668 9.91656 6.01702V6.41659C9.91656 6.49418 9.94747 6.56826 10.0017 6.62309L11.46 8.08141C11.5149 8.13566 11.589 8.16658 11.6665 8.16658H11.6765C11.7575 8.16424 11.8334 8.12808 11.8859 8.06741L13.9275 5.7341C14.029 5.61802 14.0232 5.44419 13.9147 5.33511Z" fill="white"/>
-						</svg>
-						ACCOUNTING <span class="close"><i class="fa fa-close"></i></span>
-					</span>
-          </li>
-          <li class="list-inline-item">
-					<span class="badge bg-red">
-						<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M0.440995 10.8131C0.156915 11.0972 0 11.4752 0 11.9115C0 12.7416 0.674909 13.4165 1.50498 13.4165C1.9279 13.4165 2.33389 13.2369 2.61855 12.9242L7.88483 7.13117L6.00418 5.24994L0.440995 10.8131ZM13.9147 5.33511L12.748 4.16845C12.6932 4.11362 12.6191 4.08329 12.5415 4.08329H12.2499V3.79162C12.2499 3.71404 12.2189 3.63996 12.1647 3.58513L9.83139 1.25182C9.36356 0.783991 8.57957 0 6.99992 0C5.42144 0 4.69753 0.723909 4.16845 1.25182C4.08504 1.33523 4.05995 1.46065 4.10545 1.56973C4.15037 1.67881 4.25712 1.74998 4.37495 1.74998C6.72751 1.74998 6.99992 2.74864 6.99992 3.49996C6.99992 4.12412 6.64643 4.59953 6.42068 4.84161L8.32641 6.74734C8.84207 6.39851 9.57473 5.98668 9.91656 6.01702V6.41659C9.91656 6.49418 9.94747 6.56826 10.0017 6.62309L11.46 8.08141C11.5149 8.13566 11.589 8.16658 11.6665 8.16658H11.6765C11.7575 8.16424 11.8334 8.12808 11.8859 8.06741L13.9275 5.7341C14.029 5.61802 14.0232 5.44419 13.9147 5.33511Z" fill="white"/>
-						</svg>
-						BOOKKEEPING <span class="close"><i class="fa fa-close"></i></span>
-					</span>
-          </li>
-        </ul>
-        <div class="form-group">
-          <label class="form-label">Attachments</label>
-          <div class="upload_wrap">
-            <a href="#" class="btn btn-green">Upload</a>
-            <div class="uploaded_file"><img src="../assets/images/cross.svg" alt="#"> Filename.pdf</div>
-            <div class="uploaded_file"><img src="../assets/images/cross.svg" alt="#"> Filename2.pdf</div>
-          </div>
-        </div>
-        <hr>
-        <button type="button" class="btn btn-purple-dark" data-bs-dismiss="modal">Submit</button>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="calendar_filter_popup" tabindex="-1" aria-labelledby="calendar_filterLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Calendar Filter</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-          <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1.18922 8.12L3.98922 5.32L6.80922 8.12L7.84922 7.08L5.02922 4.28L7.84922 1.46L6.82922 0.44L3.98922 3.26L1.16922 0.44L0.149219 1.46L2.96922 4.28L0.149219 7.08L1.18922 8.12Z" fill="#7B3E6D"/>
-          </svg>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="form-group">
-          <label class="form-label">Group</label>
-          <form method="post">
-            <input type="text" name="" placeholder="Search Group" class="form-control">
-            <button class="search-button">
-              <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="1.91188e-07" y="0.0450582" width="8.81618" height="3.95849" rx="1.97924" transform="matrix(0.46356 0.46356 -0.463556 0.463564 20.1889 18.3167)" fill="#272D35" stroke="#272D35" stroke-width="0.0972"></rect>
-                <ellipse cx="13.5" cy="13.5" rx="9.54594" ry="9.54594" transform="rotate(45 13.5 13.5)" stroke="#272D35" stroke-width="3"></ellipse>
-              </svg>
-            </button>
-          </form>
-        </div>
-        <ul class="list-inline badge_tag mt-2">
-          <li class="list-inline-item">
-					<span class="badge bg-blue">
-						Community Forest Alliance <span class="close"><i class="fa fa-close"></i></span>
-					</span>
-          </li>
-        </ul>
-        <hr>
-        <div class="form-group">
-          <label class="form-label mt-0">Project</label>
-          <form method="post">
-            <input type="text" name="" placeholder="Search Project" class="form-control">
-            <button class="search-button">
-              <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="1.91188e-07" y="0.0450582" width="8.81618" height="3.95849" rx="1.97924" transform="matrix(0.46356 0.46356 -0.463556 0.463564 20.1889 18.3167)" fill="#272D35" stroke="#272D35" stroke-width="0.0972"></rect>
-                <ellipse cx="13.5" cy="13.5" rx="9.54594" ry="9.54594" transform="rotate(45 13.5 13.5)" stroke="#272D35" stroke-width="3"></ellipse>
-              </svg>
-            </button>
-          </form>
-        </div>
-        <hr>
-        <button type="button" class="btn btn-purple-dark" data-bs-dismiss="modal">SAVE</button>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="add_thread_popup" tabindex="-1" aria-labelledby="add_threadLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">New Thread</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-          <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1.18922 8.12L3.98922 5.32L6.80922 8.12L7.84922 7.08L5.02922 4.28L7.84922 1.46L6.82922 0.44L3.98922 3.26L1.16922 0.44L0.149219 1.46L2.96922 4.28L0.149219 7.08L1.18922 8.12Z" fill="#7B3E6D"/>
-          </svg>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="form-group">
-          <label class="form-label">Title</label>
-          <input type="text" name="" placeholder="" class="form-control">
-        </div>
-        <div class="row">
-          <div class="col-12 col-md-6">
-            <div class="form-group">
-              <label class="form-label">Group</label>
-              <select class="form-control">
-                <option>Group</option>
-                <option>Group</option>
-                <option>Group</option>
-              </select>
-            </div>
-          </div>
-          <div class="col-12 col-md-6">
-            <div class="form-group">
-              <label class="form-label">Active Day Range</label>
-              <select class="form-control">
-                <option>1 Month</option>
-                <option>1 Month</option>
-                <option>1 Month</option>
-              </select>
-            </div>
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="form-label">Description</label>
-          <img src="../assets/images/text-editor.png" alt="#" class="text-editor">
-        </div>
-        <div class="accordion" id="privacy_collapser">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingPrivacy">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePrivacy" aria-expanded="true" aria-controls="collapsePrivacy">
-                Privacy
-              </button>
-            </h2>
-            <div id="collapsePrivacy" class="accordion-collapse collapse show" aria-labelledby="headingPrivacy" data-bs-parent="#privacy_collapser">
-              <div class="accordion-body">
-                <div class="form-group">
-                  <label class="form-label">Privacy</label>
-                  <select class="form-control">
-                    <option>Connections</option>
-                    <option>Connections</option>
-                    <option>Connections</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label class="form-label">Filter By</label>
-                  <div class="row">
-                    <div class="col-6 col-md-2">
-                      <label class="radio_check">All
-                        <input type="radio" name="t1" checked="checked">
-                        <span class="checkmark"></span>
-                      </label>
-                    </div>
-                    <div class="col-6 col-md-2">
-                      <label class="radio_check">Group
-                        <input type="radio" name="t1" checked="checked">
-                        <span class="checkmark"></span>
-                      </label>
-                    </div>
-                    <div class="col-6 col-md-2">
-                      <label class="radio_check">Individuals
-                        <input type="radio" name="t1" checked="checked">
-                        <span class="checkmark"></span>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="form-label">Groups</label>
-                  <select class="form-control">
-                    <option>All</option>
-                    <option>All</option>
-                    <option>All</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label class="form-label">Members</label>
-                  <select class="form-control">
-                    <option>Select Member</option>
-                    <option>Select Member</option>
-                    <option>Select Member</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label class="form-label">Rights</label>
-                  <div class="row">
-                    <div class="col-6 col-md-2">
-                      <label class="radio_check">View
-                        <input type="radio" name="t2" checked="checked">
-                        <span class="checkmark"></span>
-                      </label>
-                    </div>
-                    <div class="col-6 col-md-2">
-                      <label class="radio_check">Allow
-                        <input type="radio" name="t2" checked="checked">
-                        <span class="checkmark"></span>
-                      </label>
-                    </div>
-                    <div class="col-6 col-md-2">
-                      <label class="radio_check">Disallow
-                        <input type="radio" name="t2" checked="checked">
-                        <span class="checkmark"></span>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr>
-        <button type="button" class="btn btn-purple-dark" data-bs-dismiss="modal">CREATE</button>
+    <hr>
+    <button type="button" class="btn btn-purple-dark" data-bs-dismiss="modal">CREATE</button>
       </div>
     </div>
   </div>
@@ -596,8 +1250,8 @@
         <h5 class="modal-title">Make a Donation</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
           <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1.18922 8.12L3.98922 5.32L6.80922 8.12L7.84922 7.08L5.02922 4.28L7.84922 1.46L6.82922 0.44L3.98922 3.26L1.16922 0.44L0.149219 1.46L2.96922 4.28L0.149219 7.08L1.18922 8.12Z" fill="#7B3E6D"/>
-          </svg>
+        <path d="M1.18922 8.12L3.98922 5.32L6.80922 8.12L7.84922 7.08L5.02922 4.28L7.84922 1.46L6.82922 0.44L3.98922 3.26L1.16922 0.44L0.149219 1.46L2.96922 4.28L0.149219 7.08L1.18922 8.12Z" fill="#7B3E6D"/>
+      </svg>
         </button>
       </div>
       <div class="modal-body modal_steps">
@@ -611,158 +1265,57 @@
                 <div class="row">
                   <div class="col-12 col-md-6">
                     <label class="radio_box">
-                      <input type="radio" name="radio1">
-                      <span class="checkmark">$20</span>
-                    </label>
+                  <input type="radio" name="radio1">
+                  <span class="checkmark">$20</span>
+                </label>
                   </div>
                   <div class="col-12 col-md-6">
                     <label class="radio_box">
-                      <input type="radio" name="radio1">
-                      <span class="checkmark">$50</span>
-                    </label>
+                  <input type="radio" name="radio1">
+                  <span class="checkmark">$50</span>
+                </label>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-12 col-md-6">
                     <label class="radio_box">
-                      <input type="radio" name="radio1">
-                      <span class="checkmark">$100</span>
-                    </label>
+                  <input type="radio" name="radio1">
+                  <span class="checkmark">$100</span>
+                </label>
                   </div>
                   <div class="col-12 col-md-6">
                     <label class="radio_box">
-                      <input type="radio" name="radio1">
-                      <span class="checkmark">$250</span>
-                    </label>
+                  <input type="radio" name="radio1">
+                  <span class="checkmark">$250</span>
+                </label>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-12 col-md-6">
                     <label class="radio_box">
-                      <input type="radio" name="radio1">
-                      <span class="checkmark">$1000</span>
-                    </label>
+                  <input type="radio" name="radio1">
+                  <span class="checkmark">$1000</span>
+                </label>
                   </div>
                   <div class="col-12 col-md-6">
                     <label class="radio_box">
-                      <input type="radio" name="radio1">
-                      <span class="checkmark">Custom</span>
-                    </label>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="accordion" id="advanced_opt">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne8">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne8" aria-expanded="true" aria-controls="collapseOne8">
-                    Advanced Options
-                  </button>
-                </h2>
-                <div id="collapseOne8" class="accordion-collapse collapse show" aria-labelledby="headingOne8" data-bs-parent="#advanced_opt">
-                  <div class="accordion-body">
-                    <ul class="nav nav-tabs" id="myTabModal1" role="tablist">
-                      <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="purpose1-tab" data-bs-toggle="tab" data-bs-target="#purpose1" type="button" role="tab" aria-controls="purpose1" aria-selected="true">Purpose</button>
-                      </li>
-                      <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="place1-tab" data-bs-toggle="tab" data-bs-target="#place1" type="button" role="tab" aria-controls="place1" aria-selected="false">Place</button>
-                      </li>
-                      <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="funding1-tab" data-bs-toggle="tab" data-bs-target="#funding1" type="button" role="tab" aria-controls="funding1" aria-selected="false">Funding Goal</button>
-                      </li>
-                    </ul>
-                    <div class="tab-content" id="myTabModal1Content">
-                      <div class="tab-pane fade show active" id="purpose1" role="tabpanel" aria-labelledby="purpose1-tab">
-                        <div class="form-group">
-                          <select class="form-control">
-                            <option>Item</option>
-                            <option>Item</option>
-                            <option>Item</option>
-                          </select>
-                        </div>
-                        <ul class="list-inline badge_tag">
-                          <li class="list-inline-item">
-										<span class="badge bg-green">
-											<svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M6.04992 10.6592L6.00193 10.688L5.97314 10.67C-3.11516 5.20811 0.00384399 -0.0630103 3.37717 0.000569407C3.48513 0.000569407 3.5943 0.0113659 3.70227 0.0245617C5.06023 0.188909 5.69963 0.942269 6.00193 1.59006C6.30304 0.942269 6.94363 0.188909 8.3016 0.0305598C11.7793 -0.397703 15.4009 5.02457 6.04992 10.6592Z" fill="white"></path>
-											</svg>
-											AQUATIC ECOLOGY <span class="close"><i class="fa fa-close"></i></span>
-										</span>
-                          </li>
-                          <li class="list-inline-item">
-										<span class="badge bg-green">
-											<svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M6.04992 10.6592L6.00193 10.688L5.97314 10.67C-3.11516 5.20811 0.00384399 -0.0630103 3.37717 0.000569407C3.48513 0.000569407 3.5943 0.0113659 3.70227 0.0245617C5.06023 0.188909 5.69963 0.942269 6.00193 1.59006C6.30304 0.942269 6.94363 0.188909 8.3016 0.0305598C11.7793 -0.397703 15.4009 5.02457 6.04992 10.6592Z" fill="white"></path>
-											</svg>
-											HUNGER &amp; FOOD SYSTEMS <span class="close"><i class="fa fa-close"></i></span>
-										</span>
-                          </li>
-                          <li class="list-inline-item">
-										<span class="badge bg-green">
-											<svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M6.04992 10.6592L6.00193 10.688L5.97314 10.67C-3.11516 5.20811 0.00384399 -0.0630103 3.37717 0.000569407C3.48513 0.000569407 3.5943 0.0113659 3.70227 0.0245617C5.06023 0.188909 5.69963 0.942269 6.00193 1.59006C6.30304 0.942269 6.94363 0.188909 8.3016 0.0305598C11.7793 -0.397703 15.4009 5.02457 6.04992 10.6592Z" fill="white"></path>
-											</svg>
-											TERRESTRIAL ECOLOGY <span class="close"><i class="fa fa-close"></i></span>
-										</span>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="tab-pane fade" id="place1" role="tabpanel" aria-labelledby="place1-tab">
-                        <form method="post">
-                          <app-autocomplete [placeholder]="'Search a location..'"></app-autocomplete>
-<!--                          <input type="text" name="" placeholder="Search a location" class="form-control">-->
-                          <button class="search-button">
-                            <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <rect x="1.91188e-07" y="0.0450582" width="8.81618" height="3.95849" rx="1.97924" transform="matrix(0.46356 0.46356 -0.463556 0.463564 20.1889 18.3167)" fill="#272D35" stroke="#272D35" stroke-width="0.0972"></rect>
-                              <ellipse cx="13.5" cy="13.5" rx="9.54594" ry="9.54594" transform="rotate(45 13.5 13.5)" stroke="#272D35" stroke-width="3"></ellipse>
-                            </svg>
-                          </button>
-                        </form>
-                        <ul class="list-inline badge_tag mt-2">
-                          <li class="list-inline-item">
-										<span class="badge bg-blue">
-											AQUATIC ECOLOGY <span class="close"><i class="fa fa-close"></i></span>
-										</span>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="tab-pane fade" id="funding1" role="tabpanel" aria-labelledby="funding1-tab">
-                        <ul>
-                          <li class="form">
-                            <input type="number" maxlength="4" value="1000" class="from" />
-                            <input type="number" maxlength="4" value="500000" class="to" />
-                            <input type="text" class="js-range-slider" name="my_range" value="" data-skin="round" data-type="double" data-min="1000" data-max="500000" data-grid="false" />
-                          </li>
-                          <li>
-                            <label class="label green2">under 10%
-                              <input type="checkbox" checked="checked">
-                              <span class="checkmark"></span>
-                            </label>
-                          </li>
-                          <li>
-                            <label class="label green2">Over 90%
-                              <input type="checkbox">
-                              <span class="checkmark"></span>
-                            </label>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
+                  <input type="radio" name="radio1">
+                  <span class="checkmark">Custom</span>
+                </label>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <hr>
-          <div class="row">
-            <div class="col-6">
-              <a href="#" class="cancel_link" data-bs-dismiss="modal">Cancel</a>
-            </div>
-            <div class="col-6 text-right">
-              <button type="button" class="btn btn-purple-dark steps-btn" indexClass="donation_step" indexno="1">Give</button>
-            </div>
-          </div>
+      <div class="row">
+        <div class="col-6">
+          <a href="#" class="cancel_link" data-bs-dismiss="modal">Cancel</a>
+        </div>
+        <div class="col-6 text-right">
+          <button type="button" class="btn btn-purple-dark steps-btn" indexClass="donation_step" indexno="1">Give</button>
+        </div>
+      </div>
         </div>
         <div class="donation_step donation_step2">
           <div class="donation_wrap">
@@ -778,72 +1331,72 @@
             <div class="row">
               <div class="col-12 col-md-4">
                 <div class="card">
-                  <ul class="list-inline badge_tag">
-                    <li class="list-inline-item">
-							  		<span class="badge bg-green">
-										hunger
-									</span>
-                    </li>
-                  </ul>
-                  <img src="../assets/images/img2.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Open Mic & Benefit Show</h5>
-                    <p class="card-text">Local artists and musicians coming together to raise...</p>
-                    <hr>
-                    <h6>Allocation</h6>
-                    <div class="price">$100</div>
-                  </div>
-                </div>
+              <ul class="list-inline badge_tag">
+                <li class="list-inline-item">
+                  <span class="badge bg-green">
+                  hunger
+                </span>
+                </li>
+              </ul>
+              <img src="../assets/images/img2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Open Mic & Benefit Show</h5>
+                <p class="card-text">Local artists and musicians coming together to raise...</p>
+                <hr>
+                <h6>Allocation</h6>
+                <div class="price">$100</div>
+              </div>
+            </div>
               </div>
               <div class="col-12 col-md-4">
                 <div class="card">
-                  <ul class="list-inline badge_tag">
-                    <li class="list-inline-item">
-							  		<span class="badge bg-green">
-										hunger
-									</span>
-                    </li>
-                  </ul>
-                  <img src="../assets/images/img3.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Lunch for Kids</h5>
-                    <p class="card-text">Local artists and musicians coming together to raise...</p>
-                    <hr>
-                    <h6>Allocation</h6>
-                    <div class="price">$75</div>
-                  </div>
-                </div>
+              <ul class="list-inline badge_tag">
+                <li class="list-inline-item">
+                  <span class="badge bg-green">
+                  hunger
+                </span>
+                </li>
+              </ul>
+              <img src="../assets/images/img3.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Lunch for Kids</h5>
+                <p class="card-text">Local artists and musicians coming together to raise...</p>
+                <hr>
+                <h6>Allocation</h6>
+                <div class="price">$75</div>
+              </div>
+            </div>
               </div>
               <div class="col-12 col-md-4">
                 <div class="card">
-                  <ul class="list-inline badge_tag">
-                    <li class="list-inline-item">
-							  		<span class="badge bg-green">
-										hunger
-									</span>
-                    </li>
-                  </ul>
-                  <img src="../assets/images/img4.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">March for Climate Justice</h5>
-                    <p class="card-text">Local artists and musicians coming together to raise...</p>
-                    <hr>
-                    <h6>Allocation</h6>
-                    <div class="price">$75</div>
-                  </div>
-                </div>
+              <ul class="list-inline badge_tag">
+                <li class="list-inline-item">
+                  <span class="badge bg-green">
+                  hunger
+                </span>
+                </li>
+              </ul>
+              <img src="../assets/images/img4.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">March for Climate Justice</h5>
+                <p class="card-text">Local artists and musicians coming together to raise...</p>
+                <hr>
+                <h6>Allocation</h6>
+                <div class="price">$75</div>
+              </div>
+            </div>
               </div>
             </div>
           </div>
           <hr>
-          <div class="row">
-            <div class="col-6">
-              <a href="#" class="cancel_link" data-bs-dismiss="modal">Cancel</a>
-            </div>
-            <div class="col-6 text-right">
-              <span class="adjust_link">Adjust</span><button type="button" class="btn btn-purple-dark steps-btn" indexClass="donation_step" indexno="2">Confirm</button>
-            </div>
-          </div>
+      <div class="row">
+        <div class="col-6">
+          <a href="#" class="cancel_link" data-bs-dismiss="modal">Cancel</a>
+        </div>
+        <div class="col-6 text-right">
+          <span class="adjust_link">Adjust</span><button type="button" class="btn btn-purple-dark steps-btn" indexClass="donation_step" indexno="2">Confirm</button>
+        </div>
+      </div>
         </div>
         <div class="donation_step donation_step3">
           <div class="donation_wrap">
@@ -859,154 +1412,153 @@
             <div class="row">
               <div class="col-12 col-md-4">
                 <div class="card">
-			      			  <span class="cancel">
-			      			  	<svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M1.18922 8.12L3.98922 5.32L6.80922 8.12L7.84922 7.08L5.02922 4.28L7.84922 1.46L6.82922 0.44L3.98922 3.26L1.16922 0.44L0.149219 1.46L2.96922 4.28L0.149219 7.08L1.18922 8.12Z" fill="#7B3E6D"/>
-								</svg>
-			      			  </span>
-                  <ul class="list-inline badge_tag">
-                    <li class="list-inline-item">
-							  		<span class="badge bg-green">
-										hunger
-									</span>
-                    </li>
-                  </ul>
-                  <img src="../assets/images/img2.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Open Mic & Benefit Show</h5>
-                    <p class="card-text">Local artists and musicians coming together to raise...</p>
-                    <hr>
-                    <h6>Allocation</h6>
-                    <div class="form-group">
-                      <input type="text" name="" value="100" class="form-control">
-                    </div>
-                  </div>
+                  <span class="cancel">
+                    <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.18922 8.12L3.98922 5.32L6.80922 8.12L7.84922 7.08L5.02922 4.28L7.84922 1.46L6.82922 0.44L3.98922 3.26L1.16922 0.44L0.149219 1.46L2.96922 4.28L0.149219 7.08L1.18922 8.12Z" fill="#7B3E6D"/>
+              </svg>
+                  </span>
+              <ul class="list-inline badge_tag">
+                <li class="list-inline-item">
+                  <span class="badge bg-green">
+                  hunger
+                </span>
+                </li>
+              </ul>
+              <img src="../assets/images/img2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Open Mic & Benefit Show</h5>
+                <p class="card-text">Local artists and musicians coming together to raise...</p>
+                <hr>
+                <h6>Allocation</h6>
+                <div class="form-group">
+                  <input type="text" name="" value="100" class="form-control">
                 </div>
+              </div>
+            </div>
               </div>
               <div class="col-12 col-md-4">
                 <div class="card">
-			      			  <span class="cancel">
-			      			  	<svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M1.18922 8.12L3.98922 5.32L6.80922 8.12L7.84922 7.08L5.02922 4.28L7.84922 1.46L6.82922 0.44L3.98922 3.26L1.16922 0.44L0.149219 1.46L2.96922 4.28L0.149219 7.08L1.18922 8.12Z" fill="#7B3E6D"/>
-								</svg>
-			      			  </span>
-                  <ul class="list-inline badge_tag">
-                    <li class="list-inline-item">
-							  		<span class="badge bg-green">
-										hunger
-									</span>
-                    </li>
-                  </ul>
-                  <img src="../assets/images/img3.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Lunch for Kids</h5>
-                    <p class="card-text">Local artists and musicians coming together to raise...</p>
-                    <hr>
-                    <h6>Allocation</h6>
-                    <div class="form-group">
-                      <input type="text" name="" value="75" class="form-control">
-                    </div>
-                  </div>
+                  <span class="cancel">
+                    <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.18922 8.12L3.98922 5.32L6.80922 8.12L7.84922 7.08L5.02922 4.28L7.84922 1.46L6.82922 0.44L3.98922 3.26L1.16922 0.44L0.149219 1.46L2.96922 4.28L0.149219 7.08L1.18922 8.12Z" fill="#7B3E6D"/>
+              </svg>
+                  </span>
+              <ul class="list-inline badge_tag">
+                <li class="list-inline-item">
+                  <span class="badge bg-green">
+                  hunger
+                </span>
+                </li>
+              </ul>
+              <img src="../assets/images/img3.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Lunch for Kids</h5>
+                <p class="card-text">Local artists and musicians coming together to raise...</p>
+                <hr>
+                <h6>Allocation</h6>
+                <div class="form-group">
+                  <input type="text" name="" value="75" class="form-control">
                 </div>
+              </div>
+            </div>
               </div>
               <div class="col-12 col-md-4">
                 <div class="card">
-			      			  <span class="cancel">
-			      			  	<svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M1.18922 8.12L3.98922 5.32L6.80922 8.12L7.84922 7.08L5.02922 4.28L7.84922 1.46L6.82922 0.44L3.98922 3.26L1.16922 0.44L0.149219 1.46L2.96922 4.28L0.149219 7.08L1.18922 8.12Z" fill="#7B3E6D"/>
-								</svg>
-			      			  </span>
-                  <ul class="list-inline badge_tag">
-                    <li class="list-inline-item">
-							  		<span class="badge bg-green">
-										hunger
-									</span>
-                    </li>
-                  </ul>
-                  <img src="../assets/images/img4.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">March for Climate Justice</h5>
-                    <p class="card-text">Local artists and musicians coming together to raise...</p>
-                    <hr>
-                    <h6>Allocation</h6>
-                    <div class="form-group">
-                      <input type="text" name="" value="75" class="form-control">
-                    </div>
-                  </div>
+                  <span class="cancel">
+                    <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.18922 8.12L3.98922 5.32L6.80922 8.12L7.84922 7.08L5.02922 4.28L7.84922 1.46L6.82922 0.44L3.98922 3.26L1.16922 0.44L0.149219 1.46L2.96922 4.28L0.149219 7.08L1.18922 8.12Z" fill="#7B3E6D"/>
+              </svg>
+                  </span>
+              <ul class="list-inline badge_tag">
+                <li class="list-inline-item">
+                  <span class="badge bg-green">
+                  hunger
+                </span>
+                </li>
+              </ul>
+              <img src="../assets/images/img4.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">March for Climate Justice</h5>
+                <p class="card-text">Local artists and musicians coming together to raise...</p>
+                <hr>
+                <h6>Allocation</h6>
+                <div class="form-group">
+                  <input type="text" name="" value="75" class="form-control">
                 </div>
+              </div>
+            </div>
               </div>
             </div>
             <h5 class="small_text">Related projects</h5>
             <form method="post" class="form_with_searchDrop">
-              <app-autocomplete [placeholder]="'Search a location..'"></app-autocomplete>
-<!--              <input type="text" name="" placeholder="Search a location" class="form-control search_dropdown&#45;&#45;btn">-->
-              <button class="search-button">
-                <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="1.91188e-07" y="0.0450582" width="8.81618" height="3.95849" rx="1.97924" transform="matrix(0.46356 0.46356 -0.463556 0.463564 20.1889 18.3167)" fill="#272D35" stroke="#272D35" stroke-width="0.0972"></rect>
-                  <ellipse cx="13.5" cy="13.5" rx="9.54594" ry="9.54594" transform="rotate(45 13.5 13.5)" stroke="#272D35" stroke-width="3"></ellipse>
-                </svg>
-              </button>
-              <div class="search_dropdown">
-                <h6>Recommended</h6>
-                <div class="search_flex">
-                  <img src="../assets/images/img1.png" alt="#">
-                  <div class="text_box">
-                    <h5>Beach Cleanup</h5>
-                    <p>Volunteer cleanup of public beaches that line the coast of...</p>
-                    <ul class="list-inline badge_tag">
-                      <li class="list-inline-item">
-									  		<span class="badge bg-green">
-												terrestrial
-											</span>
-                      </li>
-                    </ul>
-                    <a href="#" class="btn btn-purple-dark">ADD</a>
-                  </div>
-                </div>
-                <hr>
-                <div class="search_flex">
-                  <img src="../assets/images/img2.png" alt="#">
-                  <div class="text_box">
-                    <h5>Arts & Culture Festival</h5>
-                    <p>Volunteer cleanup of public beaches that line the coast of...</p>
-                    <ul class="list-inline badge_tag">
-                      <li class="list-inline-item">
-									  		<span class="badge bg-green">
-												terrestrial
-											</span>
-                      </li>
-                    </ul>
-                    <a href="#" class="btn btn-purple-dark">ADD</a>
-                  </div>
-                </div>
-                <hr>
-                <div class="search_flex">
-                  <img src="../assets/images/img3.png" alt="#">
-                  <div class="text_box">
-                    <h5>Food Train Nashik</h5>
-                    <p>Volunteer cleanup of public beaches that line the coast of...</p>
-                    <ul class="list-inline badge_tag">
-                      <li class="list-inline-item">
-									  		<span class="badge bg-green">
-												terrestrial
-											</span>
-                      </li>
-                    </ul>
-                    <a href="#" class="btn btn-purple-dark">ADD</a>
-                  </div>
-                </div>
+          <input type="text" name="" placeholder="Search a location" class="form-control search_dropdown--btn">
+          <button class="search-button">
+            <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1.91188e-07" y="0.0450582" width="8.81618" height="3.95849" rx="1.97924" transform="matrix(0.46356 0.46356 -0.463556 0.463564 20.1889 18.3167)" fill="#272D35" stroke="#272D35" stroke-width="0.0972"></rect>
+              <ellipse cx="13.5" cy="13.5" rx="9.54594" ry="9.54594" transform="rotate(45 13.5 13.5)" stroke="#272D35" stroke-width="3"></ellipse>
+            </svg>
+          </button>
+          <div class="search_dropdown">
+            <h6>Recommended</h6>
+            <div class="search_flex">
+              <img src="../assets/images/img1.png" alt="#">
+              <div class="text_box">
+                <h5>Beach Cleanup</h5>
+                <p>Volunteer cleanup of public beaches that line the coast of...</p>
+                <ul class="list-inline badge_tag">
+                    <li class="list-inline-item">
+                      <span class="badge bg-green">
+                      terrestrial
+                    </span>
+                    </li>
+                </ul>
+                <a href="#" class="btn btn-purple-dark">ADD</a>
               </div>
-            </form>
+            </div>
+            <hr>
+            <div class="search_flex">
+              <img src="../assets/images/img2.png" alt="#">
+              <div class="text_box">
+                <h5>Arts & Culture Festival</h5>
+                <p>Volunteer cleanup of public beaches that line the coast of...</p>
+                <ul class="list-inline badge_tag">
+                    <li class="list-inline-item">
+                      <span class="badge bg-green">
+                      terrestrial
+                    </span>
+                    </li>
+                </ul>
+                <a href="#" class="btn btn-purple-dark">ADD</a>
+              </div>
+            </div>
+            <hr>
+            <div class="search_flex">
+              <img src="../assets/images/img3.png" alt="#">
+              <div class="text_box">
+                <h5>Food Train Nashik</h5>
+                <p>Volunteer cleanup of public beaches that line the coast of...</p>
+                <ul class="list-inline badge_tag">
+                    <li class="list-inline-item">
+                      <span class="badge bg-green">
+                      terrestrial
+                    </span>
+                    </li>
+                </ul>
+                <a href="#" class="btn btn-purple-dark">ADD</a>
+              </div>
+            </div>
+          </div>
+        </form>
           </div>
           <hr>
-          <div class="row">
-            <div class="col-6">
-              <a href="#" class="cancel_link" data-bs-dismiss="modal">Cancel</a>
-            </div>
-            <div class="col-6 text-right">
-              <span class="adjust_link">Adjust</span><button type="button" class="btn btn-purple-dark steps-btn" indexClass="donation_step" indexno="3">Confirm</button>
-            </div>
-          </div>
+      <div class="row">
+        <div class="col-6">
+          <a href="#" class="cancel_link" data-bs-dismiss="modal">Cancel</a>
+        </div>
+        <div class="col-6 text-right">
+          <span class="adjust_link">Adjust</span><button type="button" class="btn btn-purple-dark steps-btn" indexClass="donation_step" indexno="3">Confirm</button>
+        </div>
+      </div>
         </div>
       </div>
     </div>
@@ -1025,53 +1577,53 @@
           <div class="row">
             <div class="col-12 col-md-6">
               <div class="form-group">
-                <label class="form-label">First Name</label>
-                <input type="text" name="" placeholder="First Name" class="form-control">
-              </div>
+            <label class="form-label">First Name</label>
+            <input type="text" name="" placeholder="First Name" class="form-control">
+          </div>
             </div>
             <div class="col-12 col-md-6">
               <div class="form-group">
-                <label class="form-label">Last Name</label>
-                <input type="text" name="" placeholder="Last Name" class="form-control">
-              </div>
+            <label class="form-label">Last Name</label>
+            <input type="text" name="" placeholder="Last Name" class="form-control">
+          </div>
             </div>
           </div>
           <div class="form-group">
-            <label class="form-label">Email</label>
-            <input type="text" name="" placeholder="Email" class="form-control">
-          </div>
-          <div class="row">
+        <label class="form-label">Email</label>
+        <input type="text" name="" placeholder="Email" class="form-control">
+      </div>
+      <div class="row">
             <div class="col-12 col-md-8">
               <div class="form-group">
-                <label class="form-label">Mailing Address</label>
-                <input type="text" name="" placeholder="Mailing Address" class="form-control">
-              </div>
+            <label class="form-label">Mailing Address</label>
+            <input type="text" name="" placeholder="Mailing Address" class="form-control">
+          </div>
             </div>
             <div class="col-12 col-md-4">
               <div class="form-group">
-                <label class="form-label">City</label>
-                <input type="text" name="" placeholder="City" class="form-control">
-              </div>
+            <label class="form-label">City</label>
+            <input type="text" name="" placeholder="City" class="form-control">
+          </div>
             </div>
           </div>
           <div class="row">
             <div class="col-12 col-md-4">
               <div class="form-group">
-                <label class="form-label">State</label>
-                <input type="text" name="" placeholder="State" class="form-control">
-              </div>
+            <label class="form-label">State</label>
+            <input type="text" name="" placeholder="State" class="form-control">
+          </div>
             </div>
             <div class="col-12 col-md-4">
               <div class="form-group">
-                <label class="form-label">Zip</label>
-                <input type="text" name="" placeholder="Zip" class="form-control">
-              </div>
+            <label class="form-label">Zip</label>
+            <input type="text" name="" placeholder="Zip" class="form-control">
+          </div>
             </div>
             <div class="col-12 col-md-4">
               <div class="form-group">
-                <label class="form-label">Country</label>
-                <input type="text" name="" placeholder="Country" class="form-control">
-              </div>
+            <label class="form-label">Country</label>
+            <input type="text" name="" placeholder="Country" class="form-control">
+          </div>
             </div>
           </div>
           <hr>
@@ -1079,29 +1631,29 @@
           <div class="row">
             <div class="col-12 col-md-8">
               <div class="form-group">
-                <label class="form-label">Card Number</label>
-                <input type="text" name="" placeholder="Card Number" class="form-control">
-              </div>
+            <label class="form-label">Card Number</label>
+            <input type="text" name="" placeholder="Card Number" class="form-control">
+          </div>
             </div>
             <div class="col-12 col-md-4">
               <div class="form-group">
-                <label class="form-label">Expiration date</label>
-                <input type="text" name="" placeholder="DD/MM/YYYY" class="form-control">
-              </div>
+            <label class="form-label">Expiration date</label>
+            <input type="text" name="" placeholder="DD/MM/YYYY" class="form-control">
+          </div>
             </div>
           </div>
           <div class="row">
             <div class="col-12 col-md-8">
               <div class="form-group">
-                <label class="form-label">Card Holder’s Name</label>
-                <input type="text" name="" placeholder="Card Holder’s Name" class="form-control">
-              </div>
+            <label class="form-label">Card Holder’s Name</label>
+            <input type="text" name="" placeholder="Card Holder’s Name" class="form-control">
+          </div>
             </div>
             <div class="col-12 col-md-4">
               <div class="form-group">
-                <label class="form-label">Security code</label>
-                <input type="text" name="" placeholder="Security code" class="form-control">
-              </div>
+            <label class="form-label">Security code</label>
+            <input type="text" name="" placeholder="Security code" class="form-control">
+          </div>
             </div>
           </div>
           <hr>
@@ -1112,9 +1664,9 @@
             <div class="col-6">
               <div class="check_box">
                 <label class="label blue">Same as mailing address
-                  <input type="checkbox" checked="checked">
-                  <span class="checkmark"></span>
-                </label>
+              <input type="checkbox" checked="checked">
+              <span class="checkmark"></span>
+            </label>
               </div>
             </div>
           </div>
@@ -1125,36 +1677,36 @@
           <img src="../assets/images/checkout_img.png" alt="#" class="profile_overview_img">
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
             <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1.18922 8.12L3.98922 5.32L6.80922 8.12L7.84922 7.08L5.02922 4.28L7.84922 1.46L6.82922 0.44L3.98922 3.26L1.16922 0.44L0.149219 1.46L2.96922 4.28L0.149219 7.08L1.18922 8.12Z" fill="#7B3E6D"/>
-            </svg>
+          <path d="M1.18922 8.12L3.98922 5.32L6.80922 8.12L7.84922 7.08L5.02922 4.28L7.84922 1.46L6.82922 0.44L3.98922 3.26L1.16922 0.44L0.149219 1.46L2.96922 4.28L0.149219 7.08L1.18922 8.12Z" fill="#7B3E6D"/>
+        </svg>
           </button>
-        </div>
-        <div class="modal-body">
-          <h4 class="summary_heading">Summary <a href="#">Edit Cart</a></h4>
-          <div class="summary_content">
-            <div class="summary_flex">
-              Open Mic & Benefit Show<span>$100.00</span>
-            </div>
-            <div class="summary_flex">
-              Lunch for Kids<span>$75.00</span>
-            </div>
-            <div class="summary_flex">
-              March for Climate Justice<span>$75.00</span>
-            </div>
-            <div class="summary_flex">
-              Beach Cleanup<span>$20.00</span>
-            </div>
+      </div>
+      <div class="modal-body">
+        <h4 class="summary_heading">Summary <a href="#">Edit Cart</a></h4>
+        <div class="summary_content">
+          <div class="summary_flex">
+            Open Mic & Benefit Show<span>$100.00</span>
           </div>
-          <h4 class="total_heading">
-            Total <span class="total">$270</span>
-          </h4>
-        </div>
-        <div class="modal-footer">
-          <div class="gutter_padding">
-            <button type="button" class="btn btn-purple-dark" data-bs-dismiss="modal">Donate</button>
+          <div class="summary_flex">
+            Lunch for Kids<span>$75.00</span>
           </div>
-          <img src="../assets/images/purple_print_check.png" alt="#">
+          <div class="summary_flex">
+            March for Climate Justice<span>$75.00</span>
+          </div>
+          <div class="summary_flex">
+            Beach Cleanup<span>$20.00</span>
+          </div>
         </div>
+        <h4 class="total_heading">
+          Total <span class="total">$270</span>
+        </h4>
+      </div>
+      <div class="modal-footer">
+        <div class="gutter_padding">
+          <button type="button" class="btn btn-purple-dark" data-bs-dismiss="modal">Donate</button>
+        </div>
+        <img src="../assets/images/purple_print_check.png" alt="#">
+      </div>
       </div>
     </div>
   </div>
@@ -1163,322 +1715,340 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header justify-content-center">
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-          <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1.18922 8.12L3.98922 5.32L6.80922 8.12L7.84922 7.08L5.02922 4.28L7.84922 1.46L6.82922 0.44L3.98922 3.26L1.16922 0.44L0.149219 1.46L2.96922 4.28L0.149219 7.08L1.18922 8.12Z" fill="#7B3E6D"/>
-          </svg>
-        </button>
-      </div>
-      <div class="modal-body">
-        <img src="../assets/images/modal_mask.png" alt="#" class="mask">
-        <img src="../assets/images/all_set.svg" alt="#" class="ill">
-        <h4>All Set!</h4>
-        <p>Proin vulputate leo ac bibendum rutrum.</p>
-        <a href="#" class="btn btn-purple-dark" data-bs-dismiss="modal">Ok</a>
-      </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.18922 8.12L3.98922 5.32L6.80922 8.12L7.84922 7.08L5.02922 4.28L7.84922 1.46L6.82922 0.44L3.98922 3.26L1.16922 0.44L0.149219 1.46L2.96922 4.28L0.149219 7.08L1.18922 8.12Z" fill="#7B3E6D"/>
+        </svg>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="../assets/images/modal_mask.png" alt="#" class="mask">
+          <img src="../assets/images/all_set.svg" alt="#" class="ill">
+          <h4>All Set!</h4>
+          <p>Proin vulputate leo ac bibendum rutrum.</p>
+          <a href="#" class="btn btn-purple-dark" data-bs-dismiss="modal">Ok</a>
+        </div>
     </div>
   </div>
 </div>
-<div class="chat_box">
-  <div class="gutter_padding pb-0">
-    <h4>Chat</h4>
-    <form method="post">
-      <input type="text" name="" placeholder="Search users, groups or chat history" class="form-control">
-    </form>
-    <div class="active_wrap chat_user_slider">
-      <div>
-        <a href="#" class="user">
-          <div class="img_box">
-            <img src="../assets/images/collab1.png" alt="#">
-            <div class="active_icon"></div>
-          </div>
-          John
-        </a>
-      </div>
-      <div>
-        <a href="#" class="user">
-          <div class="img_box">
-            <img src="../assets/images/collab2.png" alt="#">
-            <div class="active_icon"></div>
-          </div>
-          Tom
-        </a>
-      </div>
-      <div>
-        <a href="#" class="user">
-          <div class="img_box">
-            <img src="../assets/images/collab3.png" alt="#">
-            <div class="active_icon"></div>
-          </div>
-          Peter
-        </a>
-      </div>
-      <div>
-        <a href="#" class="user">
-          <div class="img_box">
-            <img src="../assets/images/collab4.png" alt="#">
-            <div class="active_icon"></div>
-          </div>
-          Mary
-        </a>
-      </div>
-      <div>
-        <a href="#" class="user">
-          <div class="img_box">
-            <img src="../assets/images/collab5.png" alt="#">
-            <div class="active_icon"></div>
-          </div>
-          Bobby
-        </a>
-      </div>
-      <div>
-        <a href="#" class="user">
-          <div class="img_box">
-            <img src="../assets/images/collab6.png" alt="#">
-            <div class="active_icon"></div>
-          </div>
-          Jan
-        </a>
-      </div>
-      <div>
-        <a href="#" class="user">
-          <div class="img_box">
-            <img src="../assets/images/collab7.png" alt="#">
-            <div class="active_icon"></div>
-          </div>
-          John
-        </a>
-      </div>
-      <div>
-        <a href="#" class="user">
-          <div class="img_box">
-            <img src="../assets/images/collab8.png" alt="#">
-            <div class="active_icon"></div>
-          </div>
-          Tom
-        </a>
-      </div>
-      <div>
-        <a href="#" class="user">
-          <div class="img_box">
-            <img src="../assets/images/collab9.png" alt="#">
-            <div class="active_icon"></div>
-          </div>
-          Peter
-        </a>
-      </div>
+
+<div class="modal fade" id="upload" tabindex="-1" aria-labelledby="upload_photo_videoLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title">Attachment</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+        <svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.18922 8.12L3.98922 5.32L6.80922 8.12L7.84922 7.08L5.02922 4.28L7.84922 1.46L6.82922 0.44L3.98922 3.26L1.16922 0.44L0.149219 1.46L2.96922 4.28L0.149219 7.08L1.18922 8.12Z" fill="#7B3E6D"/>
+        </svg>
+      </button>
     </div>
-  </div>
-  <hr>
-  <div class="gutter_padding pt-0 pb-0">
-    <div class="msg_flex_wrap">
-      <div class="msg_flex">
-        <div class="img_box">
-          <img src="../assets/images/collab1.png" alt="#">
-          <div class="active_icon"></div>
-        </div>
-        <div class="text_box">
-          <div class="name">Leslie Alexander, Wade Warren</div>
-          <div class="msg_text">Sure. I strained it the other day...</div>
-          <div class="time">6m</div>
-        </div>
-      </div>
-      <div class="msg_flex">
-        <div class="img_box">
-          <img src="../assets/images/collab1.png" alt="#">
-          <div class="active_icon"></div>
-        </div>
-        <div class="text_box">
-          <div class="name">Leslie Alexander, Wade Warren</div>
-          <div class="msg_text">Sure. I strained it the other day...</div>
-          <div class="time">6m</div>
-        </div>
-      </div>
-      <div class="msg_flex">
-        <div class="img_box">
-          <img src="../assets/images/collab1.png" alt="#">
-          <div class="active_icon"></div>
-        </div>
-        <div class="text_box">
-          <div class="name">Leslie Alexander, Wade Warren</div>
-          <div class="msg_text">Sure. I strained it the other day...</div>
-          <div class="time">6m</div>
-        </div>
-      </div>
-      <div class="msg_flex">
-        <div class="img_box">
-          <img src="../assets/images/collab1.png" alt="#">
-          <div class="active_icon"></div>
-        </div>
-        <div class="text_box">
-          <div class="name">Leslie Alexander, Wade Warren</div>
-          <div class="msg_text">Sure. I strained it the other day...</div>
-          <div class="time">6m</div>
-        </div>
-      </div>
-      <div class="msg_flex">
-        <div class="img_box">
-          <img src="../assets/images/collab1.png" alt="#">
-          <div class="active_icon"></div>
-        </div>
-        <div class="text_box">
-          <div class="name">Leslie Alexander, Wade Warren</div>
-          <div class="msg_text">Sure. I strained it the other day...</div>
-          <div class="time">6m</div>
-        </div>
-      </div>
-      <div class="msg_flex">
-        <div class="img_box">
-          <img src="../assets/images/collab1.png" alt="#">
-          <div class="active_icon"></div>
-        </div>
-        <div class="text_box">
-          <div class="name">Leslie Alexander, Wade Warren</div>
-          <div class="msg_text">Sure. I strained it the other day...</div>
-          <div class="time">6m</div>
-        </div>
-      </div>
-      <div class="msg_flex">
-        <div class="img_box">
-          <img src="../assets/images/collab1.png" alt="#">
-          <div class="active_icon"></div>
-        </div>
-        <div class="text_box">
-          <div class="name">Leslie Alexander, Wade Warren</div>
-          <div class="msg_text">Sure. I strained it the other day...</div>
-          <div class="time">6m</div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="person_chat">
-    <div class="chat_top_opt">
-      <a href="#" class="back_icon">
-        <img src="../assets/images/arrow-left.svg" alt="#">
-      </a>
-      <a href="#" class="name_flex">
-        <span class="profile_img"><img src="../assets/images/collab1.png" alt="#"></span>
-        <span>Courtney Henry</span>
-        <img src="../assets/images/gear.svg" alt="#" class="gear">
-      </a>
-      <ul class="list-inline">
-        <li class="list-inline-item">
-          <a href="#">
-            <img src="../assets/images/phone_call.svg" alt="#">
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a href="#">
-            <img src="../assets/images/video_call.svg" alt="#">
-          </a>
-        </li>
+    <div class="modal-body">
+      <ul class="nav nav-tabs" id="myTabContentUpload" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="upload-new-tab" data-bs-toggle="tab" data-bs-target="#upload-new" type="button" role="tab" aria-controls="upload-new" aria-selected="true">Upload New</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="existing-tab" data-bs-toggle="tab" data-bs-target="#existing" type="button" role="tab" aria-controls="existing" aria-selected="false">Existing From Library</button>
+      </li>
       </ul>
-    </div>
-    <div class="person_profile">
-      <img src="../assets/images/people1.png" alt="#" class="user_img">
-      <h3>Courtney Henry</h3>
-      <p>You’re both in the group<br> “Community Forest Alliance”</p>
-    </div>
-    <div class="msg_timeline">
-      <div class="time">21:32</div>
-      <div class="message_flex">
-        <div class="message_content right">
-          <img src="../assets/images/hand.png" alt="#" class="hand">
-        </div>
-        <img src="../assets/images/check_icon.svg" alt="#" class="check">
-      </div>
-      <div class="time">16:44</div>
-      <div class="message_flex">
-        <div class="message_content left">
-          <img src="../assets/images/people1.png" alt="#" class="user_writer">
-          <div class="message_content_wrap">
-            <div class="message_box">Hello, Leslie!
-            </div>
-            <div class="message_box">How are you doing?
-              <span class="emo_icon">
-									<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M7 0C10.866 0 14 3.13401 14 7C14 10.866 10.866 14 7 14C3.13401 14 0 10.866 0 7C0 3.13401 3.13401 0 7 0ZM9.74864 9.16994C9.05225 10.0619 8.15271 10.4968 7.0001 10.4968C5.84749 10.4968 4.94795 10.0619 4.25155 9.16994C4.05329 8.91601 3.68671 8.87088 3.43277 9.06915C3.17884 9.26741 3.13371 9.63399 3.33198 9.88792C4.25042 11.0642 5.48977 11.6635 7.0001 11.6635C8.51043 11.6635 9.74977 11.0642 10.6682 9.88792C10.8665 9.63399 10.8214 9.26741 10.5674 9.06915C10.3135 8.87088 9.94691 8.91601 9.74864 9.16994ZM4.6666 4.6667C4.18335 4.6667 3.7916 5.18904 3.7916 5.83337C3.7916 6.4777 4.18335 7.00004 4.6666 7.00004C5.14984 7.00004 5.5416 6.4777 5.5416 5.83337C5.5416 5.18904 5.14984 4.6667 4.6666 4.6667ZM9.3334 4.6667C8.85016 4.6667 8.4584 5.18904 8.4584 5.83337C8.4584 6.4777 8.85016 7.00004 9.3334 7.00004C9.81665 7.00004 10.2084 6.4777 10.2084 5.83337C10.2084 5.18904 9.81665 4.6667 9.3334 4.6667Z" fill="#D6DCE4"/>
-									</svg>
-								</span>
-            </div>
-          </div>
-        </div>
-        <img src="../assets/images/check_icon.svg" alt="#" class="check">
-      </div>
-      <div class="time">16:50</div>
-      <div class="message_flex">
-        <div class="message_content right">
-          <div class="message_content_wrap">
-            <div class="message_box">It’s morning in Tokyo 😎
-            </div>
-          </div>
-        </div>
-        <img src="../assets/images/check_icon.svg" alt="#" class="check">
-      </div>
-      <div class="message_flex">
-        <div class="message_content left">
-          <img src="../assets/images/people1.png" alt="#" class="user_writer">
-          <div class="message_content_wrap">
-            <div class="message_box">What is the most popular meal in Japan?
-            </div>
-            <div class="message_box">Do you like it?
-            </div>
-          </div>
-        </div>
-        <img src="../assets/images/check_icon.svg" alt="#" class="check">
-      </div>
-      <div class="message_flex">
-        <div class="message_content right">
-          <div class="message_content_wrap">
-            <div class="message_box">I think top two are:
-            </div>
-          </div>
-        </div>
-        <img src="../assets/images/check_icon.svg" alt="#" class="check">
-      </div>
-      <div class="message_flex">
-        <div class="message_content right">
-          <div class="message_content_wrap">
-            <div class="uploaded_img">
-              <img src="../assets/images/upload_img1.png" alt="#">
-              <img src="../assets/images/upload_img2.png" alt="#">
-            </div>
-          </div>
-        </div>
-        <img src="../assets/images/check_icon.svg" alt="#" class="check">
-      </div>
-    </div>
-    <div class="message_typer">
-      <div class="upload_flex">
-        <div class="flex_col">
-						<span class="camera_icon">
-							<img src="../assets/images/camera.png" alt="#">
-						</span>
-        </div>
-        <div class="flex_col">
-						<span class="gallery_icon">
-							<img src="../assets/images/gallery.png" alt="#">
-						</span>
-        </div>
-        <div class="flex_col">
-						<span class="mic_icon">
-							<img src="../assets/images/mic.png" alt="#">
-						</span>
-        </div>
-      </div>
-      <form method="post">
+      <div class="tab-content" id="myTabContentUploadContent">
+      <div class="tab-pane fade show active" id="upload-new" role="tabpanel" aria-labelledby="upload-new-tab">
         <div class="form-group">
-          <input type="text" name="" placeholder="Aa" class="form-control">
-          <span class="emoji_icon">
-							<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M7 0C10.866 0 14 3.13401 14 7C14 10.866 10.866 14 7 14C3.13401 14 0 10.866 0 7C0 3.13401 3.13401 0 7 0ZM9.74864 9.16994C9.05225 10.0619 8.15271 10.4968 7.0001 10.4968C5.84749 10.4968 4.94795 10.0619 4.25155 9.16994C4.05329 8.91601 3.68671 8.87088 3.43277 9.06915C3.17884 9.26741 3.13371 9.63399 3.33198 9.88792C4.25042 11.0642 5.48977 11.6635 7.0001 11.6635C8.51043 11.6635 9.74977 11.0642 10.6682 9.88792C10.8665 9.63399 10.8214 9.26741 10.5674 9.06915C10.3135 8.87088 9.94691 8.91601 9.74864 9.16994ZM4.6666 4.6667C4.18335 4.6667 3.7916 5.18904 3.7916 5.83337C3.7916 6.4777 4.18335 7.00004 4.6666 7.00004C5.14984 7.00004 5.5416 6.4777 5.5416 5.83337C5.5416 5.18904 5.14984 4.6667 4.6666 4.6667ZM9.3334 4.6667C8.85016 4.6667 8.4584 5.18904 8.4584 5.83337C8.4584 6.4777 8.85016 7.00004 9.3334 7.00004C9.81665 7.00004 10.2084 6.4777 10.2084 5.83337C10.2084 5.18904 9.81665 4.6667 9.3334 4.6667Z" fill="#D6DCE4"></path>
-							</svg>
-						</span>
+          <label class="form-label">Select files to upload</label>
+          <div class="row">
+            <div class="col-12 col-10">
+              <input type="text" name="" class="form-control" placeholder="Or Drag and drop files here">
+            </div>
+            <div class="col-12 col-2 text-right">
+              <a href="#" class="btn btn-purple-dark">Select</a>
+            </div>
+          </div>
         </div>
-        <span class="btn-white">
-						<img src="../assets/images/plus.svg" alt="#">
-					</span>
-      </form>
+        <p>Select images to upload (jpg, jepg, png and gif). </p>
+        <div class="form-group">
+          <label class="form-label">Description</label>
+          <textarea type="text" name="" class="form-control" placeholder="Description"></textarea>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Tags</label>
+        </div>
+        <div class="white_box">
+          <ul class="list-inline badge_tag">
+            <li class="list-inline-item">
+              <span class="badge bg-green">
+                <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.04992 10.6592L6.00193 10.688L5.97314 10.67C-3.11516 5.20811 0.00384399 -0.0630103 3.37717 0.000569407C3.48513 0.000569407 3.5943 0.0113659 3.70227 0.0245617C5.06023 0.188909 5.69963 0.942269 6.00193 1.59006C6.30304 0.942269 6.94363 0.188909 8.3016 0.0305598C11.7793 -0.397703 15.4009 5.02457 6.04992 10.6592Z" fill="white"></path>
+                </svg>
+                AQUATIC ECOLOGY <span class="close"><i class="fa fa-close"></i></span>
+              </span>
+            </li>
+            <li class="list-inline-item">
+              <span class="badge bg-green">
+                <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.04992 10.6592L6.00193 10.688L5.97314 10.67C-3.11516 5.20811 0.00384399 -0.0630103 3.37717 0.000569407C3.48513 0.000569407 3.5943 0.0113659 3.70227 0.0245617C5.06023 0.188909 5.69963 0.942269 6.00193 1.59006C6.30304 0.942269 6.94363 0.188909 8.3016 0.0305598C11.7793 -0.397703 15.4009 5.02457 6.04992 10.6592Z" fill="white"></path>
+                </svg>
+                HUNGER &amp; FOOD SYSTEMS <span class="close"><i class="fa fa-close"></i></span>
+              </span>
+            </li>
+            <li class="list-inline-item">
+              <span class="badge bg-green">
+                <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.04992 10.6592L6.00193 10.688L5.97314 10.67C-3.11516 5.20811 0.00384399 -0.0630103 3.37717 0.000569407C3.48513 0.000569407 3.5943 0.0113659 3.70227 0.0245617C5.06023 0.188909 5.69963 0.942269 6.00193 1.59006C6.30304 0.942269 6.94363 0.188909 8.3016 0.0305598C11.7793 -0.397703 15.4009 5.02457 6.04992 10.6592Z" fill="white"></path>
+                </svg>
+                TERRESTRIAL ECOLOGY <span class="close"><i class="fa fa-close"></i></span>
+              </span>
+            </li>
+          </ul>
+        </div>
+        <hr>
+        <button type="button" class="btn btn-purple-dark" data-bs-dismiss="modal">Add</button>
+      </div>
+      <div class="tab-pane fade" id="existing" role="tabpanel" aria-labelledby="existing-tab">
+        <div class="white_box white_box_manage">
+          <div class="top_option">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="button_flex">
+                  <a href="#" class="btn-white">NEW FOLDER</a>
+                  <a href="#" class="btn-white">UPLOAD</a>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="list_flex">
+                  <form method="post">
+                    <input type="text" name="" placeholder="" class="form-control">
+                    <button class="search-button">
+                      <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="1.91188e-07" y="0.0450582" width="8.81618" height="3.95849" rx="1.97924" transform="matrix(0.46356 0.46356 -0.463556 0.463564 20.1889 18.3167)" fill="#272D35" stroke="#272D35" stroke-width="0.0972"></rect>
+                        <ellipse cx="13.5" cy="13.5" rx="9.54594" ry="9.54594" transform="rotate(45 13.5 13.5)" stroke="#272D35" stroke-width="3"></ellipse>
+                      </svg>
+                    </button>
+                  </form>
+                  <ul class="nav nav-tabs" id="myTabManagement" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="gridd-tab" data-bs-toggle="tab" data-bs-target="#gridd" type="button" role="tab" aria-controls="gridd" aria-selected="true">
+                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 11.0769H4.15385V6.92308H0V11.0769ZM0 4.15385H4.15385V0H0V4.15385ZM0 18H4.15385V13.8462H0V18ZM6.92308 18H11.0769V13.8462H6.92308V18ZM13.8462 11.0769H18V6.92308H13.8462V11.0769ZM6.92308 11.0769H11.0769V6.92308H6.92308V11.0769ZM13.8462 18H18V13.8462H13.8462V18ZM13.8462 0V4.15385H18V0H13.8462ZM6.92308 4.15385H11.0769V0H6.92308V4.15385Z" fill="white"/>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="listt-tab" data-bs-toggle="tab" data-bs-target="#listt" type="button" role="tab" aria-controls="listt" aria-selected="false">
+                      <svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.75 8.25H3.25V5.75H0.75V8.25ZM0.75 13.25H3.25V10.75H0.75V13.25ZM0.75 3.25H3.25V0.75H0.75V3.25ZM5.75 8.25H23.25V5.75H5.75V8.25ZM5.75 13.25H23.25V10.75H5.75V13.25ZM5.75 0.75V3.25H23.25V0.75H5.75Z" fill="white"/>
+                      </svg>
+                    </button>
+                  </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-content" id="myTabManagementContent">
+          <div class="tab-pane fade show active p-0" id="gridd" role="tabpanel" aria-labelledby="gridd-tab">
+            <div class="row">
+              <div class="col-12 col-md-4">
+                <div class="side_opt">
+                  <a href="#" class="side_opt_link">Document</a>
+                  <a href="#" class="side_opt_link active">Picture</a>
+                </div>
+              </div>
+              <div class="col-12 col-md-8">
+                <div class="uploaded_wrap">
+                  <div class="row">
+                    <div class="col-6 col-md-3">
+                      <a href="#" class="upload_col">
+                        <div class="img_box selected">
+                          <img src="../assets/images/donate_img.png" alt="#">
+                          <span class="check"><i class="fa fa-check"></i></span>
+                        </div>
+                        <div class="file_name">File name</div>
+                        <div class="file_type">JPG</div>
+                      </a>
+                    </div>
+                    <div class="col-6 col-md-3">
+                      <a href="#" class="upload_col">
+                        <div class="img_box">
+                          <img src="../assets/images/donate_img.png" alt="#">
+                          <span class="check"><i class="fa fa-check"></i></span>
+                        </div>
+                        <div class="file_name">File name</div>
+                        <div class="file_type">JPG</div>
+                      </a>
+                    </div>
+                    <div class="col-6 col-md-3">
+                      <a href="#" class="upload_col">
+                        <div class="img_box">
+                          <img src="../assets/images/donate_img.png" alt="#">
+                          <span class="check"><i class="fa fa-check"></i></span>
+                        </div>
+                        <div class="file_name">File name</div>
+                        <div class="file_type">JPG</div>
+                      </a>
+                    </div>
+                    <div class="col-6 col-md-3">
+                      <a href="#" class="upload_col">
+                        <div class="img_box">
+                          <img src="../assets/images/donate_img.png" alt="#">
+                          <span class="check"><i class="fa fa-check"></i></span>
+                        </div>
+                        <div class="file_name">File name</div>
+                        <div class="file_type">JPG</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-6 col-md-3">
+                      <a href="#" class="upload_col">
+                        <div class="img_box">
+                          <img src="../assets/images/donate_img.png" alt="#">
+                          <span class="check"><i class="fa fa-check"></i></span>
+                        </div>
+                        <div class="file_name">File name</div>
+                        <div class="file_type">JPG</div>
+                      </a>
+                    </div>
+                    <div class="col-6 col-md-3">
+                      <a href="#" class="upload_col">
+                        <div class="img_box">
+                          <img src="../assets/images/donate_img.png" alt="#">
+                          <span class="check"><i class="fa fa-check"></i></span>
+                        </div>
+                        <div class="file_name">File name</div>
+                        <div class="file_type">JPG</div>
+                      </a>
+                    </div>
+                    <div class="col-6 col-md-3">
+                      <a href="#" class="upload_col">
+                        <div class="img_box">
+                          <img src="../assets/images/donate_img.png" alt="#">
+                          <span class="check"><i class="fa fa-check"></i></span>
+                        </div>
+                        <div class="file_name">File name</div>
+                        <div class="file_type">JPG</div>
+                      </a>
+                    </div>
+                    <div class="col-6 col-md-3">
+                      <a href="#" class="upload_col">
+                        <div class="img_box">
+                          <img src="../assets/images/donate_img.png" alt="#">
+                          <span class="check"><i class="fa fa-check"></i></span>
+                        </div>
+                        <div class="file_name">File name</div>
+                        <div class="file_type">JPG</div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade p-0" id="listt" role="tabpanel" aria-labelledby="listt-tab">
+            <div class="row">
+              <div class="col-12 col-md-4">
+                <div class="side_opt">
+                  <a href="#" class="side_opt_link">Document</a>
+                  <a href="#" class="side_opt_link active">Picture</a>
+                </div>
+              </div>
+              <div class="col-12 col-md-8">
+                <div class="uploaded_wrap">
+                  <div class="row">
+                    <div class="col-6 col-md-3">
+                      <a href="#" class="upload_col">
+                        <div class="img_box selected">
+                          <img src="../assets/images/donate_img.png" alt="#">
+                          <span class="check"><i class="fa fa-check"></i></span>
+                        </div>
+                        <div class="file_name">File name</div>
+                        <div class="file_type">JPG</div>
+                      </a>
+                    </div>
+                    <div class="col-6 col-md-3">
+                      <a href="#" class="upload_col">
+                        <div class="img_box">
+                          <img src="../assets/images/donate_img.png" alt="#">
+                          <span class="check"><i class="fa fa-check"></i></span>
+                        </div>
+                        <div class="file_name">File name</div>
+                        <div class="file_type">JPG</div>
+                      </a>
+                    </div>
+                    <div class="col-6 col-md-3">
+                      <a href="#" class="upload_col">
+                        <div class="img_box">
+                          <img src="../assets/images/donate_img.png" alt="#">
+                          <span class="check"><i class="fa fa-check"></i></span>
+                        </div>
+                        <div class="file_name">File name</div>
+                        <div class="file_type">JPG</div>
+                      </a>
+                    </div>
+                    <div class="col-6 col-md-3">
+                      <a href="#" class="upload_col">
+                        <div class="img_box">
+                          <img src="../assets/images/donate_img.png" alt="#">
+                          <span class="check"><i class="fa fa-check"></i></span>
+                        </div>
+                        <div class="file_name">File name</div>
+                        <div class="file_type">JPG</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-6 col-md-3">
+                      <a href="#" class="upload_col">
+                        <div class="img_box">
+                          <img src="../assets/images/donate_img.png" alt="#">
+                          <span class="check"><i class="fa fa-check"></i></span>
+                        </div>
+                        <div class="file_name">File name</div>
+                        <div class="file_type">JPG</div>
+                      </a>
+                    </div>
+                    <div class="col-6 col-md-3">
+                      <a href="#" class="upload_col">
+                        <div class="img_box">
+                          <img src="../assets/images/donate_img.png" alt="#">
+                          <span class="check"><i class="fa fa-check"></i></span>
+                        </div>
+                        <div class="file_name">File name</div>
+                        <div class="file_type">JPG</div>
+                      </a>
+                    </div>
+                    <div class="col-6 col-md-3">
+                      <a href="#" class="upload_col">
+                        <div class="img_box">
+                          <img src="../assets/images/donate_img.png" alt="#">
+                          <span class="check"><i class="fa fa-check"></i></span>
+                        </div>
+                        <div class="file_name">File name</div>
+                        <div class="file_type">JPG</div>
+                      </a>
+                    </div>
+                    <div class="col-6 col-md-3">
+                      <a href="#" class="upload_col">
+                        <div class="img_box">
+                          <img src="../assets/images/donate_img.png" alt="#">
+                          <span class="check"><i class="fa fa-check"></i></span>
+                        </div>
+                        <div class="file_name">File name</div>
+                        <div class="file_type">JPG</div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <hr>
+        <button type="button" class="btn btn-purple-dark" data-bs-dismiss="modal">Add</button>
+      </div>
+      </div>
+    </div>
     </div>
   </div>
 </div>

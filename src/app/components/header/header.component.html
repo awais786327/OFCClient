@@ -1,7 +1,300 @@
 <!-- private route header -->
 <section class="nav_section" *ngIf="!isPublicRoute">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
     <div class="container">
+
+      <div class="mobile-navbrand visible-xs">
+        <a class="navbar-brand" href="#"><img src="../assets/images/logo_icon.svg" alt="#"> Open Impact</a>
+      </div>
+
+      <a class="navbar-brand hidden-xs" href="#"><img src="../assets/images/logo_icon.svg" alt="#"> Open Impact</a>
+
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 visible-xs">
+        <li class="nav-item">
+          <a class="nav-link round_icon chat_icon" href="#"><img src="../assets/images/chat.svg" alt="#"></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle round_icon bell_icon" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="../assets/images/bell.svg" alt="#">
+          </a>
+          <div class="dropdown-menu notificate" aria-labelledby="navbarDropdown">
+            <div class="top_heading">
+              <h4>Notification <span>(6)</span></h4> <a href="#" class="clear_all">Clear All</a>
+            </div>
+            <div class="bottom_notif">
+              <div class="notify_flex">
+                <div class="img_box">
+                  <img src="../assets/images/collab1.png" alt="#">
+                </div>
+                <div class="text_box">
+                  <a href="#" class="notifi_link">Aliquam consequat dolor ex. Aenean nec justo tincidunt, vehicula lorem non.</a>
+                  <ul class="list-inline">
+                    <li class="list-inline-item">
+                      Art In Revolt
+                    </li>
+                    <li class="list-inline-item">
+                      2 hours ago
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#">Dismiss</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="notify_flex">
+                <div class="img_box">
+                  <img src="../assets/images/collab1.png" alt="#">
+                </div>
+                <div class="text_box">
+                  <a href="#" class="notifi_link">Aliquam consequat dolor ex. Aenean nec justo tincidunt, vehicula lorem non.</a>
+                  <ul class="list-inline">
+                    <li class="list-inline-item">
+                      Art In Revolt
+                    </li>
+                    <li class="list-inline-item">
+                      2 hours ago
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#">Dismiss</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="notify_flex">
+                <div class="img_box">
+                  <img src="../assets/images/collab1.png" alt="#">
+                </div>
+                <div class="text_box">
+                  <a href="#" class="notifi_link">Aliquam consequat dolor ex. Aenean nec justo tincidunt, vehicula lorem non.</a>
+                  <ul class="list-inline">
+                    <li class="list-inline-item">
+                      Art In Revolt
+                    </li>
+                    <li class="list-inline-item">
+                      2 hours ago
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#">Dismiss</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="notify_flex">
+                <div class="img_box">
+                  <img src="../assets/images/collab1.png" alt="#">
+                </div>
+                <div class="text_box">
+                  <a href="#" class="notifi_link">Aliquam consequat dolor ex. Aenean nec justo tincidunt, vehicula lorem non.</a>
+                  <ul class="list-inline">
+                    <li class="list-inline-item">
+                      Art In Revolt
+                    </li>
+                    <li class="list-inline-item">
+                      2 hours ago
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#">Dismiss</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <a href="#" class="view_all">View All Notifications</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="../assets/images/user.png" alt="#">
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Discussions</a></li>
+            <li><a class="dropdown-item" href="#">Dashboard</a></li>
+            <li><a class="dropdown-item" href="#">Overview</a></li>
+            <li><a class="dropdown-item" href="#">My projects</a></li>
+            <li><a class="dropdown-item" href="#">Management</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" href="#">Log out</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        </li>
+      </ul>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav m-auto">
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link"
+            href="javascript:"
+            id="managementDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Management
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="managementDropdown">
+            <li>
+              <a class="dropdown-item" routerLink="/management/create-group" routerLinkActive="active"
+              >Create Group</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" routerLink="/management/create-project" routerLinkActive="active"
+              >Create Project</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" routerLink="/management/create-user-preferences" routerLinkActive="active"
+              >Create User Preferences</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" routerLink="/management/create-user" routerLinkActive="active">Create User</a>
+            </li>
+            <li>
+              <a class="dropdown-item" routerLink="/management/create-user-profile" routerLinkActive="active"
+              >Create User Profile</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="javascript:void(0);" id="my-project">My Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0);" id="my-group">My Groups</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/marketplace/card-grid">Marketplace</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/donations">Donate</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 hidden-xs">
+        <li class="nav-item">
+          <a class="nav-link round_icon chat_icon" href="javascript:">
+            <img src="../assets/images/chat.svg" alt="#" />
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle round_icon bell_icon" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="../assets/images/bell.svg" alt="#">
+          </a>
+          <div class="dropdown-menu notificate" aria-labelledby="navbarDropdown">
+            <div class="top_heading">
+              <h4>Notification <span>(6)</span></h4> <a href="#" class="clear_all">Clear All</a>
+            </div>
+            <div class="bottom_notif">
+              <div class="notify_flex">
+                <div class="img_box">
+                  <img src="../assets/images/collab1.png" alt="#">
+                </div>
+                <div class="text_box">
+                  <a href="#" class="notifi_link">Aliquam consequat dolor ex. Aenean nec justo tincidunt, vehicula lorem non.</a>
+                  <ul class="list-inline">
+                    <li class="list-inline-item">
+                      Art In Revolt
+                    </li>
+                    <li class="list-inline-item">
+                      2 hours ago
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#">Dismiss</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="notify_flex">
+                <div class="img_box">
+                  <img src="../assets/images/collab1.png" alt="#">
+                </div>
+                <div class="text_box">
+                  <a href="#" class="notifi_link">Aliquam consequat dolor ex. Aenean nec justo tincidunt, vehicula lorem non.</a>
+                  <ul class="list-inline">
+                    <li class="list-inline-item">
+                      Art In Revolt
+                    </li>
+                    <li class="list-inline-item">
+                      2 hours ago
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#">Dismiss</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="notify_flex">
+                <div class="img_box">
+                  <img src="../assets/images/collab1.png" alt="#">
+                </div>
+                <div class="text_box">
+                  <a href="#" class="notifi_link">Aliquam consequat dolor ex. Aenean nec justo tincidunt, vehicula lorem non.</a>
+                  <ul class="list-inline">
+                    <li class="list-inline-item">
+                      Art In Revolt
+                    </li>
+                    <li class="list-inline-item">
+                      2 hours ago
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#">Dismiss</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="notify_flex">
+                <div class="img_box">
+                  <img src="../assets/images/collab1.png" alt="#">
+                </div>
+                <div class="text_box">
+                  <a href="#" class="notifi_link">Aliquam consequat dolor ex. Aenean nec justo tincidunt, vehicula lorem non.</a>
+                  <ul class="list-inline">
+                    <li class="list-inline-item">
+                      Art In Revolt
+                    </li>
+                    <li class="list-inline-item">
+                      2 hours ago
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#">Dismiss</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <a href="#" class="view_all">View All Notifications</a>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Leslie Alexander <img src="../assets/images/user.png" alt="#">
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Discussions</a></li>
+            <li><a class="dropdown-item" href="#">Dashboard</a></li>
+            <li><a class="dropdown-item" href="#">Overview</a></li>
+            <li><a class="dropdown-item" href="#">My projects</a></li>
+            <li><a class="dropdown-item" href="#">Management</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" href="#">Log out</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+
+
+    <ng-template [ngIf]="false">
+
+      <!--  -->
       <div class="mobile-navbrand visible-xs">
         <button
           class="navbar-toggler"
@@ -16,6 +309,7 @@
         </button>
         <a routerLink="/profile" class="navbar-brand"><img src="../assets/images/logo_icon.svg" alt="#" /> Open Impact</a>
       </div>
+
       <a routerLink="/profile" class="navbar-brand hidden-xs"><img src="../assets/images/logo_icon.svg" alt="#" /> Open Impact</a>
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0 visible-xs flex-dir">
         <li class="nav-item">
@@ -326,6 +620,10 @@
           </li>
         </ul>
       </div>
+
+
+    </ng-template>
+    
     </div>
   </nav>
 
@@ -461,6 +759,26 @@
   </div>
 </section>
 <!-- private route header -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- public route header -->
 <section class="nav_section" *ngIf="isPublicRoute">
