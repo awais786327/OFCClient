@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CreateGroupService } from './create-group.service';
+declare var $: any;
 
 @Component({
   selector: 'app-create-group',
@@ -52,5 +53,18 @@ export class CreateGroupComponent implements OnInit {
       groupForm.reset();
       this.counter = 0;
     }
+  }
+
+  ngAfterViewInit(): void {
+    //Called after ngAfterContentInit when the component's view has been initialized. Applies to components only.
+    //Add 'implements AfterViewInit' to the class.
+    $(document).ready(function () {
+      $('.create_section .create_steps .step_flex').click(function () {
+        var e = $(this).index() + 1;
+        $('.create_wrap .inner_wrap, .create_section .create_steps .step_flex').removeClass('active'),
+          $('.create_wrap .inner_wrap:nth-child(' + e + ')').addClass('active'),
+          $(this).addClass('active');
+      });
+    });
   }
 }

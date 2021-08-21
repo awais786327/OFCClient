@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { LoadingBarService } from '@ngx-loading-bar/core';
 import { CreateUserServiceV2 } from './create-user.service';
+declare var $: any;
 
 @Component({
   selector: 'app-create-user',
@@ -26,6 +27,19 @@ export class CreateUserComponent implements OnInit {
   ngOnInit(): void {
     this.counter = 0;
     this.initCaptcha();
+  }
+
+  ngAfterViewInit(): void {
+    //Called after ngAfterContentInit when the component's view has been initialized. Applies to components only.
+    //Add 'implements AfterViewInit' to the class.
+    $(document).ready(function () {
+      $('.create_section .create_steps .step_flex').click(function () {
+        var e = $(this).index() + 1;
+        $('.create_wrap .inner_wrap, .create_section .create_steps .step_flex').removeClass('active'),
+          $('.create_wrap .inner_wrap:nth-child(' + e + ')').addClass('active'),
+          $(this).addClass('active');
+      });
+    });
   }
 
   go(index: number): void {
