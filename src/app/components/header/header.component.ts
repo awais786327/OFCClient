@@ -41,12 +41,12 @@ export class HeaderComponent implements OnInit {
   }
 
   jqueryLoad() {
-    /*$('#navbarSupportedContent .navbar-nav a').click(function(){
-      if(window.innerWidth < 767) {
-        console.log('window.innerWidth ::: ', window.innerWidth)
+    $('#navbarSupportedContent .navbar-nav a').click(function(){
+      let id = $(this).attr('id');
+      if(!['managementDropdown', 'my-project', 'my-group'].includes(id) && window.innerWidth < 767) {
         $('.navbar-toggler').click();
       }
-    });*/
+    });
 
     /*Chat_Box*/
     $('.chat_icon').click(function () {
