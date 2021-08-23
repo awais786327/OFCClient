@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { LoadingBarService } from '@ngx-loading-bar/core';
 import { CreateUserPreferencesService } from './create-user-preferences.service';
 declare var $: any;
@@ -13,16 +14,23 @@ export class CreateUserPreferencesComponent implements OnInit {
   isLoading: any = false;
 
   createUserPreferencesFormPayload: any = {};
-
+  
   constructor(
     public loadingBarService: LoadingBarService,
-    public createUserPreferencesService: CreateUserPreferencesService
+    public createUserPreferencesService: CreateUserPreferencesService,
+    private route: ActivatedRoute
   ) {
+    route.queryParamMap.subscribe((paramsMap: any) => {
+      const { params } = paramsMap;
+      this.counter = params.tab ? Number(params.tab) : 0;
+      console.log("this.counter : ", this.counter)
+    });
+
     this.loadingBarService.useRef().value$.subscribe((v: any) => (this.isLoading = !!v));
   }
 
   ngOnInit(): void {
-    this.counter = 0;
+    // this.counter = 0;
   }
 
   ngAfterViewInit(): void {
